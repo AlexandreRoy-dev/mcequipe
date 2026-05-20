@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="fr-CA" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mathieu Michaud | MC Équipe</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        mc: {
+                            charcoal: '#3d312c', sand: '#bbab9a', silver: '#c4c4c3',
+                            white: '#ffffff', linen: '#efe9e2', ocean: '#4f909b',
+                        }
+                    },
+                    fontFamily: {
+                        heading: ['Optima', 'sans-serif'], body: ['"Montserrat"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        .font-heading { font-family: 'Optima', sans-serif; }
+        
+        /* Curseur personnalisé (Desktop) */
+        @media (min-width: 1024px) { body, a, button { cursor: none; } }
+        .custom-cursor {
+            position: fixed; top: 0; left: 0; width: 12px; height: 12px;
+            background-color: #bbab9a; border-radius: 50%; pointer-events: none;
+            z-index: 9999; transform: translate(-50%, -50%);
+            transition: width 0.3s ease, height 0.3s ease, background-color 0.3s ease;
+            mix-blend-mode: difference;
+        }
+        .custom-cursor.active { width: 60px; height: 60px; opacity: 0.8; }
+
+        /* Animations au scroll */
+        .reveal-up {
+            opacity: 0; transform: translateY(30px);
+            transition: opacity 1s cubic-bezier(0.16, 1, 0.3, 1), transform 1s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .reveal-up.is-visible { opacity: 1; transform: translateY(0); }
+    </style>
+</head>
+<body class="bg-mc-white text-mc-charcoal font-body antialiased selection:bg-mc-sand selection:text-white overflow-x-hidden">
+
+    <div class="custom-cursor hidden lg:block" id="cursor"></div>
+
+    <nav class="w-full z-50 px-8 py-6 flex justify-between items-center bg-mc-white border-b border-mc-linen">
+        <a href="index.html" class="text-2xl font-heading tracking-widest uppercase hover-trigger text-mc-charcoal">MC Équipe</a>
+        <div class="hidden md:flex gap-12 text-[11px] tracking-widest uppercase font-medium text-mc-charcoal">
+            <a href="index.html#services" class="hover-trigger hover:text-mc-sand transition-colors">Services</a>
+            <a href="index.html#equipe" class="hover-trigger text-mc-sand transition-colors">L'Équipe</a>
+            <a href="#" class="hover-trigger hover:text-mc-ocean transition-colors">International</a>
+        </div>
+        <a href="index.html#contact" class="hover-trigger border border-mc-charcoal text-mc-charcoal px-6 py-3 text-[10px] uppercase tracking-widest hover:bg-mc-charcoal hover:text-white transition-all duration-500 rounded-full">
+            Contact
+        </a>
+    </nav>
+
+    <section class="pt-20 pb-32 px-6 lg:px-8 max-w-7xl mx-auto flex flex-col-reverse lg:flex-row items-center gap-16 lg:gap-24 relative">
+        
+        <div class="absolute top-40 left-0 w-64 h-64 bg-mc-sand/10 rounded-full blur-3xl -z-10"></div>
+
+        <div class="w-full lg:w-1/2 reveal-up">
+            <span class="text-mc-sand uppercase tracking-widest text-xs font-bold block mb-4 border-l-2 border-mc-sand pl-3">Courtier Immobilier</span>
+            <h1 class="font-heading text-5xl md:text-6xl lg:text-7xl text-mc-charcoal mb-8 leading-tight">Mathieu <br>Michaud.</h1>
+            
+            <div class="space-y-6 font-light text-mc-charcoal/80 text-base leading-relaxed text-justify">
+                <p>
+                    Reconnu pour son esprit analytique et sa lecture approfondie des dynamiques du marché immobilier, Mathieu aborde chaque transaction avec la rigueur d'un stratège. Que ce soit pour la vente d'un domaine de prestige ou l'acquisition d'un actif clé, son approche pragmatique et visionnaire permet de sécuriser les intérêts de ses clients tout en maximisant la valeur de leur portefeuille.
+                </p>
+                <p>
+                    Avant-gardiste, il intègre les technologies de pointe offertes par le réseau mondial eXp pour offrir une visibilité inégalée aux propriétés qu'il représente. Son réseau étendu et sa maîtrise de la négociation font de lui un allié redoutable dans un marché compétitif.
+                </p>
+                <p>
+                    Plus qu'un simple intermédiaire, Mathieu se positionne comme un conseiller de confiance à long terme, bâtissant ses relations sur la transparence totale et une communication sans faille.
+                </p>
+            </div>
+
+            <div class="mt-12 flex items-center gap-6">
+                <a href="mailto:mathieu@mcequipe.com" class="hover-trigger bg-mc-charcoal text-white px-8 py-4 text-xs uppercase tracking-widest rounded-full hover:bg-mc-sand hover:text-mc-charcoal transition-all duration-300">
+                    Écrire à Mathieu
+                </a>
+                <a href="tel:4186558090" class="hover-trigger font-light text-sm tracking-widest text-mc-charcoal hover:text-mc-sand transition-colors">
+                    (418) 655-8090
+                </a>
+            </div>
+        </div>
+
+        <div class="w-full lg:w-1/2 reveal-up">
+            <div class="aspect-[3/4] overflow-hidden rounded-xl shadow-2xl relative">
+                <img src="mathieu.png" alt="Mathieu Michaud" class="w-full h-full object-cover grayscale hover:grayscale-0 transition duration-1000">
+                <div class="absolute inset-0 bg-mc-charcoal/10 mix-blend-overlay"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-32 bg-mc-charcoal text-white relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 relative z-10 flex flex-col md:flex-row items-center gap-16">
+            <div class="md:w-1/3 reveal-up">
+                <h2 class="font-heading text-4xl lg:text-5xl mb-4">The Buddy <br><span class="italic text-mc-sand">Broker.</span></h2>
+                <span class="text-[10px] uppercase tracking-widest text-white/50">La méthode exclusive</span>
+            </div>
+            <div class="md:w-2/3 reveal-up" style="transition-delay: 200ms;">
+                <p class="font-light text-lg leading-relaxed text-white/80 border-l border-mc-sand/50 pl-8">
+                    Conscient que le succès d'une transaction réside dans les détails, Mathieu a développé "The Buddy Broker". Bien plus qu'un simple carnet de notes, c'est un système organisationnel complet conçu pour le courtage moderne. Cet outil garantit une gestion des suivis d'une rigueur absolue : aucun appel n'est oublié, aucune échéance n'est manquée. C'est l'assurance pour chaque client de bénéficier d'une tranquillité d'esprit totale et d'un service véritablement irréprochable.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-mc-linen text-mc-charcoal py-12 text-center border-t border-mc-sand/20">
+        <a href="index.html" class="font-heading text-2xl uppercase tracking-widest hover-trigger mb-4 inline-block">MC Équipe</a>
+        <p class="font-light text-xs text-mc-charcoal/50 tracking-widest uppercase">&copy; 2026 MC Équipe - eXp Agence Immobilière.</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const cursor = document.getElementById('cursor');
+            const hoverTriggers = document.querySelectorAll('.hover-trigger, a, button');
+            if(window.innerWidth >= 1024) {
+                document.addEventListener('mousemove', (e) => {
+                    cursor.style.left = e.clientX + 'px';
+                    cursor.style.top = e.clientY + 'px';
+                });
+                hoverTriggers.forEach(trigger => {
+                    trigger.addEventListener('mouseenter', () => cursor.classList.add('active'));
+                    trigger.addEventListener('mouseleave', () => cursor.classList.remove('active'));
+                });
+            }
+            const revealElements = document.querySelectorAll('.reveal-up');
+            const revealObserver = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.1, rootMargin: "0px 0px -50px 0px" });
+            revealElements.forEach(el => revealObserver.observe(el));
+        });
+    </script>
+</body>
+</html>

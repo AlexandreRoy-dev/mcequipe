@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="fr-CA" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acquisition Internationale | MC Équipe</title>
+    <meta name="description" content="Investissez au Mexique ou au Panama en toute sécurité avec MC Équipe. Service clé en main pour les acheteurs québécois.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        mc: {
+                            charcoal: '#3d312c', 
+                            sand: '#bbab9a', 
+                            silver: '#c4c4c3',
+                            white: '#ffffff',
+                            linen: '#efe9e2', 
+                            ocean: '#4f909b',
+                        }
+                    },
+                    fontFamily: {
+                        heading: ['Optima', 'sans-serif'], 
+                        body: ['"Montserrat"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        .font-heading { font-family: 'Optima', sans-serif; }
+        
+        /* Curseur personnalisé (Desktop uniquement) */
+        @media (min-width: 1024px) {
+            body, a, button { cursor: none; }
+        }
+
+        .custom-cursor {
+            position: fixed;
+            top: 0; left: 0;
+            width: 12px; height: 12px;
+            background-color: #4f909b; /* Curse modifié en océan pour cette page */
+            border-radius: 50%;
+            pointer-events: none;
+            z-index: 9999;
+            transform: translate(-50%, -50%);
+            transition: width 0.3s ease, height 0.3s ease, background-color 0.3s ease;
+            mix-blend-mode: difference;
+        }
+        .custom-cursor.active {
+            width: 60px; height: 60px;
+            background-color: #bbab9a;
+            mix-blend-mode: normal;
+            opacity: 0.8;
+        }
+
+        /* Animations au scroll */
+        .reveal-up {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 1s cubic-bezier(0.16, 1, 0.3, 1), transform 1s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .reveal-up.is-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Navigation transparente vs solide */
+        .nav-scrolled {
+            background-color: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid #efe9e2;
+            color: #3d312c !important;
+        }
+        .nav-scrolled .nav-btn {
+            border-color: #3d312c;
+            color: #3d312c;
+        }
+        .nav-scrolled .nav-btn:hover {
+            background-color: #3d312c;
+            color: #ffffff;
+        }
+        
+        /* Glass form spécifique à l'international */
+        .glass-form {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+    </style>
+</head>
+<body class="bg-mc-white text-mc-charcoal font-body antialiased selection:bg-mc-ocean selection:text-white overflow-x-hidden">
+
+    <div class="custom-cursor hidden lg:block" id="cursor"></div>
+
+    <nav id="navbar" class="fixed top-0 w-full z-50 px-8 py-6 flex justify-between items-center text-white transition-all duration-500">
+        <div class="text-2xl font-heading tracking-widest uppercase hover-trigger"><a href="index.html">MC Équipe</a></div>
+        <div class="hidden md:flex gap-12 text-[11px] tracking-widest uppercase font-medium nav-links">
+            <a href="index.html#services" class="hover-trigger hover:text-mc-sand transition-colors">Services</a>
+            <a href="index.html#equipe" class="hover-trigger hover:text-mc-sand transition-colors">L'Équipe</a>
+            <a href="international.html" class="hover-trigger text-mc-ocean transition-colors">International</a>
+        </div>
+        <a href="#contact" class="nav-btn hover-trigger border border-white px-6 py-3 text-[10px] uppercase tracking-widest hover:bg-white hover:text-mc-charcoal transition-all duration-500 rounded-full">
+            Contact
+        </a>
+    </nav>
+
+<header class="relative min-h-screen w-full flex flex-col justify-center items-center overflow-hidden bg-zinc-950 pt-32 pb-20">
+    
+    <div class="absolute inset-0 z-0">
+        <img src="https://images.unsplash.com/photo-1515238152791-8216bfdf89a7?q=80&w=2000&auto=format&fit=crop" alt="Côte Tropicale Cristalline" class="w-full h-full object-cover opacity-40 mix-blend-luminosity scale-105 animate-[kenburns_20s_ease-in-out_infinite_alternate]">
+        <div class="absolute inset-0 bg-gradient-to-tr from-zinc-950 via-zinc-950/90 to-transparent"></div>
+        <div class="absolute top-1/2 right-0 w-[600px] h-[600px] bg-mc-ocean/20 rounded-full blur-[120px] -translate-y-1/2 translate-x-1/3"></div>
+    </div>
+
+    <div class="relative z-20 w-full max-w-7xl mx-auto px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
+        
+        <div class="lg:col-span-7 text-white reveal-up">
+            <div class="inline-flex items-center gap-4 mb-8">
+                <span class="w-12 h-px bg-mc-ocean"></span>
+                <span class="text-mc-ocean uppercase tracking-[0.3em] text-[10px] font-bold">Acquisition Outre-mer</span>
+            </div>
+            
+            <h1 class="font-heading text-6xl md:text-7xl lg:text-[5.5rem] leading-[1.05] mb-8">
+                Votre ancrage <br>
+                <span class="block mt-2 pl-12 lg:pl-24"><span class="italic text-white font-light">sous les tropiques.</span></span>
+            </h1>
+            
+            <p class="font-light text-base md:text-lg tracking-wide text-white/70 mb-12 max-w-lg leading-relaxed pl-1 border-l border-white/20 ml-1">
+                Mexique & Panama. Une acquisition clé en main, sécurisée légalement, et pensée exclusivement pour les investisseurs québécois.
+            </p>
+            
+            <div class="flex flex-wrap items-center gap-8 font-light text-[10px] tracking-[0.2em] text-white/50 uppercase">
+                <span class="flex items-center gap-3">
+                    <svg class="w-3 h-3 text-mc-ocean" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                    Sans friction légale
+                </span>
+                <span class="flex items-center gap-3">
+                    <svg class="w-3 h-3 text-mc-ocean" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"/></svg>
+                    Service Francophone
+                </span>
+            </div>
+        </div>
+
+        <div class="lg:col-span-5 reveal-up" style="transition-delay: 200ms;">
+            <div class="relative">
+                <div class="absolute -inset-0.5 bg-gradient-to-br from-mc-ocean/50 to-mc-silver/30 rounded-2xl opacity-50 blur-sm"></div>
+                
+                <div class="relative bg-slate-950/40 backdrop-blur-2xl border border-white/10 rounded-2xl p-8 md:p-10 shadow-[0_0_40px_rgba(0,0,0,0.5)]">
+                    
+                    <div class="mb-8">
+                        <h3 class="font-heading text-3xl text-white mb-2">Accéder au portefeuille</h3>
+                        <p class="font-light text-[11px] text-mc-sand uppercase tracking-widest">Sélection exclusive</p>
+                    </div>
+                    
+                    <form action="#" method="POST" class="space-y-6">
+                        
+                        <div class="space-y-4">
+                            <div class="relative group">
+                                <input type="text" name="nom" required id="nom" class="peer w-full bg-white/5 border border-white/10 rounded-lg py-4 px-5 text-white font-light text-sm focus:outline-none focus:border-mc-ocean focus:bg-white/10 transition-all placeholder-transparent">
+                                <label for="nom" class="absolute left-5 top-4 text-white/50 text-sm font-light transition-all peer-placeholder-shown:text-sm peer-placeholder-shown:top-4 peer-focus:-top-2 peer-focus:text-[10px] peer-focus:text-mc-ocean peer-focus:bg-zinc-900 peer-focus:px-2 rounded">Nom complet</label>
+                            </div>
+                            
+                            <div class="relative group">
+                                <input type="email" name="email" required id="email" class="peer w-full bg-white/5 border border-white/10 rounded-lg py-4 px-5 text-white font-light text-sm focus:outline-none focus:border-mc-ocean focus:bg-white/10 transition-all placeholder-transparent">
+                                <label for="email" class="absolute left-5 top-4 text-white/50 text-sm font-light transition-all peer-placeholder-shown:text-sm peer-placeholder-shown:top-4 peer-focus:-top-2 peer-focus:text-[10px] peer-focus:text-mc-ocean peer-focus:bg-zinc-900 peer-focus:px-2 rounded">Adresse courriel</label>
+                            </div>
+                            
+                            <div class="relative group">
+                                <input type="tel" name="telephone" required id="tel" class="peer w-full bg-white/5 border border-white/10 rounded-lg py-4 px-5 text-white font-light text-sm focus:outline-none focus:border-mc-ocean focus:bg-white/10 transition-all placeholder-transparent">
+                                <label for="tel" class="absolute left-5 top-4 text-white/50 text-sm font-light transition-all peer-placeholder-shown:text-sm peer-placeholder-shown:top-4 peer-focus:-top-2 peer-focus:text-[10px] peer-focus:text-mc-ocean peer-focus:bg-zinc-900 peer-focus:px-2 rounded">Numéro de téléphone</label>
+                            </div>
+                        </div>
+
+                        <div class="pt-2">
+                            <p class="text-[10px] text-white/50 uppercase tracking-widest mb-3 pl-1">Destination d'intérêt</p>
+                            <div class="grid grid-cols-2 gap-3">
+                                <label class="cursor-pointer group relative">
+                                    <input type="radio" name="pays" value="mexique" class="peer sr-only" checked>
+                                    <div class="py-3 border border-white/10 rounded-lg text-center peer-checked:bg-mc-ocean/20 peer-checked:border-mc-ocean peer-checked:text-mc-ocean text-white/70 peer-checked:text-white transition-all text-xs uppercase tracking-widest font-medium hover-trigger hover:bg-white/5">Mexique</div>
+                                </label>
+                                <label class="cursor-pointer group relative">
+                                    <input type="radio" name="pays" value="panama" class="peer sr-only">
+                                    <div class="py-3 border border-white/10 rounded-lg text-center peer-checked:bg-mc-ocean/20 peer-checked:border-mc-ocean peer-checked:text-mc-ocean text-white/70 peer-checked:text-white transition-all text-xs uppercase tracking-widest font-medium hover-trigger hover:bg-white/5">Panama</div>
+                                </label>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="relative w-full group overflow-hidden rounded-lg mt-4 hover-trigger">
+                            <div class="absolute inset-0 w-full h-full bg-mc-ocean transition-all duration-300 ease-out group-hover:bg-white"></div>
+                            <span class="relative block px-8 py-5 text-white group-hover:text-mc-charcoal text-[10px] uppercase tracking-[0.3em] font-bold transition-colors duration-300">
+                                Recevoir la sélection
+                            </span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</header>
+
+    <section class="py-32 bg-mc-linen text-mc-charcoal text-center px-6">
+        <div class="max-w-5xl mx-auto reveal-up">
+            <span class="text-mc-ocean uppercase tracking-widest text-xs font-bold block mb-4">L'Avantage MC Équipe</span>
+            <h2 class="font-heading text-4xl md:text-5xl mb-16">Simplifier l'exotisme, <br>sécuriser l'excellence.</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 text-left">
+                <div class="bg-white p-10 rounded-xl shadow-sm hover-trigger transition-transform duration-500 hover:-translate-y-2 border-t-2 border-mc-ocean/0 hover:border-mc-ocean">
+                    <span class="font-heading text-4xl text-mc-sand/30 block mb-4">01</span>
+                    <h3 class="font-heading text-xl mb-4">Sécurisation Légale</h3>
+                    <p class="font-light text-sm opacity-80 leading-relaxed">Réseau de cabinets juridiques partenaires. Nous validons chaque titre de propriété (fideicomiso) avant toute transaction.</p>
+                </div>
+                <div class="bg-white p-10 rounded-xl shadow-sm hover-trigger transition-transform duration-500 hover:-translate-y-2 border-t-2 border-mc-ocean/0 hover:border-mc-ocean">
+                    <span class="font-heading text-4xl text-mc-sand/30 block mb-4">02</span>
+                    <h3 class="font-heading text-xl mb-4">Accompagnement Francophone</h3>
+                    <p class="font-light text-sm opacity-80 leading-relaxed">De l'analyse des contrats à la signature finale, nous éliminons la barrière linguistique. Vous comprenez chaque clause.</p>
+                </div>
+                <div class="bg-white p-10 rounded-xl shadow-sm hover-trigger transition-transform duration-500 hover:-translate-y-2 border-t-2 border-mc-ocean/0 hover:border-mc-ocean">
+                    <span class="font-heading text-4xl text-mc-sand/30 block mb-4">03</span>
+                    <h3 class="font-heading text-xl mb-4">Accès Privilégié</h3>
+                    <p class="font-light text-sm opacity-80 leading-relaxed">Grâce au réseau eXp Global, nous accédons aux pré-ventes exclusives et aux projets des promoteurs les plus solides du marché.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-0 bg-mc-charcoal flex flex-col md:flex-row border-t border-mc-linen">
+        <div class="w-full md:w-1/2 relative h-[500px] lg:h-[700px] group overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1512813195386-6cf811ad3542?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Mexique Tulum" class="w-full h-full object-cover transition-transform duration-[10s] group-hover:scale-110 opacity-60 grayscale group-hover:grayscale-0">
+            <div class="absolute inset-0 bg-gradient-to-t from-mc-charcoal via-transparent to-transparent opacity-90"></div>
+            <div class="absolute inset-0 bg-mc-ocean/20 opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
+            
+            <div class="absolute bottom-16 left-12 right-12 z-10 text-white reveal-up">
+                <h3 class="font-heading text-5xl md:text-6xl mb-4">Mexique</h3>
+                <p class="font-light text-xs uppercase tracking-[0.2em] text-mc-sand mb-6">Tulum & Riviera Maya</p>
+                <div class="h-px w-12 group-hover:w-full bg-mc-sand transition-all duration-1000 mb-6"></div>
+                <p class="font-light text-sm text-white/80 max-w-sm">Un marché dynamique de classe mondiale, idéal pour le rendement locatif à court terme et un style de vie idyllique.</p>
+            </div>
+        </div>
+        
+        <div class="w-full md:w-1/2 relative h-[500px] lg:h-[700px] group overflow-hidden border-t md:border-t-0 md:border-l border-mc-linen/20">
+            <img src="https://images.unsplash.com/photo-1574227492706-f65b24c3688a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Panama" class="w-full h-full object-cover transition-transform duration-[10s] group-hover:scale-110 opacity-60 grayscale group-hover:grayscale-0">
+            <div class="absolute inset-0 bg-gradient-to-t from-mc-charcoal via-transparent to-transparent opacity-90"></div>
+            <div class="absolute inset-0 bg-mc-ocean/20 opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
+            
+            <div class="absolute bottom-16 left-12 right-12 z-10 text-white reveal-up">
+                <h3 class="font-heading text-5xl md:text-6xl mb-4">Panama</h3>
+                <p class="font-light text-xs uppercase tracking-[0.2em] text-white mb-6">Panama City & Bocas del Toro</p>
+                <div class="h-px w-12 group-hover:w-full bg-white transition-all duration-1000 mb-6"></div>
+                <p class="font-light text-sm text-white/80 max-w-sm">Hub économique stable utilisant le dollar américain, offrant des incitatifs fiscaux majeurs pour les retraités étrangers.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-32 bg-mc-white overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="flex flex-col lg:flex-row items-center gap-16 lg:gap-24">
+                <div class="w-full lg:w-1/2 relative reveal-up">
+                    <div class="aspect-[4/5] rounded-xl overflow-hidden relative shadow-2xl">
+                        <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="L'équipe" class="w-full h-full object-cover grayscale hover:grayscale-0 transition duration-1000">
+                    </div>
+                    <div class="absolute -bottom-8 -right-4 lg:-right-12 bg-mc-white p-8 rounded-lg shadow-xl hover-trigger border-t border-mc-ocean">
+                        <p class="font-heading text-3xl text-mc-charcoal mb-1">eXp Global</p>
+                        <p class="text-[10px] uppercase tracking-widest text-mc-ocean font-bold">Réseau International</p>
+                    </div>
+                </div>
+
+                <div class="w-full lg:w-1/2 reveal-up mt-12 lg:mt-0">
+                    <span class="text-mc-ocean uppercase tracking-widest text-xs font-medium block mb-4">L'humain avant tout</span>
+                    <h2 class="font-heading text-4xl md:text-5xl text-mc-charcoal mb-8 leading-tight">Le duo derrière <br>votre projet.</h2>
+                    <p class="text-mc-charcoal/80 font-light leading-relaxed mb-6 text-base">
+                        Mathieu Michaud et Catherine Aubé unissent leurs forces pour sécuriser vos investissements. L'un analyse les données avec froideur, l'autre comprend intimement vos besoins de vie.
+                    </p>
+                    <p class="text-mc-charcoal/80 font-light leading-relaxed mb-10 text-base">
+                        Catherine agit comme votre spécialiste attitrée pour les transactions au Mexique et au Panama, assurant une communication fluide avec nos partenaires locaux.
+                    </p>
+                    
+                    <a href="catherine.html" class="hover-trigger inline-flex items-center gap-4 border border-mc-charcoal text-mc-charcoal px-8 py-4 text-[10px] uppercase tracking-widest rounded-full hover:bg-mc-charcoal hover:text-white transition-all duration-300">
+                        Rencontrer Catherine
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq" class="py-32 bg-mc-charcoal text-white">
+        <div class="max-w-4xl mx-auto px-6 lg:px-8">
+            <div class="text-center mb-16 reveal-up">
+                <span class="text-mc-ocean uppercase tracking-widest text-xs font-medium block mb-4">Clarifier vos doutes</span>
+                <h2 class="font-heading text-4xl md:text-5xl">Questions Fréquentes</h2>
+            </div>
+
+            <div class="space-y-4">
+                
+                <div class="faq-item border-b border-white/20 reveal-up">
+                    <button class="faq-button w-full py-6 flex justify-between items-center text-left hover-trigger focus:outline-none group">
+                        <span class="font-heading text-xl md:text-2xl group-hover:text-mc-ocean transition-colors">Puis-je acheter au Mexique en tant que Canadien ?</span>
+                        <span class="transform transition-transform duration-300 w-6 h-6 flex items-center justify-center text-mc-ocean border border-mc-ocean rounded-full">
+                            <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v12M6 12h12"/></svg>
+                        </span>
+                    </button>
+                    <div class="faq-content overflow-hidden max-h-0 transition-all duration-500 ease-in-out">
+                        <p class="pb-8 font-light text-sm md:text-base text-white/70 leading-relaxed">
+                            Absolument. Si la propriété se trouve dans la "zone restreinte" (près des côtes ou des frontières), nous établissons un <em>Fideicomiso</em>, une fiducie bancaire sécurisée et renouvelable qui vous donne tous les droits de propriété.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-item border-b border-white/20 reveal-up" style="transition-delay: 100ms;">
+                    <button class="faq-button w-full py-6 flex justify-between items-center text-left hover-trigger focus:outline-none group">
+                        <span class="font-heading text-xl md:text-2xl group-hover:text-mc-ocean transition-colors">Dois-je me déplacer pour la signature ?</span>
+                        <span class="transform transition-transform duration-300 w-6 h-6 flex items-center justify-center text-mc-ocean border border-mc-ocean rounded-full">
+                            <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v12M6 12h12"/></svg>
+                        </span>
+                    </button>
+                    <div class="faq-content overflow-hidden max-h-0 transition-all duration-500 ease-in-out">
+                        <p class="pb-8 font-light text-sm md:text-base text-white/70 leading-relaxed">
+                            Non, ce n'est pas obligatoire. Grâce aux procurations notariées (Power of Attorney) et aux signatures électroniques, nous pouvons clôturer l'achat à distance, depuis le confort de votre foyer au Québec.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-item border-b border-white/20 reveal-up" style="transition-delay: 200ms;">
+                    <button class="faq-button w-full py-6 flex justify-between items-center text-left hover-trigger focus:outline-none group">
+                        <span class="font-heading text-xl md:text-2xl group-hover:text-mc-ocean transition-colors">Comment fonctionne la gestion locative ?</span>
+                        <span class="transform transition-transform duration-300 w-6 h-6 flex items-center justify-center text-mc-ocean border border-mc-ocean rounded-full">
+                            <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v12M6 12h12"/></svg>
+                        </span>
+                    </button>
+                    <div class="faq-content overflow-hidden max-h-0 transition-all duration-500 ease-in-out">
+                        <p class="pb-8 font-light text-sm md:text-base text-white/70 leading-relaxed">
+                            Nous collaborons avec des compagnies de gestion immobilière (Property Management) réputées sur place. Elles s'occupent de tout : entretien, marketing sur Airbnb/Vrbo, accueil des locataires et remises des clés.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+<section id="contact" class="py-32 bg-mc-linen text-mc-charcoal relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="flex flex-col lg:flex-row gap-20">
+                
+                <div class="w-full lg:w-5/12 reveal-up">
+                    <span class="text-mc-ocean uppercase tracking-widest text-xs font-medium block mb-4">Discutons de votre vision</span>
+                    <h2 class="font-heading text-5xl md:text-6xl mb-8 leading-tight">Prendre <br><span class="italic text-mc-sand">Contact.</span></h2>
+                    
+                    <p class="font-light text-mc-charcoal/80 leading-relaxed mb-12 max-w-md">
+                        Planifiez un appel stratégique avec notre équipe. Nous répondrons à vos questions sur la fiscalité, le processus d'achat et nos opportunités actuelles dans le Sud.
+                    </p>
+
+                    <div class="space-y-6">
+                        <div>
+                            <p class="text-[10px] uppercase tracking-widest text-mc-charcoal/50 mb-2">Téléphones</p>
+                            <p class="font-light text-sm mb-1">Mathieu : (418) 655-8090</p>
+                            <p class="font-light text-sm">Catherine : (418) 952-0925</p>
+                        </div>
+                        <div>
+                            <p class="text-[10px] uppercase tracking-widest text-mc-charcoal/50 mb-2">Courriels</p>
+                            <a href="mailto:mathieu@mcequipe.com" class="font-light text-sm hover:text-mc-ocean transition-colors duration-300 block mb-1">mathieu@mcequipe.com</a>
+                            <a href="mailto:catherine@mcequipe.com" class="font-light text-sm hover:text-mc-ocean transition-colors duration-300 block">catherine@mcequipe.com</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w-full lg:w-7/12 reveal-up" style="transition-delay: 200ms;">
+                    <form action="#" method="POST" class="space-y-8 mt-4 lg:mt-0">
+                        
+                        <div class="relative group">
+                            <label for="contact-nom" class="sr-only">Nom complet</label>
+                            <input type="text" id="contact-nom" name="nom" required placeholder="Bonjour, je m'appelle..." 
+                                   class="w-full bg-transparent border-b border-mc-charcoal/20 py-4 px-0 text-xl font-heading text-mc-charcoal focus:outline-none focus:border-mc-ocean transition-colors placeholder-mc-charcoal/30">
+                        </div>
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                            <div class="relative group">
+                                <label for="contact-email" class="sr-only">Adresse courriel</label>
+                                <input type="email" id="contact-email" name="email" required placeholder="Mon courriel est..." 
+                                       class="w-full bg-transparent border-b border-mc-charcoal/20 py-4 px-0 text-lg font-light text-mc-charcoal focus:outline-none focus:border-mc-ocean transition-colors placeholder-mc-charcoal/30">
+                            </div>
+                            <div class="relative group">
+                                <label for="contact-tel" class="sr-only">Numéro de téléphone</label>
+                                <input type="tel" id="contact-tel" name="telephone" required placeholder="Mon téléphone est..." 
+                                       class="w-full bg-transparent border-b border-mc-charcoal/20 py-4 px-0 text-lg font-light text-mc-charcoal focus:outline-none focus:border-mc-ocean transition-colors placeholder-mc-charcoal/30">
+                            </div>
+                        </div>
+
+                        <div class="relative group mt-12">
+                            <label for="contact-message" class="sr-only">Votre message</label>
+                            <textarea id="contact-message" name="message" rows="4" placeholder="Je m'intéresse au marché du..." 
+                                      class="w-full bg-transparent border-b border-mc-charcoal/20 py-4 px-0 text-lg font-light text-mc-charcoal focus:outline-none focus:border-mc-ocean transition-colors resize-none placeholder-mc-charcoal/30"></textarea>
+                        </div>
+
+                        <div class="pt-8 text-right">
+                            <button type="submit" class="hover-trigger group inline-flex items-center gap-4 text-mc-charcoal">
+                                <span class="font-light text-xs tracking-[0.2em] uppercase border-b border-mc-charcoal pb-1 group-hover:text-mc-ocean group-hover:border-mc-ocean transition-colors duration-300">Envoyer le message</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 transform group-hover:translate-x-2 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                                </svg>
+                            </button>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-mc-charcoal text-white py-12 text-center">
+        <p class="font-light text-xs text-white/50 tracking-widest uppercase">&copy; 2026 MC Équipe - eXp Agence Immobilière.</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            
+            /* --- Curseur --- */
+            const cursor = document.getElementById('cursor');
+            const hoverTriggers = document.querySelectorAll('.hover-trigger, a, button');
+
+            if(window.innerWidth >= 1024) {
+                document.addEventListener('mousemove', (e) => {
+                    cursor.style.left = e.clientX + 'px';
+                    cursor.style.top = e.clientY + 'px';
+                });
+
+                hoverTriggers.forEach(trigger => {
+                    trigger.addEventListener('mouseenter', () => cursor.classList.add('active'));
+                    trigger.addEventListener('mouseleave', () => cursor.classList.remove('active'));
+                });
+            }
+
+            /* --- Animations au Scroll --- */
+            const revealElements = document.querySelectorAll('.reveal-up');
+            const revealOptions = { threshold: 0.1, rootMargin: "0px 0px -50px 0px" };
+            const revealObserver = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, revealOptions);
+            revealElements.forEach(el => revealObserver.observe(el));
+
+            /* --- Navbar dynamique au scroll --- */
+            const navbar = document.getElementById('navbar');
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 50) {
+                    navbar.classList.add('nav-scrolled');
+                    navbar.classList.remove('text-white');
+                } else {
+                    navbar.classList.remove('nav-scrolled');
+                    navbar.classList.add('text-white');
+                }
+            });
+
+            /* --- FAQ Accordion --- */
+            const faqButtons = document.querySelectorAll('.faq-button');
+            faqButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    const content = button.nextElementSibling;
+                    const icon = button.querySelector('span.transform');
+                    const iconSvg = icon.querySelector('svg');
+                    
+                    document.querySelectorAll('.faq-content').forEach(otherContent => {
+                        if (otherContent !== content) {
+                            otherContent.style.maxHeight = null;
+                            const otherIconSvg = otherContent.previousElementSibling.querySelector('span.transform svg');
+                            otherIconSvg.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v12M6 12h12"/>';
+                            otherContent.previousElementSibling.querySelector('span.transform').classList.remove('rotate-45');
+                        }
+                    });
+
+                    if (content.style.maxHeight) {
+                        content.style.maxHeight = null;
+                        iconSvg.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v12M6 12h12"/>';
+                        icon.classList.remove('rotate-45');
+                    } else {
+                        content.style.maxHeight = content.scrollHeight + "px";
+                        iconSvg.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"/>';
+                        icon.classList.add('rotate-45');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
