@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="fr-CA" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Achat et Vente | MC Équipe</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        mc: {
+                            charcoal: '#3d312c', 
+                            sand: '#bbab9a', 
+                            silver: '#c4c4c3',
+                            white: '#ffffff',
+                            linen: '#efe9e2', 
+                            ocean: '#4f909b',
+                        }
+                    },
+                    fontFamily: {
+                        heading: ['Optima', 'sans-serif'], 
+                        body: ['"Montserrat"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        .font-heading { font-family: 'Optima', sans-serif; }
+        
+        @media (min-width: 1024px) {
+            body, a, button { cursor: none; }
+        }
+
+        .custom-cursor {
+            position: fixed;
+            top: 0; left: 0;
+            width: 12px; height: 12px;
+            background-color: #f7f3ea;
+            border-radius: 50%;
+            pointer-events: none;
+            z-index: 9999;
+            transform: translate(-50%, -50%);
+            transition: width 0.3s ease, height 0.3s ease, background-color 0.3s ease;
+            mix-blend-mode: difference;
+        }
+        .custom-cursor.active {
+            width: 60px; height: 60px;
+            background-color: #bbab9a;
+            mix-blend-mode: normal;
+            opacity: 0.8;
+        }
+
+        .reveal-up {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 1s cubic-bezier(0.16, 1, 0.3, 1), transform 1s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .reveal-up.is-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .nav-scrolled {
+            background-color: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid #efe9e2;
+            color: #3d312c !important;
+        }
+        .nav-scrolled .nav-btn {
+            border-color: #3d312c;
+            color: #3d312c;
+        }
+        .nav-scrolled .nav-btn:hover {
+            background-color: #3d312c;
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body class="bg-mc-white text-mc-charcoal font-body antialiased selection:bg-mc-ocean selection:text-white overflow-x-hidden">
+
+    <div class="custom-cursor hidden lg:block" id="cursor"></div>
+
+    <nav id="navbar" class="fixed top-0 w-full z-50 px-8 py-6 flex justify-between items-center text-white transition-all duration-500">
+        <a href="index.html" class="text-2xl font-heading tracking-widest uppercase hover-trigger">MC Équipe</a>
+        <div class="hidden md:flex gap-12 text-[11px] tracking-widest uppercase font-medium nav-links">
+            <a href="index.html#services" class="hover-trigger text-mc-sand transition-colors">Services</a>
+            <a href="index.html#equipe" class="hover-trigger hover:text-mc-sand transition-colors">L'Équipe</a>
+            <a href="international.html" class="hover-trigger text-mc-ocean hover:opacity-70 transition-opacity">International</a>
+        </div>
+        <a href="index.html#contact" class="nav-btn hover-trigger border border-white px-6 py-3 text-[10px] uppercase tracking-widest hover:bg-white hover:text-mc-charcoal transition-all duration-500 rounded-full">
+            Contact
+        </a>
+    </nav>
+
+    <header class="relative h-[70vh] w-full flex flex-col justify-center items-center overflow-hidden">
+        <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" alt="Résidentiel Québec" class="absolute inset-0 w-full h-full object-cover z-0">
+        <div class="absolute inset-0 bg-mc-charcoal/60 z-10"></div>
+
+        <div class="relative z-20 text-center w-full max-w-4xl mx-auto px-6 reveal-up">
+            <span class="text-mc-sand uppercase tracking-[0.3em] text-xs font-medium block mb-6 drop-shadow-md">Immobilier Résidentiel</span>
+            <h1 class="font-heading text-5xl md:text-7xl leading-[1.1] mb-8 text-white drop-shadow-lg">
+                Achat & <span class="italic font-light">Vente</span>
+            </h1>
+            <p class="font-light text-base md:text-lg tracking-wide text-white/90 uppercase">
+                Une approche stratégique et raffinée pour vos projets au Québec.
+            </p>
+        </div>
+    </header>
+
+    <section class="py-32 bg-mc-white">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+                <div class="reveal-up">
+                    <span class="text-mc-sand uppercase tracking-widest text-xs font-medium block mb-4 border-l-2 pl-3 border-mc-sand">Acquisition</span>
+                    <h2 class="font-heading text-4xl md:text-5xl text-mc-charcoal mb-6">Trouver l'exception.</h2>
+                    <p class="text-mc-charcoal/80 font-light leading-relaxed mb-6 text-base text-justify">
+                        Acquérir une propriété est bien plus qu'une simple transaction; c'est le début d'un nouveau chapitre. Nous prenons le temps de comprendre intimement votre style de vie, vos aspirations et vos critères d'excellence. 
+                    </p>
+                    <p class="text-mc-charcoal/80 font-light leading-relaxed mb-8 text-base text-justify">
+                        Grâce à notre vaste réseau et à notre accès privilégié aux propriétés hors marché (pocket listings), nous vous présentons des opportunités uniques, souvent invisibles au grand public. De la première visite à la remise des clés, nous défendons vos intérêts avec une force de négociation redoutable.
+                    </p>
+                    <ul class="space-y-4 font-light text-sm text-mc-charcoal/90">
+                        <li class="flex items-center gap-3">
+                            <span class="w-1.5 h-1.5 bg-mc-sand rounded-full"></span> Recherche ciblée et personnalisée
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <span class="w-1.5 h-1.5 bg-mc-sand rounded-full"></span> Accès aux propriétés exclusives
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <span class="w-1.5 h-1.5 bg-mc-sand rounded-full"></span> Stratégie de négociation rigoureuse
+                        </li>
+                    </ul>
+                </div>
+                <div class="aspect-square lg:aspect-auto lg:h-[600px] overflow-hidden rounded-xl reveal-up">
+                    <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Intérieur de luxe" class="w-full h-full object-cover hover:scale-105 transition-transform duration-1000">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-32 bg-mc-linen">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+                <div class="order-2 lg:order-1 aspect-square lg:aspect-auto lg:h-[600px] overflow-hidden rounded-xl reveal-up">
+                    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Extérieur propriété" class="w-full h-full object-cover hover:scale-105 transition-transform duration-1000">
+                </div>
+                <div class="order-1 lg:order-2 reveal-up">
+                    <span class="text-mc-sand uppercase tracking-widest text-xs font-medium block mb-4 border-l-2 pl-3 border-mc-sand">Mise en marché</span>
+                    <h2 class="font-heading text-4xl md:text-5xl text-mc-charcoal mb-6">Vendre avec distinction.</h2>
+                    <p class="text-mc-charcoal/80 font-light leading-relaxed mb-6 text-base text-justify">
+                        Votre propriété est unique, sa mise en marché doit l'être tout autant. Nous déployons une stratégie marketing sur mesure, digne des plus grands magazines d'architecture. Photographie professionnelle, vidéos cinématiques, et placement stratégique sur les plateformes locales et internationales.
+                    </p>
+                    <p class="text-mc-charcoal/80 font-light leading-relaxed mb-8 text-base text-justify">
+                        Soutenus par le réseau mondial eXp Realty et la méthode "The Buddy Broker", nous assurons une visibilité maximale et un suivi sans faille, garantissant une transaction fluide et sécuritaire, au meilleur prix possible.
+                    </p>
+                    <a href="evaluation.html" class="hover-trigger inline-block bg-mc-charcoal text-white px-10 py-4 text-xs uppercase tracking-widest rounded-full hover:bg-mc-sand hover:text-mc-charcoal transition-all duration-300">
+                        Évaluer ma propriété
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-mc-charcoal text-white py-12 text-center">
+        <p class="font-light text-xs text-white/50 tracking-widest uppercase">&copy; 2026 MC Équipe - eXp Agence Immobilière.</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const cursor = document.getElementById('cursor');
+            const hoverTriggers = document.querySelectorAll('.hover-trigger, a, button');
+
+            if(window.innerWidth >= 1024) {
+                document.addEventListener('mousemove', (e) => {
+                    cursor.style.left = e.clientX + 'px';
+                    cursor.style.top = e.clientY + 'px';
+                });
+                hoverTriggers.forEach(trigger => {
+                    trigger.addEventListener('mouseenter', () => cursor.classList.add('active'));
+                    trigger.addEventListener('mouseleave', () => cursor.classList.remove('active'));
+                });
+            }
+
+            const revealElements = document.querySelectorAll('.reveal-up');
+            const revealObserver = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.1, rootMargin: "0px 0px -50px 0px" });
+            revealElements.forEach(el => revealObserver.observe(el));
+
+            const navbar = document.getElementById('navbar');
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 50) {
+                    navbar.classList.add('nav-scrolled');
+                    navbar.classList.remove('text-white');
+                } else {
+                    navbar.classList.remove('nav-scrolled');
+                    navbar.classList.add('text-white');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
