@@ -14,6 +14,7 @@
     'meta.title.international': 'International Acquisition | MC Équipe',
     'meta.title.mathieu': 'Mathieu Michaud | MC Équipe',
     'meta.title.catherine': 'Catherine Aubé | MC Équipe',
+    'meta.title.privacy': 'Privacy Policy | MC Équipe',
     'meta.desc.international':
       'Invest in Mexico or Panama with confidence through MC Équipe. Turnkey service for Quebec buyers.',
 
@@ -26,6 +27,70 @@
 
     'footer.copyright': '© 2026 MC Équipe - eXp Realty.',
     'footer.credit': 'Website by Roy Marketing',
+    'footer.privacy': 'Privacy policy',
+
+    'cookies.message':
+      'This site uses essential cookies and third-party services required for it to function.',
+    'cookies.learnMore': 'Learn more',
+    'cookies.accept': 'Got it',
+
+    'privacy.hero.tag': 'Privacy',
+    'privacy.hero.title': 'Privacy <span class="italic font-light">Policy</span>',
+    'privacy.updated': 'Last updated: June 1, 2026',
+    'privacy.intro':
+      'This policy describes how MC Équipe (Mathieu Michaud, real estate broker — eXp Realty) collects, uses, discloses, and protects your personal information in accordance with Quebec\'s Act respecting the protection of personal information in the private sector (CQLR, c. P-39.1), as amended by Law 25, and, where applicable, the federal Personal Information Protection and Electronic Documents Act (PIPEDA).',
+
+    'privacy.s1.title': '1. Person responsible for the protection of personal information',
+    'privacy.s1.body':
+      'The person responsible for the protection of personal information is Mathieu Michaud. You may contact them regarding any request relating to your personal information:<br><br>Mathieu Michaud — MC Équipe<br>1111 Blvd. Dr. Frederik-Philips, Suite 601<br>Saint-Laurent, QC H4M 2X6<br>Email: <a href="mailto:info@mcequipe.com" class="text-mc-ocean hover:underline">info@mcequipe.com</a><br>Phone: (418) 655-8090',
+
+    'privacy.s2.title': '2. Personal information we collect',
+    'privacy.s2.body':
+      'Depending on your interactions with us, we may collect:<ul class="list-disc pl-6 mt-4 space-y-2"><li>Identity and contact information (name, email, phone, mailing address);</li><li>Information related to your real estate project (budget, desired location, property type, timeline);</li><li>Property information when you request an evaluation or listing (address, characteristics, photos);</li><li>Technical data when you browse our site (IP address, browser type, pages visited — where applicable);</li><li>Any other information you voluntarily provide through our forms or communications.</li></ul>',
+
+    'privacy.s3.title': '3. Purposes of collection',
+    'privacy.s3.body':
+      'We use your personal information to:<ul class="list-disc pl-6 mt-4 space-y-2"><li>Respond to your requests and provide brokerage services (purchase, sale, evaluation, international acquisitions);</li><li>Contact you regarding properties or opportunities matching your criteria;</li><li>Prepare comparative market analyses and listing strategies;</li><li>Comply with legal and regulatory obligations applicable to real estate brokerage in Quebec;</li><li>Improve our website and the security of our online services;</li><li>Send you communications you have consented to receive.</li></ul>',
+
+    'privacy.s4.title': '4. Consent',
+    'privacy.s4.body':
+      'We collect, use, and disclose your personal information only with your consent, except where the law authorizes or requires us to do so without consent. By submitting a form on our site or communicating with us, you consent to the processing of your information for the purposes described in this policy. You may withdraw your consent at any time, subject to legal or contractual restrictions, by contacting the person responsible listed above.',
+
+    'privacy.s5.title': '5. Disclosure to third parties',
+    'privacy.s5.body':
+      'We may share your information with:<ul class="list-disc pl-6 mt-4 space-y-2"><li><strong>eXp Realty</strong> and its network, as required for your transaction;</li><li><strong>Formspree</strong>, our online form processing provider (submissions are transmitted to our team);</li><li>Professional partners (notaries, inspectors, lawyers) involved in your transaction, with your knowledge;</li><li>Technology providers (hosting, fonts, essential site tools) whose servers may be located outside Quebec;</li><li>Public authorities when required by law.</li></ul>We do not sell your personal information.',
+
+    'privacy.s6.title': '6. Transfers outside Quebec',
+    'privacy.s6.body':
+      'Some of our service providers (for example, form hosting or content delivery networks) may process data in the United States or elsewhere. Before transferring personal information outside Quebec, we assess the risks and implement appropriate contractual or organizational safeguards in accordance with applicable requirements.',
+
+    'privacy.s7.title': '7. Retention period',
+    'privacy.s7.body':
+      'We retain your personal information only for as long as necessary to fulfill the purposes for which it was collected, comply with our legal and professional obligations (including records required by the Organisme d\'autoréglementation du courtage immobilier du Québec), and resolve any disputes. Thereafter, information is destroyed or anonymized securely.',
+
+    'privacy.s8.title': '8. Security measures',
+    'privacy.s8.body':
+      'We implement reasonable physical, administrative, and technical safeguards to protect your personal information against loss, theft, unauthorized access, disclosure, copying, use, or modification. No method of transmission over the Internet is completely secure; we invite you to exercise caution when sharing sensitive information online.',
+
+    'privacy.s9.title': '9. Your rights',
+    'privacy.s9.body':
+      'Under Quebec law, you have the right to:<ul class="list-disc pl-6 mt-4 space-y-2"><li>Access the personal information we hold about you;</li><li>Request correction of inaccurate, incomplete, or outdated information;</li><li>Request deletion or cessation of dissemination of your information, subject to legal exceptions;</li><li>Withdraw your consent to certain uses;</li><li>Request portability of computerized personal information we hold, in accordance with applicable rules;</li><li>Be informed of a privacy incident involving your information, when required by law.</li></ul>To exercise your rights, contact the person responsible listed in section 1. We will respond within the timeframes prescribed by law.',
+
+    'privacy.s10.title': '10. Cookies and similar technologies',
+    'privacy.s10.body':
+      'Our site uses essential cookies to remember your language preferences and cookie consent. We may use third-party services (such as Google Fonts or content delivery networks) that place technical cookies. You may manage cookies through your browser settings. For more details, see the notice displayed when you first visit our site.',
+
+    'privacy.s11.title': '11. Minors',
+    'privacy.s11.body':
+      'Our services are intended for adults. We do not knowingly collect personal information from children under 14 without the consent of a parent or guardian. If you believe we have collected such information, please contact us so we can delete it.',
+
+    'privacy.s12.title': '12. Changes to this policy',
+    'privacy.s12.body':
+      'We may update this policy to reflect changes in our practices or the law. The date of the last update will appear at the top of this page. We encourage you to review this policy periodically.',
+
+    'privacy.s13.title': '13. Complaints',
+    'privacy.s13.body':
+      'If you believe your personal information is not being handled in accordance with this policy, we invite you to contact us first so we can address your concerns. You also have the right to file a complaint with the Commission d\'accès à l\'information du Québec (CAI): <a href="https://www.cai.gouv.qc.ca" target="_blank" rel="noopener noreferrer" class="text-mc-ocean hover:underline">www.cai.gouv.qc.ca</a>.',
 
     'common.learnMore': 'Learn more',
     'common.readBio': 'Read biography',
@@ -427,7 +492,12 @@
     document.head.appendChild(s);
   }
 
-  global.I18n = { initEarly, init, applyLanguage, getLang: getStoredLang };
+  function refresh() {
+    captureDefaults();
+    applyLanguage(getStoredLang());
+  }
+
+  global.I18n = { initEarly, init, applyLanguage, getLang: getStoredLang, refresh };
   initEarly();
 
   if (typeof document !== 'undefined') {

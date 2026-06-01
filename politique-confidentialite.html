@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="fr-CA" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="meta.title.privacy">Politique de confidentialité | MC Équipe</title>
+    <script src="i18n.js"></script>
+    <script src="cookies.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        mc: {
+                            charcoal: '#3d312c',
+                            sand: '#bbab9a',
+                            white: '#ffffff',
+                            linen: '#efe9e2',
+                            ocean: '#4f909b',
+                        }
+                    },
+                    fontFamily: {
+                        heading: ['Optima', 'sans-serif'],
+                        body: ['"Montserrat"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .font-heading { font-family: 'Optima', sans-serif; }
+        .legal-content h2 { margin-top: 2.5rem; margin-bottom: 1rem; }
+        .legal-content p, .legal-content ul { margin-bottom: 1rem; }
+        @media (min-width: 1024px) { body, a, button { cursor: none; } }
+        .custom-cursor {
+            position: fixed; top: 0; left: 0; width: 12px; height: 12px;
+            background-color: #bbab9a; border-radius: 50%; pointer-events: none;
+            z-index: 9999; transform: translate(-50%, -50%);
+            transition: width 0.3s ease, height 0.3s ease;
+            mix-blend-mode: difference;
+        }
+        .custom-cursor.active { width: 60px; height: 60px; opacity: 0.8; }
+    </style>
+</head>
+<body class="bg-mc-white text-mc-charcoal font-body antialiased selection:bg-mc-ocean selection:text-white overflow-x-hidden">
+
+    <div class="custom-cursor hidden lg:block" id="cursor"></div>
+
+    <nav class="w-full z-50 px-8 py-6 flex justify-between items-center bg-mc-white border-b border-mc-linen sticky top-0">
+        <a href="index.html" class="text-2xl font-heading tracking-widest uppercase hover-trigger text-mc-charcoal">MC Équipe</a>
+        <div class="hidden md:flex gap-12 text-[11px] tracking-widest uppercase font-medium text-mc-charcoal">
+            <a href="index.html#services" class="hover-trigger hover:text-mc-sand transition-colors" data-i18n="nav.services">Services</a>
+            <a href="index.html#equipe" class="hover-trigger hover:text-mc-sand transition-colors" data-i18n="nav.team">L'Équipe</a>
+            <a href="international.html" class="hover-trigger hover:text-mc-ocean transition-colors" data-i18n="nav.international">International</a>
+            <a href="https://mathieumichaud.expquebec.com/fr/proprietes" data-i18n-href="listings" class="hover-trigger hover:text-mc-sand transition-colors" target="_blank" rel="noopener noreferrer" data-i18n="nav.listings">Propriétés</a>
+        </div>
+        <div class="flex items-center gap-4 md:gap-6 shrink-0">
+            <div class="lang-toggle flex items-center gap-1.5 text-[10px] tracking-widest uppercase font-medium" role="group" aria-label="Language">
+                <button type="button" data-lang-set="fr" class="lang-btn hover-trigger transition-opacity">FR</button>
+                <span class="opacity-30 select-none" aria-hidden="true">|</span>
+                <button type="button" data-lang-set="en" class="lang-btn hover-trigger transition-opacity">EN</button>
+            </div>
+            <a href="index.html#contact" class="hover-trigger border border-mc-charcoal text-mc-charcoal px-6 py-3 text-[10px] uppercase tracking-widest hover:bg-mc-charcoal hover:text-white transition-all duration-500 rounded-full" data-i18n="nav.contact">Contact</a>
+        </div>
+    </nav>
+
+    <header class="bg-mc-linen border-b border-mc-sand/20 py-20 px-6">
+        <div class="max-w-3xl mx-auto text-center">
+            <span class="text-mc-ocean uppercase tracking-[0.3em] text-xs font-medium block mb-4" data-i18n="privacy.hero.tag">Confidentialité</span>
+            <h1 class="font-heading text-4xl md:text-5xl text-mc-charcoal mb-4" data-i18n="privacy.hero.title" data-i18n-html>Politique de <span class="italic font-light">confidentialité</span></h1>
+            <p class="text-xs text-mc-charcoal/50 uppercase tracking-widest" data-i18n="privacy.updated">Dernière mise à jour : 1 juin 2026</p>
+        </div>
+    </header>
+
+    <main class="max-w-3xl mx-auto px-6 lg:px-8 py-16 legal-content font-light text-sm md:text-base leading-relaxed text-mc-charcoal/85 text-justify">
+
+        <p data-i18n="privacy.intro">
+            La présente politique décrit comment MC Équipe (Mathieu Michaud, courtier immobilier — eXp Realty) collecte, utilise, communique et protège vos renseignements personnels conformément à la <em>Loi sur la protection des renseignements personnels dans le secteur privé</em> (RLRQ, c. P-39.1), telle que modifiée par la Loi 25, et, le cas échéant, à la <em>Loi sur la protection des renseignements personnels et les documents électroniques</em> (LPRPDE) du Canada.
+        </p>
+
+        <h2 class="font-heading text-xl md:text-2xl text-mc-charcoal" data-i18n="privacy.s1.title">1. Responsable de la protection des renseignements personnels</h2>
+        <div data-i18n="privacy.s1.body" data-i18n-html>
+            <p>Le responsable de la protection des renseignements personnels est Mathieu Michaud. Pour toute demande relative à vos renseignements personnels, vous pouvez le joindre :</p>
+            <p>Mathieu Michaud — MC Équipe<br>1111, boul. Dr. Frederik-Philips, bureau 601<br>Saint-Laurent (QC) H4M 2X6<br>Courriel : <a href="mailto:info@mcequipe.com" class="text-mc-ocean hover:underline">info@mcequipe.com</a><br>Téléphone : (418) 655-8090</p>
+        </div>
+
+        <h2 class="font-heading text-xl md:text-2xl text-mc-charcoal" data-i18n="privacy.s2.title">2. Renseignements personnels collectés</h2>
+        <div data-i18n="privacy.s2.body" data-i18n-html>
+            <p>Selon vos interactions avec nous, nous pouvons collecter notamment :</p>
+            <ul class="list-disc pl-6 mt-4 space-y-2">
+                <li>Identité et coordonnées (nom, courriel, téléphone, adresse postale);</li>
+                <li>Renseignements liés à votre projet immobilier (budget, secteur recherché, type de propriété, échéancier);</li>
+                <li>Renseignements sur un immeuble lors d'une demande d'évaluation ou de mise en marché (adresse, caractéristiques, photos);</li>
+                <li>Données techniques lors de la navigation sur notre site (adresse IP, type de navigateur, pages consultées — le cas échéant);</li>
+                <li>Tout autre renseignement que vous nous communiquez volontairement par formulaire ou autrement.</li>
+            </ul>
+        </div>
+
+        <h2 class="font-heading text-xl md:text-2xl text-mc-charcoal" data-i18n="privacy.s3.title">3. Finalités de la collecte</h2>
+        <div data-i18n="privacy.s3.body" data-i18n-html>
+            <p>Nous utilisons vos renseignements personnels pour :</p>
+            <ul class="list-disc pl-6 mt-4 space-y-2">
+                <li>Répondre à vos demandes et vous offrir des services de courtage (achat, vente, évaluation, acquisitions internationales);</li>
+                <li>Vous contacter au sujet de propriétés ou d'occasions correspondant à vos critères;</li>
+                <li>Préparer des analyses comparatives de marché et des stratégies de mise en marché;</li>
+                <li>Nous conformer aux obligations légales et réglementaires applicables au courtage immobilier au Québec;</li>
+                <li>Améliorer notre site Web et la sécurité de nos services en ligne;</li>
+                <li>Vous envoyer des communications pour lesquelles vous avez donné votre consentement.</li>
+            </ul>
+        </div>
+
+        <h2 class="font-heading text-xl md:text-2xl text-mc-charcoal" data-i18n="privacy.s4.title">4. Consentement</h2>
+        <p data-i18n="privacy.s4.body">
+            Nous collectons, utilisons et communiquons vos renseignements personnels uniquement avec votre consentement, sauf lorsque la loi nous autorise ou nous oblige à le faire sans consentement. En soumettant un formulaire sur notre site ou en communiquant avec nous, vous consentez au traitement de vos renseignements aux fins décrites dans la présente politique. Vous pouvez retirer votre consentement en tout temps, sous réserve de restrictions légales ou contractuelles, en contactant le responsable indiqué à la section 1.
+        </p>
+
+        <h2 class="font-heading text-xl md:text-2xl text-mc-charcoal" data-i18n="privacy.s5.title">5. Communication à des tiers</h2>
+        <div data-i18n="privacy.s5.body" data-i18n-html>
+            <p>Nous pouvons communiquer vos renseignements à :</p>
+            <ul class="list-disc pl-6 mt-4 space-y-2">
+                <li><strong>eXp Realty</strong> et son réseau, dans le cadre de votre transaction;</li>
+                <li><strong>Formspree</strong>, notre fournisseur de traitement des formulaires en ligne (les soumissions nous sont transmises);</li>
+                <li>Partenaires professionnels (notaires, inspecteurs, avocats) impliqués dans votre transaction, avec votre connaissance;</li>
+                <li>Fournisseurs technologiques (hébergement, polices de caractères, outils essentiels du site) dont les serveurs peuvent être situés à l'extérieur du Québec;</li>
+                <li>Autorités publiques lorsque la loi l'exige.</li>
+            </ul>
+            <p class="mt-4">Nous ne vendons pas vos renseignements personnels.</p>
+        </div>
+
+        <h2 class="font-heading text-xl md:text-2xl text-mc-charcoal" data-i18n="privacy.s6.title">6. Transferts à l'extérieur du Québec</h2>
+        <p data-i18n="privacy.s6.body">
+            Certains de nos fournisseurs de services (par exemple, hébergement de formulaires ou réseaux de diffusion de contenu) peuvent traiter des données aux États-Unis ou ailleurs. Avant de transférer des renseignements personnels hors du Québec, nous évaluons les risques et mettons en place des mesures contractuelles ou organisationnelles appropriées conformément aux exigences applicables.
+        </p>
+
+        <h2 class="font-heading text-xl md:text-2xl text-mc-charcoal" data-i18n="privacy.s7.title">7. Durée de conservation</h2>
+        <p data-i18n="privacy.s7.body">
+            Nous conservons vos renseignements personnels uniquement le temps nécessaire aux fins pour lesquelles ils ont été collectés, pour respecter nos obligations légales et professionnelles (y compris les dossiers exigés par l'Organisme d'autoréglementation du courtage immobilier du Québec) et pour régler tout litige. Par la suite, les renseignements sont détruits ou anonymisés de façon sécuritaire.
+        </p>
+
+        <h2 class="font-heading text-xl md:text-2xl text-mc-charcoal" data-i18n="privacy.s8.title">8. Mesures de sécurité</h2>
+        <p data-i18n="privacy.s8.body">
+            Nous appliquons des mesures de protection physiques, administratives et techniques raisonnables pour protéger vos renseignements personnels contre la perte, le vol, l'accès non autorisé, la communication, la copie, l'utilisation ou la modification non autorisés. Aucune méthode de transmission sur Internet n'est totalement sécurisée; nous vous invitons à faire preuve de prudence lorsque vous communiquez des renseignements sensibles en ligne.
+        </p>
+
+        <h2 class="font-heading text-xl md:text-2xl text-mc-charcoal" data-i18n="privacy.s9.title">9. Vos droits</h2>
+        <div data-i18n="privacy.s9.body" data-i18n-html>
+            <p>En vertu de la loi québécoise, vous avez le droit de :</p>
+            <ul class="list-disc pl-6 mt-4 space-y-2">
+                <li>Accéder aux renseignements personnels que nous détenons à votre sujet;</li>
+                <li>Demander la rectification de renseignements inexacts, incomplets ou périmés;</li>
+                <li>Demander la suppression ou la cessation de diffusion de vos renseignements, sous réserve des exceptions prévues par la loi;</li>
+                <li>Retirer votre consentement à certaines utilisations;</li>
+                <li>Demander la portabilité des renseignements personnels informatisés que nous détenons, conformément aux règles applicables;</li>
+                <li>Être informé d'un incident de confidentialité touchant vos renseignements, lorsque la loi l'exige.</li>
+            </ul>
+            <p class="mt-4">Pour exercer vos droits, communiquez avec le responsable indiqué à la section 1. Nous répondrons dans les délais prescrits par la loi.</p>
+        </div>
+
+        <h2 class="font-heading text-xl md:text-2xl text-mc-charcoal" data-i18n="privacy.s10.title">10. Témoins (cookies) et technologies similaires</h2>
+        <p data-i18n="privacy.s10.body">
+            Notre site utilise des témoins essentiels pour mémoriser vos préférences linguistiques et votre consentement aux témoins. Nous pouvons utiliser des services tiers (comme Google Fonts ou des réseaux de diffusion de contenu) qui déposent des témoins techniques. Vous pouvez gérer les témoins dans les paramètres de votre navigateur. Pour plus de détails, consultez l'avis affiché lors de votre première visite sur notre site.
+        </p>
+
+        <h2 class="font-heading text-xl md:text-2xl text-mc-charcoal" data-i18n="privacy.s11.title">11. Mineurs</h2>
+        <p data-i18n="privacy.s11.body">
+            Nos services s'adressent aux adultes. Nous ne collectons pas sciemment de renseignements personnels auprès d'enfants de moins de 14 ans sans le consentement d'un parent ou tuteur. Si vous croyez que nous avons collecté de tels renseignements, veuillez nous contacter afin que nous puissions les supprimer.
+        </p>
+
+        <h2 class="font-heading text-xl md:text-2xl text-mc-charcoal" data-i18n="privacy.s12.title">12. Modifications de la présente politique</h2>
+        <p data-i18n="privacy.s12.body">
+            Nous pouvons mettre à jour cette politique pour refléter l'évolution de nos pratiques ou de la loi. La date de la dernière mise à jour figure en haut de cette page. Nous vous invitons à la consulter périodiquement.
+        </p>
+
+        <h2 class="font-heading text-xl md:text-2xl text-mc-charcoal" data-i18n="privacy.s13.title">13. Plaintes</h2>
+        <p data-i18n="privacy.s13.body" data-i18n-html>
+            Si vous estimez que vos renseignements personnels ne sont pas traités conformément à la présente politique, nous vous invitons d'abord à nous contacter afin que nous puissions répondre à vos préoccupations. Vous avez également le droit de déposer une plainte auprès de la Commission d'accès à l'information du Québec (CAI) : <a href="https://www.cai.gouv.qc.ca" target="_blank" rel="noopener noreferrer" class="text-mc-ocean hover:underline">www.cai.gouv.qc.ca</a>.
+        </p>
+
+    </main>
+
+    <footer class="bg-mc-linen text-mc-charcoal py-12 border-t border-mc-sand/20">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs font-light tracking-widest uppercase text-mc-charcoal/50">
+            <div class="flex flex-col sm:flex-row items-center gap-3 sm:gap-8 text-center sm:text-left">
+                <p data-i18n="footer.copyright">&copy; 2026 MC Équipe - eXp Agence Immobilière.</p>
+                <a href="politique-confidentialite.html" class="hover-trigger hover:text-mc-charcoal/80 transition-colors" data-i18n="footer.privacy">Politique de confidentialité</a>
+            </div>
+            <a href="https://roymarketing.ca" target="_blank" rel="noopener noreferrer" class="hover-trigger hover:text-mc-charcoal/70 transition-colors" data-i18n="footer.credit">Conception web par Roy Marketing</a>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const cursor = document.getElementById('cursor');
+            const hoverTriggers = document.querySelectorAll('.hover-trigger, a, button');
+            if (window.innerWidth >= 1024) {
+                document.addEventListener('mousemove', (e) => {
+                    cursor.style.left = e.clientX + 'px';
+                    cursor.style.top = e.clientY + 'px';
+                });
+                hoverTriggers.forEach((t) => {
+                    t.addEventListener('mouseenter', () => cursor.classList.add('active'));
+                    t.addEventListener('mouseleave', () => cursor.classList.remove('active'));
+                });
+            }
+        });
+    </script>
+</body>
+</html>

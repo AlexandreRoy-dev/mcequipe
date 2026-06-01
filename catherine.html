@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title data-i18n="meta.title.catherine">Catherine Aubé | MC Équipe</title>
     <script src="i18n.js"></script>
+    <script src="cookies.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&display=swap" rel="stylesheet">
     
@@ -127,7 +128,10 @@
             <a href="index.html" class="font-heading text-2xl uppercase tracking-widest hover-trigger inline-block">MC Équipe</a>
         </div>
         <div class="max-w-7xl mx-auto px-6 lg:px-8 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs font-light tracking-widest uppercase text-mc-charcoal/50">
-            <p data-i18n="footer.copyright">&copy; 2026 MC Équipe - eXp Agence Immobilière.</p>
+            <div class="flex flex-col sm:flex-row items-center gap-3 sm:gap-8 text-center sm:text-left">
+                <p data-i18n="footer.copyright">&copy; 2026 MC Équipe - eXp Agence Immobilière.</p>
+                <a href="politique-confidentialite.html" class="hover-trigger hover:text-mc-charcoal/80 transition-colors" data-i18n="footer.privacy">Politique de confidentialité</a>
+            </div>
             <a href="https://roymarketing.ca" target="_blank" rel="noopener noreferrer" class="hover-trigger hover:text-mc-charcoal/70 transition-colors" data-i18n="footer.credit">Conception web par Roy Marketing</a>
         </div>
     </footer>
