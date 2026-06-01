@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Catherine Aubé | MC Équipe</title>
+    <title data-i18n="meta.title.catherine">Catherine Aubé | MC Équipe</title>
+    <script src="i18n.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&display=swap" rel="stylesheet">
     
@@ -54,14 +55,19 @@
     <nav class="w-full z-50 px-8 py-6 flex justify-between items-center bg-mc-white border-b border-mc-linen">
         <a href="index.html" class="text-2xl font-heading tracking-widest uppercase hover-trigger text-mc-charcoal">MC Équipe</a>
         <div class="hidden md:flex gap-12 text-[11px] tracking-widest uppercase font-medium text-mc-charcoal">
-            <a href="index.html#services" class="hover-trigger hover:text-mc-sand transition-colors">Services</a>
-            <a href="index.html#equipe" class="hover-trigger text-mc-sand transition-colors">L'Équipe</a>
-            <a href="#" class="hover-trigger hover:text-mc-ocean transition-colors">International</a>
-            <a href="https://mathieumichaud.expquebec.com/fr/proprietes" class="hover-trigger hover:text-mc-sand transition-colors" target="_blank" rel="noopener noreferrer">Propriétés</a>
+            <a href="index.html#services" class="hover-trigger hover:text-mc-sand transition-colors" data-i18n="nav.services">Services</a>
+            <a href="index.html#equipe" class="hover-trigger text-mc-sand transition-colors" data-i18n="nav.team">L'Équipe</a>
+            <a href="international.html" class="hover-trigger hover:text-mc-ocean transition-colors" data-i18n="nav.international">International</a>
+            <a href="https://mathieumichaud.expquebec.com/fr/proprietes" data-i18n-href="listings" class="hover-trigger hover:text-mc-sand transition-colors" target="_blank" rel="noopener noreferrer" data-i18n="nav.listings">Propriétés</a>
         </div>
-        <a href="index.html#contact" class="hover-trigger border border-mc-charcoal text-mc-charcoal px-6 py-3 text-[10px] uppercase tracking-widest hover:bg-mc-charcoal hover:text-white transition-all duration-500 rounded-full">
-            Contact
-        </a>
+        <div class="flex items-center gap-4 md:gap-6 shrink-0">
+            <div class="lang-toggle flex items-center gap-1.5 text-[10px] tracking-widest uppercase font-medium" role="group" aria-label="Language">
+                <button type="button" data-lang-set="fr" class="lang-btn hover-trigger transition-opacity">FR</button>
+                <span class="opacity-30 select-none" aria-hidden="true">|</span>
+                <button type="button" data-lang-set="en" class="lang-btn hover-trigger transition-opacity">EN</button>
+            </div>
+            <a href="index.html#contact" class="hover-trigger border border-mc-charcoal text-mc-charcoal px-6 py-3 text-[10px] uppercase tracking-widest hover:bg-mc-charcoal hover:text-white transition-all duration-500 rounded-full" data-i18n="nav.contact">Contact</a>
+        </div>
     </nav>
 
     <section class="pt-20 pb-32 px-6 lg:px-8 max-w-7xl mx-auto flex flex-col-reverse lg:flex-row items-center gap-16 lg:gap-24 relative">
@@ -69,23 +75,23 @@
         <div class="absolute top-40 left-0 w-64 h-64 bg-mc-ocean/5 rounded-full blur-3xl -z-10"></div>
 
         <div class="w-full lg:w-1/2 reveal-up">
-            <span class="text-mc-sand uppercase tracking-widest text-xs font-bold block mb-4 border-l-2 border-mc-sand pl-3">Courtière Immobilière</span>
+            <span class="text-mc-sand uppercase tracking-widest text-xs font-bold block mb-4 border-l-2 border-mc-sand pl-3" data-i18n="catherine.role">Courtière Immobilière</span>
             <h1 class="font-heading text-5xl md:text-6xl lg:text-7xl text-mc-charcoal mb-8 leading-tight">Catherine <br>Aubé.</h1>
             
             <div class="space-y-6 font-light text-mc-charcoal/80 text-base leading-relaxed text-justify">
-                <p>
+                <p data-i18n="catherine.p1">
                     Animée par une passion indéfectible pour l'architecture, le design de l'espace et l'humain, Catherine possède ce talent rare pour révéler le plein potentiel d'une propriété. Son empathie naturelle, combinée à une redoutable force de négociation, lui permet de tisser des liens de confiance inébranlables avec ses clients, transformant des transactions complexes en expériences fluides et rassurantes.
                 </p>
-                <p>
+                <p data-i18n="catherine.p2">
                     Spécialiste de l'accompagnement personnalisé, elle est l'âme relationnelle du cabinet. Elle excelle dans l'art de comprendre intimement les besoins de vie de ses clients pour les diriger vers le bon investissement. Son expertise en mise en valeur (staging) assure aux propriétés qu'elle représente un positionnement esthétique optimal sur le marché.
                 </p>
-                <p>
+                <p data-i18n="catherine.p3">
                     Au-delà du Québec, Catherine est le pilier de notre service d'acquisition outre-mer. Qu'il s'agisse d'un projet de retraite sous le soleil du Mexique ou d'un investissement au Panama, elle démystifie les processus légaux transfrontaliers et offre un accompagnement sécurisant, de la première visite virtuelle jusqu'à la remise des clés.
                 </p>
             </div>
 
             <div class="mt-12 flex items-center gap-6">
-                <a href="mailto:catherine@mcequipe.com" class="hover-trigger bg-mc-charcoal text-white px-8 py-4 text-xs uppercase tracking-widest rounded-full hover:bg-mc-ocean hover:text-white transition-all duration-300">
+                <a href="mailto:catherine@mcequipe.com" class="hover-trigger bg-mc-charcoal text-white px-8 py-4 text-xs uppercase tracking-widest rounded-full hover:bg-mc-ocean hover:text-white transition-all duration-300" data-i18n="catherine.cta">
                     Écrire à Catherine
                 </a>
                 <a href="tel:4189520925" class="hover-trigger font-light text-sm tracking-widest text-mc-charcoal hover:text-mc-ocean transition-colors">
@@ -105,25 +111,25 @@
     <section class="py-32 bg-mc-charcoal text-white relative overflow-hidden">
         <div class="max-w-7xl mx-auto px-6 lg:px-8 relative z-10 flex flex-col md:flex-row items-center gap-16">
             <div class="md:w-1/3 reveal-up">
-                <h2 class="font-heading text-4xl lg:text-5xl mb-4">L'Horizon <br><span class="italic text-mc-ocean">Sans Frontières.</span></h2>
-                <span class="text-[10px] uppercase tracking-widest text-white/50">Acquisition Mexique & Panama</span>
+                <h2 class="font-heading text-4xl lg:text-5xl mb-4" data-i18n="catherine.horizon.title" data-i18n-html>L'Horizon <br><span class="italic text-mc-ocean">Sans Frontières.</span></h2>
+                <span class="text-[10px] uppercase tracking-widest text-white/50" data-i18n="catherine.horizon.tag">Acquisition Mexique & Panama</span>
             </div>
             <div class="md:w-2/3 reveal-up" style="transition-delay: 200ms;">
-                <p class="font-light text-lg leading-relaxed text-white/80 border-l border-mc-ocean/50 pl-8">
+                <p class="font-light text-lg leading-relaxed text-white/80 border-l border-mc-ocean/50 pl-8" data-i18n="catherine.horizon.desc">
                     Acquérir une propriété à l'étranger ne devrait jamais être source de stress. Catherine a mis en place un réseau de partenaires locaux de confiance (avocats, notaires, inspecteurs) au Mexique et au Panama. Elle orchestre chaque étape de votre achat avec la même rigueur qu'au Québec, éliminant les barrières linguistiques et juridiques pour vous offrir une transition vers les tropiques d'une douceur absolue.
                 </p>
             </div>
         </div>
     </section>
 
-    <footer class="bg-mc-linen text-mc-charcoal py-12 text-center border-t border-mc-sand/20">
-        <a href="index.html" class="font-heading text-2xl uppercase tracking-widest hover-trigger mb-4 inline-block">MC Équipe</a>
-        <p class="font-light text-xs text-mc-charcoal/50 tracking-widest uppercase">&copy; 2026 MC Équipe - eXp Agence Immobilière.</p>
-        <p class="mt-5">
-            <a href="https://roymarketing.ca" target="_blank" rel="noopener noreferrer" class="hover-trigger inline-block text-sm font-medium tracking-widest uppercase text-mc-ocean hover:text-mc-charcoal transition-colors">
-                Conception web par <span class="font-semibold underline decoration-mc-ocean/40 underline-offset-4">Roy Marketing</span>
-            </a>
-        </p>
+    <footer class="bg-mc-linen text-mc-charcoal py-12 border-t border-mc-sand/20">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 text-center mb-8">
+            <a href="index.html" class="font-heading text-2xl uppercase tracking-widest hover-trigger inline-block">MC Équipe</a>
+        </div>
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs font-light tracking-widest uppercase text-mc-charcoal/50">
+            <p data-i18n="footer.copyright">&copy; 2026 MC Équipe - eXp Agence Immobilière.</p>
+            <a href="https://roymarketing.ca" target="_blank" rel="noopener noreferrer" class="hover-trigger hover:text-mc-charcoal/70 transition-colors" data-i18n="footer.credit">Conception web par Roy Marketing</a>
+        </div>
     </footer>
 
     <script>
