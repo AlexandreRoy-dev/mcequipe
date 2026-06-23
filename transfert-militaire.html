@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="fr-CA" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="meta.title.military">Transfert Militaire | MC Équipe</title>
+    <meta name="description" data-i18n="meta.desc.military" content="Courtier immobilier accrédité pour les transferts militaires au Québec. Mathieu Michaud accompagne les membres des FAC et leurs familles à Valcartier et dans la région de Québec.">
+    <script src="i18n.js"></script>
+    <script src="cookies.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        mc: {
+                            charcoal: '#3d312c',
+                            sand: '#bbab9a',
+                            white: '#ffffff',
+                            linen: '#efe9e2',
+                            ocean: '#4f909b',
+                        }
+                    },
+                    fontFamily: {
+                        heading: ['Optima', 'sans-serif'],
+                        body: ['"Montserrat"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .font-heading { font-family: 'Optima', sans-serif; }
+        @media (min-width: 1024px) { body, a, button { cursor: none; } }
+        .custom-cursor {
+            position: fixed; top: 0; left: 0; width: 12px; height: 12px;
+            background-color: #f7f3ea; border-radius: 50%; pointer-events: none;
+            z-index: 9999; transform: translate(-50%, -50%);
+            transition: width 0.3s ease, height 0.3s ease, background-color 0.3s ease;
+            mix-blend-mode: difference;
+        }
+        .custom-cursor.active { width: 60px; height: 60px; background-color: #bbab9a; mix-blend-mode: normal; opacity: 0.8; }
+        .reveal-up {
+            opacity: 0; transform: translateY(30px);
+            transition: opacity 1s cubic-bezier(0.16, 1, 0.3, 1), transform 1s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .reveal-up.is-visible { opacity: 1; transform: translateY(0); }
+        .nav-scrolled {
+            background-color: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid #efe9e2;
+            color: #3d312c !important;
+        }
+        .nav-scrolled .nav-btn { border-color: #3d312c; color: #3d312c; }
+        .nav-scrolled .nav-btn:hover { background-color: #3d312c; color: #ffffff; }
+    </style>
+</head>
+<body class="bg-mc-white text-mc-charcoal font-body antialiased selection:bg-mc-ocean selection:text-white overflow-x-hidden">
+
+    <div class="custom-cursor hidden lg:block" id="cursor"></div>
+
+    <nav id="navbar" class="fixed top-0 w-full z-50 px-8 py-6 flex justify-between items-center text-white transition-all duration-500">
+        <a href="index.html" class="text-2xl font-heading tracking-widest uppercase hover-trigger">MC Équipe</a>
+        <div class="hidden md:flex gap-12 text-[11px] tracking-widest uppercase font-medium nav-links">
+            <a href="index.html#services" class="hover-trigger hover:text-mc-sand transition-colors" data-i18n="nav.services">Services</a>
+            <a href="index.html#equipe" class="hover-trigger hover:text-mc-sand transition-colors" data-i18n="nav.team">L'Équipe</a>
+            <a href="international.html" class="hover-trigger text-mc-ocean hover:opacity-70 transition-opacity" data-i18n="nav.international">International</a>
+            <a href="https://mathieumichaud.expquebec.com/fr/proprietes" data-i18n-href="listings" class="hover-trigger hover:text-mc-sand transition-colors" target="_blank" rel="noopener noreferrer" data-i18n="nav.listings">Propriétés</a>
+        </div>
+        <div class="flex items-center gap-4 md:gap-6 shrink-0">
+            <div class="lang-toggle flex items-center gap-1.5 text-[10px] tracking-widest uppercase font-medium nav-lang" role="group" aria-label="Language">
+                <button type="button" data-lang-set="fr" class="lang-btn hover-trigger transition-opacity">FR</button>
+                <span class="opacity-30 select-none" aria-hidden="true">|</span>
+                <button type="button" data-lang-set="en" class="lang-btn hover-trigger transition-opacity">EN</button>
+            </div>
+            <a href="#contact" class="nav-btn hover-trigger border border-white px-6 py-3 text-[10px] uppercase tracking-widest hover:bg-white hover:text-mc-charcoal transition-all duration-500 rounded-full" data-i18n="nav.contact">Contact</a>
+        </div>
+    </nav>
+
+    <header class="relative h-[75vh] w-full flex flex-col justify-center items-center overflow-hidden">
+        <img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" alt="Région de Québec" class="absolute inset-0 w-full h-full object-cover z-0">
+        <div class="absolute inset-0 bg-mc-charcoal/65 z-10"></div>
+        <div class="relative z-20 text-center w-full max-w-4xl mx-auto px-6 reveal-up">
+            <span class="inline-block text-mc-sand uppercase tracking-[0.3em] text-xs font-medium mb-6 drop-shadow-md border border-mc-sand/40 px-4 py-2 rounded-full" data-i18n="military.hero.badge">Courtier accrédité, transfert militaire</span>
+            <h1 class="font-heading text-5xl md:text-7xl leading-[1.1] mb-8 text-white drop-shadow-lg" data-i18n="military.hero.title" data-i18n-html>
+                Votre relocalisation, <br><span class="italic font-light">sans compromis.</span>
+            </h1>
+            <p class="font-light text-base md:text-lg tracking-wide text-white/90 max-w-2xl mx-auto leading-relaxed" data-i18n="military.hero.sub">
+                Membres des Forces armées canadiennes et familles : Mathieu Michaud vous accompagne dans l'achat ou la vente de votre résidence lors d'un posting à Valcartier, à Québec ou dans la région.
+            </p>
+        </div>
+    </header>
+
+    <section class="py-32 bg-mc-white">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+                <div class="reveal-up">
+                    <span class="text-mc-ocean uppercase tracking-widest text-xs font-medium block mb-4 border-l-2 pl-3 border-mc-ocean" data-i18n="military.intro.tag">Expertise reconnue</span>
+                    <h2 class="font-heading text-4xl md:text-5xl text-mc-charcoal mb-6" data-i18n="military.intro.title">Comprendre l'urgence d'un posting.</h2>
+                    <p class="text-mc-charcoal/80 font-light leading-relaxed mb-6 text-base text-justify" data-i18n="military.intro.p1">
+                        Un transfert militaire impose des délais serrés, des contraintes géographiques et une pression familiale unique. En tant que courtier accrédité pour les relocalisations des FAC, Mathieu Michaud maîtrise les exigences du programme de relocation et coordonne chaque étape avec la rigueur que votre situation exige.
+                    </p>
+                    <p class="text-mc-charcoal/80 font-light leading-relaxed mb-8 text-base text-justify" data-i18n="military.intro.p2">
+                        Que vous arriviez au 2e Groupe de patrouille de réserve de Valcartier, que vous quittiez la région de la Capitale-Nationale ou que vous deviez synchroniser l'achat et la vente de deux résidences, notre équipe structure un plan d'action clair, sans surprise et sans délai inutile.
+                    </p>
+                    <ul class="space-y-4 font-light text-sm text-mc-charcoal/90">
+                        <li class="flex items-center gap-3">
+                            <span class="w-1.5 h-1.5 bg-mc-ocean rounded-full"></span>
+                            <span data-i18n="military.intro.li1">Accompagnement conforme au programme de relocation (BGRS)</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <span class="w-1.5 h-1.5 bg-mc-ocean rounded-full"></span>
+                            <span data-i18n="military.intro.li2">Connaissance approfondie de Valcartier, Québec et environs</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <span class="w-1.5 h-1.5 bg-mc-ocean rounded-full"></span>
+                            <span data-i18n="military.intro.li3">Coordination achat / vente selon votre date de mutation</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="aspect-square lg:aspect-auto lg:h-[600px] overflow-hidden rounded-xl reveal-up">
+                    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Maison familiale" class="w-full h-full object-cover hover:scale-105 transition-transform duration-1000">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-32 bg-mc-linen">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="text-center mb-16 reveal-up">
+                <span class="text-mc-sand uppercase tracking-widest text-xs font-medium block mb-4" data-i18n="military.services.label">Services dédiés</span>
+                <h2 class="font-heading text-4xl md:text-5xl text-mc-charcoal" data-i18n="military.services.title">À chaque étape de votre mutation</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-10 rounded-xl shadow-sm reveal-up hover-trigger transition-transform duration-500 hover:-translate-y-1 border-t-2 border-mc-ocean/0 hover:border-mc-ocean">
+                    <span class="font-heading text-4xl text-mc-sand/40 block mb-4">01</span>
+                    <h3 class="font-heading text-xl mb-4 text-mc-charcoal" data-i18n="military.s1.title">Arrivée au Québec</h3>
+                    <p class="font-light text-sm text-mc-charcoal/80 leading-relaxed" data-i18n="military.s1.desc">Recherche ciblée selon vos critères, écoles, temps de trajet vers la garnison et budget approuvé. Visites optimisées pour les familles en déplacement ou en télétravail depuis une autre province.</p>
+                </div>
+                <div class="bg-white p-10 rounded-xl shadow-sm reveal-up hover-trigger transition-transform duration-500 hover:-translate-y-1 border-t-2 border-mc-ocean/0 hover:border-mc-ocean" style="transition-delay: 100ms;">
+                    <span class="font-heading text-4xl text-mc-sand/40 block mb-4">02</span>
+                    <h3 class="font-heading text-xl mb-4 text-mc-charcoal" data-i18n="military.s2.title">Départ & vente</h3>
+                    <p class="font-light text-sm text-mc-charcoal/80 leading-relaxed" data-i18n="military.s2.desc">Évaluation marchande, mise en vente stratégique et négociation pour maximiser la valeur de votre résidence avant le posting, en respectant vos échéances militaires.</p>
+                </div>
+                <div class="bg-white p-10 rounded-xl shadow-sm reveal-up hover-trigger transition-transform duration-500 hover:-translate-y-1 border-t-2 border-mc-ocean/0 hover:border-mc-ocean" style="transition-delay: 200ms;">
+                    <span class="font-heading text-4xl text-mc-sand/40 block mb-4">03</span>
+                    <h3 class="font-heading text-xl mb-4 text-mc-charcoal" data-i18n="military.s3.title">Transaction simultanée</h3>
+                    <p class="font-light text-sm text-mc-charcoal/80 leading-relaxed" data-i18n="military.s3.desc">Gestion des conditions, des délais de financement et de la coordination entre les deux marchés pour réduire le stress et les frais de double logement.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-32 bg-mc-charcoal text-white relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 relative z-10 flex flex-col lg:flex-row items-center gap-16">
+            <div class="lg:w-2/5 reveal-up">
+                <div class="aspect-[4/5] overflow-hidden rounded-xl">
+                    <img src="mathieu.png" alt="Mathieu Michaud" class="w-full h-full object-cover grayscale hover:grayscale-0 transition duration-1000">
+                </div>
+            </div>
+            <div class="lg:w-3/5 reveal-up">
+                <span class="text-mc-sand uppercase tracking-widest text-xs font-medium block mb-4" data-i18n="military.mathieu.tag">Votre courtier accrédité</span>
+                <h2 class="font-heading text-4xl md:text-5xl mb-6 leading-tight">Mathieu <span class="italic text-mc-sand">Michaud</span></h2>
+                <p class="font-light text-lg leading-relaxed text-white/80 mb-6 text-justify" data-i18n="military.mathieu.p1">
+                    Courtier immobilier résidentiel et membre de l'équipe MC Équipe, eXp Realty, Mathieu est accrédité pour accompagner les membres des Forces armées canadiennes dans leurs transactions immobilières liées à un transfert. Sa méthode « The Buddy Broker » garantit un suivi sans faille, essentiel lorsque chaque jour compte.
+                </p>
+                <p class="font-light text-base leading-relaxed text-white/70 mb-10 text-justify" data-i18n="military.mathieu.p2">
+                    Contactez-le dès réception de vos instructions de posting pour bâtir un calendrier réaliste et sécuriser votre prochain chapitre au Québec.
+                </p>
+                <div class="flex flex-wrap items-center gap-6">
+                    <a href="#contact" class="hover-trigger bg-mc-sand text-mc-charcoal px-8 py-4 text-xs uppercase tracking-widest rounded-full hover:bg-white transition-all duration-300" data-i18n="military.mathieu.cta">
+                        Planifier un appel
+                    </a>
+                    <a href="mathieu.html" class="hover-trigger font-light text-xs tracking-[0.2em] uppercase border-b border-white/40 pb-1 hover:text-mc-sand hover:border-mc-sand transition-colors" data-i18n="military.mathieu.bio">Voir sa biographie</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-32 bg-mc-linen text-mc-charcoal relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="flex flex-col lg:flex-row gap-20">
+
+                <div class="w-full lg:w-5/12 reveal-up">
+                    <span class="text-mc-ocean uppercase tracking-widest text-xs font-medium block mb-4" data-i18n="military.contact.label">Planifier un appel</span>
+                    <h2 class="font-heading text-5xl md:text-6xl mb-8 leading-tight" data-i18n="military.contact.title" data-i18n-html>Prendre <br><span class="italic text-mc-sand">Contact.</span></h2>
+
+                    <p class="font-light text-mc-charcoal/80 leading-relaxed mb-12 max-w-md" data-i18n="military.contact.desc">
+                        Remplissez le formulaire ci-contre pour planifier un appel avec Mathieu. Indiquez votre date de posting, votre situation (achat, vente ou les deux) et la région visée. Nous vous répondrons rapidement.
+                    </p>
+
+                    <div class="space-y-6">
+                        <div>
+                            <p class="text-[10px] uppercase tracking-widest text-mc-charcoal/50 mb-1" data-i18n="index.contact.phone">Téléphone</p>
+                            <p class="font-light text-sm" data-i18n="index.contact.ph1">Mathieu : (418) 655-8090</p>
+                        </div>
+                        <div>
+                            <p class="text-[10px] uppercase tracking-widest text-mc-charcoal/50 mb-1" data-i18n="index.contact.email">Courriel</p>
+                            <a href="mailto:mathieu@mcequipe.com" class="font-light text-sm hover:text-mc-ocean transition-colors duration-300">mathieu@mcequipe.com</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w-full lg:w-7/12 reveal-up" style="transition-delay: 200ms;">
+                    <form action="https://formspree.io/f/xgoqbwek" method="POST" class="space-y-8 mt-4 lg:mt-0">
+                        <input type="hidden" name="sujet" value="Transfert militaire">
+
+                        <div class="relative group">
+                            <label for="military-contact-nom" class="sr-only" data-i18n="index.contact.form.nameLabel">Nom complet</label>
+                            <input type="text" id="military-contact-nom" name="nom" required data-i18n-placeholder="index.contact.form.name" placeholder="Bonjour, je m'appelle..."
+                                   class="w-full bg-transparent border-b border-mc-charcoal/20 py-4 px-0 text-xl font-heading text-mc-charcoal focus:outline-none focus:border-mc-ocean transition-colors placeholder-mc-charcoal/30">
+                        </div>
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                            <div class="relative group">
+                                <label for="military-contact-email" class="sr-only" data-i18n="index.contact.form.emailLabel">Adresse courriel</label>
+                                <input type="email" id="military-contact-email" name="email" required data-i18n-placeholder="index.contact.form.email" placeholder="Mon courriel est..."
+                                       class="w-full bg-transparent border-b border-mc-charcoal/20 py-4 px-0 text-lg font-light text-mc-charcoal focus:outline-none focus:border-mc-ocean transition-colors placeholder-mc-charcoal/30">
+                            </div>
+                            <div class="relative group">
+                                <label for="military-contact-tel" class="sr-only" data-i18n="index.contact.form.phoneLabel">Numéro de téléphone</label>
+                                <input type="tel" id="military-contact-tel" name="telephone" required data-i18n-placeholder="index.contact.form.phone" placeholder="Mon téléphone est..."
+                                       class="w-full bg-transparent border-b border-mc-charcoal/20 py-4 px-0 text-lg font-light text-mc-charcoal focus:outline-none focus:border-mc-ocean transition-colors placeholder-mc-charcoal/30">
+                            </div>
+                        </div>
+
+                        <div class="relative group mt-12">
+                            <label for="military-contact-message" class="sr-only" data-i18n="military.contact.form.messageLabel">Votre message</label>
+                            <textarea id="military-contact-message" name="message" rows="4" required data-i18n-placeholder="military.contact.form.message" placeholder="Ma date de posting est... Je souhaite..."
+                                      class="w-full bg-transparent border-b border-mc-charcoal/20 py-4 px-0 text-lg font-light text-mc-charcoal focus:outline-none focus:border-mc-ocean transition-colors resize-none placeholder-mc-charcoal/30"></textarea>
+                        </div>
+
+                        <div class="pt-8 text-right">
+                            <button type="submit" class="hover-trigger group inline-flex items-center gap-4 text-mc-charcoal">
+                                <span class="font-light text-xs tracking-[0.2em] uppercase border-b border-mc-charcoal pb-1 group-hover:text-mc-ocean group-hover:border-mc-ocean transition-colors duration-300" data-i18n="military.contact.form.submit">Envoyer la demande</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 transform group-hover:translate-x-2 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                                </svg>
+                            </button>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-mc-charcoal text-white py-12 border-t border-white/10">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs font-light tracking-widest uppercase text-white/50">
+            <div class="flex flex-col sm:flex-row items-center gap-3 sm:gap-8 text-center sm:text-left">
+                <p data-i18n="footer.copyright">&copy; 2026 MC Équipe - eXp Agence Immobilière.</p>
+                <a href="politique-confidentialite.html" class="hover-trigger hover:text-white/70 transition-colors" data-i18n="footer.privacy">Politique de confidentialité</a>
+            </div>
+            <a href="https://roymarketing.ca" target="_blank" rel="noopener noreferrer" class="hover-trigger hover:text-white/70 transition-colors" data-i18n="footer.credit">Conception web par Roy Marketing</a>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const cursor = document.getElementById('cursor');
+            const hoverTriggers = document.querySelectorAll('.hover-trigger, a, button');
+            if (window.innerWidth >= 1024) {
+                document.addEventListener('mousemove', (e) => {
+                    cursor.style.left = e.clientX + 'px';
+                    cursor.style.top = e.clientY + 'px';
+                });
+                hoverTriggers.forEach((t) => {
+                    t.addEventListener('mouseenter', () => cursor.classList.add('active'));
+                    t.addEventListener('mouseleave', () => cursor.classList.remove('active'));
+                });
+            }
+            const revealElements = document.querySelectorAll('.reveal-up');
+            const revealObserver = new IntersectionObserver((entries, observer) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+            revealElements.forEach((el) => revealObserver.observe(el));
+            const navbar = document.getElementById('navbar');
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 50) {
+                    navbar.classList.add('nav-scrolled');
+                    navbar.classList.remove('text-white');
+                } else {
+                    navbar.classList.remove('nav-scrolled');
+                    navbar.classList.add('text-white');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

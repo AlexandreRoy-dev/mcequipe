@@ -1,5 +1,5 @@
 /**
- * Subtle cookie consent banner — Quebec / Law 25
+ * Subtle cookie consent banner (Quebec / Law 25)
  */
 (function () {
   const CONSENT_KEY = 'mc-cookie-consent';

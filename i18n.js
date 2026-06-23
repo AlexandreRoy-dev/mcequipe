@@ -1,5 +1,5 @@
 /**
- * MC Équipe — FR (default in HTML) / EN
+ * MC Équipe: FR (default in HTML) / EN
  * Detects browser language, persists choice in localStorage.
  */
 (function (global) {
@@ -10,6 +10,9 @@
   const EN = {
     'meta.title.index': 'MC Équipe | Real estate reimagined',
     'meta.title.residentiel': 'Buy & Sell | MC Équipe',
+    'meta.title.military': 'Military Relocation | MC Équipe',
+    'meta.desc.military':
+      'Accredited real estate broker for military relocations in Quebec. Mathieu Michaud supports CAF members and families in Valcartier and the Québec City region.',
     'meta.title.evaluation': 'Free Home Evaluation | MC Équipe',
     'meta.title.international': 'International Acquisition | MC Équipe',
     'meta.title.mathieu': 'Mathieu Michaud | MC Équipe',
@@ -38,15 +41,15 @@
     'privacy.hero.title': 'Privacy <span class="italic font-light">Policy</span>',
     'privacy.updated': 'Last updated: June 1, 2026',
     'privacy.intro':
-      'This policy describes how MC Équipe (Mathieu Michaud, real estate broker — eXp Realty) collects, uses, discloses, and protects your personal information in accordance with Quebec\'s Act respecting the protection of personal information in the private sector (CQLR, c. P-39.1), as amended by Law 25, and, where applicable, the federal Personal Information Protection and Electronic Documents Act (PIPEDA).',
+      'This policy describes how MC Équipe (Mathieu Michaud, real estate broker, eXp Realty) collects, uses, discloses, and protects your personal information in accordance with Quebec\'s Act respecting the protection of personal information in the private sector (CQLR, c. P-39.1), as amended by Law 25, and, where applicable, the federal Personal Information Protection and Electronic Documents Act (PIPEDA).',
 
     'privacy.s1.title': '1. Person responsible for the protection of personal information',
     'privacy.s1.body':
-      'The person responsible for the protection of personal information is Mathieu Michaud. You may contact them regarding any request relating to your personal information:<br><br>Mathieu Michaud — MC Équipe<br>1111 Blvd. Dr. Frederik-Philips, Suite 601<br>Saint-Laurent, QC H4M 2X6<br>Email: <a href="mailto:info@mcequipe.com" class="text-mc-ocean hover:underline">info@mcequipe.com</a><br>Phone: (418) 655-8090',
+      'The person responsible for the protection of personal information is Mathieu Michaud. You may contact them regarding any request relating to your personal information:<br><br>Mathieu Michaud, MC Équipe<br>1111 Blvd. Dr. Frederik-Philips, Suite 601<br>Saint-Laurent, QC H4M 2X6<br>Email: <a href="mailto:info@mcequipe.com" class="text-mc-ocean hover:underline">info@mcequipe.com</a><br>Phone: (418) 655-8090',
 
     'privacy.s2.title': '2. Personal information we collect',
     'privacy.s2.body':
-      'Depending on your interactions with us, we may collect:<ul class="list-disc pl-6 mt-4 space-y-2"><li>Identity and contact information (name, email, phone, mailing address);</li><li>Information related to your real estate project (budget, desired location, property type, timeline);</li><li>Property information when you request an evaluation or listing (address, characteristics, photos);</li><li>Technical data when you browse our site (IP address, browser type, pages visited — where applicable);</li><li>Any other information you voluntarily provide through our forms or communications.</li></ul>',
+      'Depending on your interactions with us, we may collect:<ul class="list-disc pl-6 mt-4 space-y-2"><li>Identity and contact information (name, email, phone, mailing address);</li><li>Information related to your real estate project (budget, desired location, property type, timeline);</li><li>Property information when you request an evaluation or listing (address, characteristics, photos);</li><li>Technical data when you browse our site (IP address, browser type, pages visited, where applicable);</li><li>Any other information you voluntarily provide through our forms or communications.</li></ul>',
 
     'privacy.s3.title': '3. Purposes of collection',
     'privacy.s3.body':
@@ -117,13 +120,20 @@
     'index.s3.desc':
       'Mexico & Panama. A turnkey, legally secure acquisition tailored to Quebec investors.',
 
+    'index.s4.tag': 'Forces armées canadiennes',
+    'index.s4.title': 'Transfert Militaire',
+    'index.s4.desc':
+      'Courtier accrédité pour les relocalisations des FAC. Valcartier, Québec et région: achat, vente et coordination selon votre posting.',
+
     'index.team.label': 'Faces of excellence',
     'index.team.title': 'Our partner brokers',
     'index.mathieu.role': 'Residential real estate broker',
     'index.mathieu.p1':
       'Known for his analytical mindset and deep understanding of Quebec market dynamics, Mathieu orchestrates every transaction with surgical precision. His pragmatic, forward-looking approach protects clients’ interests while maximizing the value of their real estate assets.',
     'index.mathieu.p2':
-      'He architects the team’s listing strategies and created “The Buddy Broker” method—a system that guarantees follow-ups of absolute rigour.',
+      'He architects the team’s listing strategies and created “The Buddy Broker” method, a system that guarantees follow-ups of absolute rigour.',
+    'index.mathieu.p3':
+      'An accredited broker for military relocations, he supports CAF members and their families during postings to Valcartier and the Québec City region.',
     'index.catherine.role': 'Residential real estate broker',
     'index.catherine.p1':
       'Driven by a passion for architecture, spatial design and people, Catherine has a rare gift for revealing a property’s full potential. Her natural empathy and formidable negotiation skills build unshakeable trust.',
@@ -153,11 +163,11 @@
     'index.t1.quote':
       '"The MC team completely redefined our view of brokerage. Their marketing strategy for our Eastern Townships estate was worthy of an architecture magazine. The sale closed above our expectations, with absolute discretion."',
     'index.t1.name': 'Tremblay family',
-    'index.t1.role': 'Residential sale — Magog',
+    'index.t1.role': 'Residential sale, Magog',
     'index.t2.quote':
       '"Buying in Mexico seemed complex, but Catherine simplified every legal and notarial step. Truly turnkey service."',
     'index.t2.name': 'Marc-André P.',
-    'index.t2.role': 'Acquisition — Tulum',
+    'index.t2.role': 'Acquisition, Tulum',
     'index.t3.quote':
       '"The Buddy Broker playbook isn’t a myth. Mathieu’s follow-up is incredibly precise. Always one step ahead."',
     'index.t3.name': 'Sophie L.',
@@ -165,7 +175,7 @@
     'index.t4.quote':
       '"The synergy between Mathieu and Catherine is remarkable. One analyses data coolly, the other intimately understands our lifestyle needs. The perfect duo for any major transaction."',
     'index.t4.name': 'Dr. Vincent R.',
-    'index.t4.role': 'Residential purchase — Québec City',
+    'index.t4.role': 'Residential purchase, Québec City',
 
     'index.faq.label': 'Clearing your doubts',
     'index.faq.title': 'Frequently asked questions',
@@ -174,13 +184,13 @@
       'We offer a turnkey service. We work with trusted local lawyers and notaries in Mexico and Panama to secure the transaction. We support you from viewings (virtual or in person) through to closing, removing language barriers and legal uncertainty.',
     'index.faq.q2': 'What does the free property evaluation include?',
     'index.faq.a2':
-      'Our evaluation is based on a rigorous comparative market analysis (CMA). We review recently sold comparable properties in your area, current market trends and your home’s unique features to determine fair market value—with no obligation.',
+      'Our evaluation is based on a rigorous comparative market analysis (CMA). We review recently sold comparable properties in your area, current market trends and your home’s unique features to determine fair market value, with no obligation.',
     'index.faq.q3': 'What is “The Buddy Broker” method?',
     'index.faq.a3':
       'It’s our exclusive organization and follow-up tool. Created by Mathieu Michaud, this system ensures no detail is left to chance. We stay proactive, keep you informed in real time and give you complete peace of mind throughout the process.',
     'index.faq.q4': 'What are the benefits of eXp Realty?',
     'index.faq.a4':
-      'eXp is one of the fastest-growing real estate brokerages in the world. That gives us cutting-edge marketing technology and, above all, a global network of thousands of agents. Your property isn’t only visible in Quebec—it’s visible internationally.',
+      'eXp is one of the fastest-growing real estate brokerages in the world. That gives us cutting-edge marketing technology and, above all, a global network of thousands of agents. Your property isn’t only visible in Quebec. It’s visible internationally.',
 
     'index.contact.label': 'Let’s discuss your vision',
     'index.contact.title': 'Get in <br><span class="italic text-mc-sand">touch.</span>',
@@ -207,7 +217,7 @@
     'residentiel.buy.tag': 'Acquisition',
     'residentiel.buy.title': 'Find the exceptional.',
     'residentiel.buy.p1':
-      'Buying a home is more than a transaction—it’s the start of a new chapter. We take time to understand your lifestyle, aspirations and standards of excellence.',
+      'Buying a home is more than a transaction. It’s the start of a new chapter. We take time to understand your lifestyle, aspirations and standards of excellence.',
     'residentiel.buy.p2':
       'Through our network and access to off-market properties (pocket listings), we present unique opportunities often invisible to the public. From the first showing to handing over the keys, we defend your interests with formidable negotiation strength.',
     'residentiel.buy.li1': 'Targeted, personalized search',
@@ -216,17 +226,58 @@
     'residentiel.sell.tag': 'Go to market',
     'residentiel.sell.title': 'Sell with distinction.',
     'residentiel.sell.p1':
-      'Your property is unique—its marketing should be too. We deploy a bespoke strategy worthy of top architecture magazines: professional photography, cinematic video and strategic placement on local and international platforms.',
+      'Your property is unique. Its marketing should be too. We deploy a bespoke strategy worthy of top architecture magazines: professional photography, cinematic video and strategic placement on local and international platforms.',
     'residentiel.sell.p2':
       'Backed by the global eXp Realty network and The Buddy Broker method, we maximize visibility and follow-up for a smooth, secure transaction at the best possible price.',
     'residentiel.sell.cta': 'Evaluate my property',
+
+    'military.hero.badge': 'Accredited broker, military relocation',
+    'military.hero.title': 'Your relocation, <br><span class="italic font-light">without compromise.</span>',
+    'military.hero.sub':
+      'Canadian Armed Forces members and families: Mathieu Michaud guides you through buying or selling your home when posted to Valcartier, Québec City or the surrounding region.',
+    'military.intro.tag': 'Recognized expertise',
+    'military.intro.title': 'Understanding the urgency of a posting.',
+    'military.intro.p1':
+      'A military transfer means tight deadlines, geographic constraints and unique family pressure. As an accredited broker for CAF relocations, Mathieu Michaud understands relocation program requirements and coordinates every step with the rigour your situation demands.',
+    'military.intro.p2':
+      'Whether you are arriving at 2 Canadian Patrol Group in Valcartier, leaving the Capitale-Nationale region or need to synchronize buying and selling two homes, our team builds a clear action plan, with no surprises, no wasted time.',
+    'military.intro.li1': 'Support aligned with the relocation program (BGRS)',
+    'military.intro.li2': 'Deep knowledge of Valcartier, Québec City and surrounding areas',
+    'military.intro.li3': 'Buy / sell coordination based on your posting date',
+    'military.services.label': 'Dedicated services',
+    'military.services.title': 'At every stage of your transfer',
+    'military.s1.title': 'Arriving in Quebec',
+    'military.s1.desc':
+      'Targeted search based on your criteria, schools, commute to the base and approved budget. Optimized showings for families travelling or working remotely from another province.',
+    'military.s2.title': 'Departure & sale',
+    'military.s2.desc':
+      'Market evaluation, strategic listing and negotiation to maximize your home\'s value before posting, while respecting military timelines.',
+    'military.s3.title': 'Simultaneous transactions',
+    'military.s3.desc':
+      'Managing conditions, financing deadlines and coordination between both markets to reduce stress and double-housing costs.',
+    'military.mathieu.tag': 'Your accredited broker',
+    'military.mathieu.p1':
+      'Residential real estate broker with MC Équipe, eXp Realty, Mathieu is accredited to support Canadian Armed Forces members in real estate transactions related to a transfer. His "Buddy Broker" method ensures flawless follow-up when every day counts.',
+    'military.mathieu.p2':
+      'Contact him as soon as you receive posting instructions to build a realistic timeline and secure your next chapter in Quebec.',
+    'military.mathieu.cta': 'Schedule a call',
+    'military.mathieu.bio': 'Read his biography',
+    'military.contact.label': 'Schedule a call',
+    'military.contact.title': 'Get in <br><span class="italic text-mc-sand">touch.</span>',
+    'military.contact.desc':
+      'Fill out the form to schedule a call with Mathieu. Include your posting date, whether you need to buy, sell, or both, and your target area. We will respond promptly.',
+    'military.contact.form.message': 'My posting date is... I would like to...',
+    'military.contact.form.messageLabel': 'Your message',
+    'military.contact.form.submit': 'Send request',
+
+    'mathieu.military.link': 'Military relocation, accredited broker',
 
     'evaluation.hero.tag': 'Fair market value',
     'evaluation.hero.title': 'Free <span class="italic font-light">Evaluation</span>',
     'evaluation.hero.sub': 'Get an accurate read on the market with precision and confidentiality.',
     'evaluation.intro.title': 'Expertise beyond the algorithm',
     'evaluation.intro.desc':
-      'Online automated estimates miss the nuances of your property. Our brokers analyze recent comparable sales, your home’s condition, upgrades and neighbourhood dynamics to deliver a surgical comparative market analysis (CMA)—with no obligation.',
+      'Online automated estimates miss the nuances of your property. Our brokers analyze recent comparable sales, your home’s condition, upgrades and neighbourhood dynamics to deliver a surgical comparative market analysis (CMA), with no obligation.',
     'evaluation.form.prop': '1. Your property',
     'evaluation.form.coords': '2. Your contact details',
     'evaluation.form.submit': 'Receive my evaluation',
@@ -328,7 +379,7 @@
     'mathieu.buddy.title': 'The Buddy <br><span class="italic text-mc-sand">Broker.</span>',
     'mathieu.buddy.tag': 'The exclusive method',
     'mathieu.buddy.desc':
-      'Knowing that transaction success lies in the details, Mathieu developed “The Buddy Broker”. Far more than a notebook, it’s a complete organizational system for modern brokerage. This tool guarantees follow-ups of absolute rigour: no call forgotten, no deadline missed—true peace of mind and impeccable service for every client.',
+      'Knowing that transaction success lies in the details, Mathieu developed “The Buddy Broker”. Far more than a notebook, it’s a complete organizational system for modern brokerage. This tool guarantees follow-ups of absolute rigour: no call forgotten, no deadline missed. True peace of mind and impeccable service for every client.',
 
     'catherine.role': 'Real estate broker',
     'catherine.p1':
