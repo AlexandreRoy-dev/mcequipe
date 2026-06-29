@@ -1,12 +1,10 @@
 /**
- * Formspree AJAX submit — avoids GitHub Pages 405 on native POST fallbacks.
+ * Formspree AJAX submit + redirect to merci.html
  */
 (function () {
+  const THANK_YOU_PATH = 'merci.html';
+
   const MESSAGES = {
-    success: {
-      fr: 'Merci! Votre message a été envoyé. Nous vous répondrons sous peu.',
-      en: 'Thank you! Your message has been sent. We will respond shortly.',
-    },
     error: {
       fr: 'Une erreur est survenue. Veuillez réessayer ou nous appeler directement.',
       en: 'Something went wrong. Please try again or call us directly.',
@@ -17,28 +15,25 @@
     return document.documentElement.dataset.lang === 'en' ? 'en' : 'fr';
   }
 
-  function showStatus(form, type) {
+  function thankYouUrl(form) {
+    const nextField = form.querySelector('[name="_next"]');
+    if (nextField && nextField.value) return nextField.value;
+    return new URL(THANK_YOU_PATH, window.location.href).href;
+  }
+
+  function showError(form, type) {
     let el = form.querySelector('.form-status');
     if (!el) {
       el = document.createElement('p');
       el.className = 'form-status';
-      el.setAttribute('role', 'status');
-      el.setAttribute('aria-live', 'polite');
+      el.setAttribute('role', 'alert');
+      el.setAttribute('aria-live', 'assertive');
       form.appendChild(el);
     }
 
     const dark = form.dataset.formTheme === 'dark';
-    const base = 'form-status text-sm mt-4 font-light tracking-wide';
-    const tone =
-      type === 'success'
-        ? dark
-          ? 'text-mc-sand'
-          : 'text-mc-ocean'
-        : dark
-          ? 'text-red-300'
-          : 'text-red-600';
-
-    el.className = `${base} ${tone}`;
+    const tone = dark ? 'text-red-300' : 'text-red-600';
+    el.className = `form-status text-sm mt-4 font-light tracking-wide ${tone}`;
     el.textContent = MESSAGES[type][lang()];
   }
 
@@ -63,18 +58,17 @@
       });
 
       if (response.ok) {
-        form.reset();
-        showStatus(form, 'success');
-      } else {
-        showStatus(form, 'error');
+        window.location.href = thankYouUrl(form);
+        return;
       }
+      showError(form, 'error');
     } catch {
-      showStatus(form, 'error');
-    } finally {
-      if (submitBtn) {
-        submitBtn.disabled = false;
-        submitBtn.removeAttribute('aria-busy');
-      }
+      showError(form, 'error');
+    }
+
+    if (submitBtn) {
+      submitBtn.disabled = false;
+      submitBtn.removeAttribute('aria-busy');
     }
   }
 

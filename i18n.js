@@ -18,6 +18,9 @@
     'meta.title.mathieu': 'Mathieu Michaud | MC Équipe',
     'meta.title.catherine': 'Catherine Aubé | MC Équipe',
     'meta.title.privacy': 'Privacy Policy | MC Équipe',
+    'meta.title.merci': 'Thank You | MC Équipe',
+    'meta.desc.merci':
+      'Your message has been sent. The MC Équipe team will respond shortly.',
     'meta.desc.international':
       'Invest in Mexico or Panama with confidence through MC Équipe. Turnkey service for Quebec buyers.',
 
@@ -31,6 +34,15 @@
     'footer.copyright': '© 2026 MC Équipe - eXp Realty.',
     'footer.credit': 'Website by Roy Marketing',
     'footer.privacy': 'Privacy policy',
+
+    'merci.tag': 'Message received',
+    'merci.title': 'Thank you for <br><span class="italic text-mc-sand">your trust.</span>',
+    'merci.desc':
+      'Your request has been sent to our team. Mathieu or Catherine will respond as soon as possible.',
+    'merci.privacy': 'All information remains strictly confidential.',
+    'merci.cta.home': 'Back to home',
+    'merci.cta.services': 'Explore our services',
+    'merci.urgent': 'Need a quick response?',
 
     'cookies.message':
       'This site uses essential cookies and third-party services required for it to function.',
