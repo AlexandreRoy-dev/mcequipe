@@ -12,7 +12,7 @@
     'meta.title.residentiel': 'Buy & Sell | MC Équipe',
     'meta.title.military': 'Military Relocation | MC Équipe',
     'meta.desc.military':
-      'Accredited real estate broker for military relocations in Quebec. Mathieu Michaud supports CAF members and families in Valcartier and the Québec City region.',
+      'Accredited broker and former regular-force member. Mathieu Michaud supports CAF members during relocations to Valcartier, Québec City and the surrounding region.',
     'meta.title.evaluation': 'Free Home Evaluation | MC Équipe',
     'meta.title.international': 'International Acquisition | MC Équipe',
     'meta.title.mathieu': 'Mathieu Michaud | MC Équipe',
@@ -123,7 +123,7 @@
     'index.s4.tag': 'Forces armées canadiennes',
     'index.s4.title': 'Transfert Militaire',
     'index.s4.desc':
-      'Courtier accrédité pour les relocalisations des FAC. Valcartier, Québec et région: achat, vente et coordination selon votre posting.',
+      'Accredited broker and former regular-force member. Valcartier, Québec and region: buy, sell and coordination as soon as your posting is announced.',
 
     'index.team.label': 'Faces of excellence',
     'index.team.title': 'Our partner brokers',
@@ -133,7 +133,7 @@
     'index.mathieu.p2':
       'He architects the team’s listing strategies and created “The Buddy Broker” method, a system that guarantees follow-ups of absolute rigour.',
     'index.mathieu.p3':
-      'An accredited broker for military relocations, he supports CAF members and their families during postings to Valcartier and the Québec City region.',
+      'An accredited broker and former regular-force member, he supports CAF members during relocations — he has lived a posting himself.',
     'index.catherine.role': 'Residential real estate broker',
     'index.catherine.p1':
       'Driven by a passion for architecture, spatial design and people, Catherine has a rare gift for revealing a property’s full potential. Her natural empathy and formidable negotiation skills build unshakeable trust.',
@@ -231,19 +231,26 @@
       'Backed by the global eXp Realty network and The Buddy Broker method, we maximize visibility and follow-up for a smooth, secure transaction at the best possible price.',
     'residentiel.sell.cta': 'Evaluate my property',
 
+    'residentiel.contact.label': 'Start your project',
+    'residentiel.contact.title': 'Get in <br><span class="italic text-mc-sand">touch.</span>',
+    'residentiel.contact.desc':
+      'Whether you want to buy or sell in Quebec, our team supports you with rigour and discretion. Describe your project and we will respond promptly.',
+    'residentiel.contact.form.message': 'I would like to buy / sell...',
+    'residentiel.contact.form.messageLabel': 'Your message',
+
     'military.hero.badge': 'Accredited broker, military relocation',
     'military.hero.title': 'Your relocation, <br><span class="italic font-light">without compromise.</span>',
     'military.hero.sub':
-      'Canadian Armed Forces members and families: Mathieu Michaud guides you through buying or selling your home when posted to Valcartier, Québec City or the surrounding region.',
+      'Regular-force Canadian Armed Forces members and families: Mathieu Michaud, a former service member, guides you through buying or selling your home when relocated to Valcartier, Québec City or the surrounding region.',
     'military.intro.tag': 'Recognized expertise',
     'military.intro.title': 'Understanding the urgency of a posting.',
     'military.intro.p1':
-      'A military transfer means tight deadlines, geographic constraints and unique family pressure. As an accredited broker for CAF relocations, Mathieu Michaud understands relocation program requirements and coordinates every step with the rigour your situation demands.',
+      'A posting typically lasts two to three years, alone or with family. You are supported by the federal relocation system, including the home inspection week before you buy. Postings apply to regular-force members — every trade — not the reserve, whose status and work contracts differ. Mathieu Michaud, an accredited broker for CAF relocations, coordinates every step with the rigour your situation demands.',
     'military.intro.p2':
-      'Whether you are arriving at 2 Canadian Patrol Group in Valcartier, leaving the Capitale-Nationale region or need to synchronize buying and selling two homes, our team builds a clear action plan, with no surprises, no wasted time.',
-    'military.intro.li1': 'Support aligned with the relocation program (BGRS)',
+      'As soon as you know your posting, listing — and sometimes selling — your home should begin. Whether you are arriving at CFB Valcartier, leaving the Capitale-Nationale region or coordinating two transactions, our team builds a clear action plan with no surprises.',
+    'military.intro.li1': 'Support aligned with the federal relocation program (BGRS)',
     'military.intro.li2': 'Deep knowledge of Valcartier, Québec City and surrounding areas',
-    'military.intro.li3': 'Buy / sell coordination based on your posting date',
+    'military.intro.li3': 'Listing as soon as your posting is announced and buy / sell coordination',
     'military.services.label': 'Dedicated services',
     'military.services.title': 'At every stage of your transfer',
     'military.s1.title': 'Arriving in Quebec',
@@ -251,15 +258,15 @@
       'Targeted search based on your criteria, schools, commute to the base and approved budget. Optimized showings for families travelling or working remotely from another province.',
     'military.s2.title': 'Departure & sale',
     'military.s2.desc':
-      'Market evaluation, strategic listing and negotiation to maximize your home\'s value before posting, while respecting military timelines.',
+      'Market evaluation and listing as soon as your posting is confirmed — sometimes months before you leave — to maximize your home\'s value while respecting military timelines.',
     'military.s3.title': 'Simultaneous transactions',
     'military.s3.desc':
       'Managing conditions, financing deadlines and coordination between both markets to reduce stress and double-housing costs.',
-    'military.mathieu.tag': 'Your accredited broker',
+    'military.mathieu.tag': 'Former service member, accredited broker',
     'military.mathieu.p1':
-      'Residential real estate broker with MC Équipe, eXp Realty, Mathieu is accredited to support Canadian Armed Forces members in real estate transactions related to a transfer. His "Buddy Broker" method ensures flawless follow-up when every day counts.',
+      'A former regular-force infantry sergeant, Mathieu has lived a posting and every step that comes with it. His family kept the house; he had to rent in another province. He knows the federal system from the inside. An accredited broker for CAF relocations with MC Équipe, eXp Realty, his "Buddy Broker" method ensures flawless follow-up when every day counts.',
     'military.mathieu.p2':
-      'Contact him as soon as you receive posting instructions to build a realistic timeline and secure your next chapter in Quebec.',
+      'Contact him as soon as you receive posting instructions to start selling or listing your home and build a realistic timeline.',
     'military.mathieu.cta': 'Schedule a call',
     'military.mathieu.bio': 'Read his biography',
     'military.contact.label': 'Schedule a call',

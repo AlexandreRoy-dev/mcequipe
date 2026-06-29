@@ -102,7 +102,7 @@
                 <span class="opacity-30 select-none" aria-hidden="true">|</span>
                 <button type="button" data-lang-set="en" class="lang-btn hover-trigger transition-opacity">EN</button>
             </div>
-            <a href="index.html#contact" class="nav-btn hover-trigger border border-white px-6 py-3 text-[10px] uppercase tracking-widest hover:bg-white hover:text-mc-charcoal transition-all duration-500 rounded-full" data-i18n="nav.contact">Contact</a>
+            <a href="#contact" class="nav-btn hover-trigger border border-white px-6 py-3 text-[10px] uppercase tracking-widest hover:bg-white hover:text-mc-charcoal transition-all duration-500 rounded-full" data-i18n="nav.contact">Contact</a>
         </div>
     </nav>
 
@@ -170,6 +170,76 @@
                     <a href="evaluation.html" class="hover-trigger inline-block bg-mc-charcoal text-white px-10 py-4 text-xs uppercase tracking-widest rounded-full hover:bg-mc-sand hover:text-mc-charcoal transition-all duration-300" data-i18n="residentiel.sell.cta">
                         Évaluer ma propriété
                     </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-32 bg-mc-white text-mc-charcoal relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="flex flex-col lg:flex-row gap-20">
+
+                <div class="w-full lg:w-5/12 reveal-up">
+                    <span class="text-mc-sand uppercase tracking-widest text-xs font-medium block mb-4" data-i18n="residentiel.contact.label">Démarrons votre projet</span>
+                    <h2 class="font-heading text-5xl md:text-6xl mb-8 leading-tight" data-i18n="residentiel.contact.title" data-i18n-html>Prendre <br><span class="italic text-mc-sand">Contact.</span></h2>
+
+                    <p class="font-light text-mc-charcoal/80 leading-relaxed mb-12 max-w-md" data-i18n="residentiel.contact.desc">
+                        Que vous souhaitiez acheter ou vendre au Québec, notre équipe vous accompagne avec rigueur et discrétion. Décrivez votre projet et nous vous répondrons rapidement.
+                    </p>
+
+                    <div class="space-y-6">
+                        <div>
+                            <p class="text-[10px] uppercase tracking-widest text-mc-charcoal/50 mb-1" data-i18n="index.contact.phone">Téléphone</p>
+                            <p class="font-light text-sm" data-i18n="index.contact.ph1">Mathieu : (418) 655-8090</p>
+                            <p class="font-light text-sm" data-i18n="index.contact.ph2">Catherine : (418) 952-0925</p>
+                        </div>
+                        <div>
+                            <p class="text-[10px] uppercase tracking-widest text-mc-charcoal/50 mb-1" data-i18n="index.contact.email">Courriel</p>
+                            <a href="mailto:info@mcequipe.com" class="font-light text-sm hover:text-mc-sand transition-colors duration-300">info@mcequipe.com</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w-full lg:w-7/12 reveal-up" style="transition-delay: 200ms;">
+                    <form action="https://formspree.io/f/xgoqbwek" method="POST" class="space-y-8 mt-4 lg:mt-0">
+                        <input type="hidden" name="sujet" value="Résidentiel — Contact">
+                        <input type="hidden" name="_subject" value="MC Équipe — Résidentiel (Contact)">
+
+                        <div class="relative group">
+                            <label for="residentiel-contact-nom" class="sr-only" data-i18n="index.contact.form.nameLabel">Nom complet</label>
+                            <input type="text" id="residentiel-contact-nom" name="nom" required data-i18n-placeholder="index.contact.form.name" placeholder="Bonjour, je m'appelle..."
+                                   class="w-full bg-transparent border-b border-mc-charcoal/20 py-4 px-0 text-xl font-heading text-mc-charcoal focus:outline-none focus:border-mc-sand transition-colors placeholder-mc-charcoal/30">
+                        </div>
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                            <div class="relative group">
+                                <label for="residentiel-contact-email" class="sr-only" data-i18n="index.contact.form.emailLabel">Adresse courriel</label>
+                                <input type="email" id="residentiel-contact-email" name="email" required data-i18n-placeholder="index.contact.form.email" placeholder="Mon courriel est..."
+                                       class="w-full bg-transparent border-b border-mc-charcoal/20 py-4 px-0 text-lg font-light text-mc-charcoal focus:outline-none focus:border-mc-sand transition-colors placeholder-mc-charcoal/30">
+                            </div>
+                            <div class="relative group">
+                                <label for="residentiel-contact-tel" class="sr-only" data-i18n="index.contact.form.phoneLabel">Numéro de téléphone</label>
+                                <input type="tel" id="residentiel-contact-tel" name="telephone" required data-i18n-placeholder="index.contact.form.phone" placeholder="Mon téléphone est..."
+                                       class="w-full bg-transparent border-b border-mc-charcoal/20 py-4 px-0 text-lg font-light text-mc-charcoal focus:outline-none focus:border-mc-sand transition-colors placeholder-mc-charcoal/30">
+                            </div>
+                        </div>
+
+                        <div class="relative group mt-12">
+                            <label for="residentiel-contact-message" class="sr-only" data-i18n="residentiel.contact.form.messageLabel">Votre message</label>
+                            <textarea id="residentiel-contact-message" name="message" rows="4" required data-i18n-placeholder="residentiel.contact.form.message" placeholder="Je souhaite acheter / vendre..."
+                                      class="w-full bg-transparent border-b border-mc-charcoal/20 py-4 px-0 text-lg font-light text-mc-charcoal focus:outline-none focus:border-mc-sand transition-colors resize-none placeholder-mc-charcoal/30"></textarea>
+                        </div>
+
+                        <div class="pt-8 text-right">
+                            <button type="submit" class="hover-trigger group inline-flex items-center gap-4 text-mc-charcoal">
+                                <span class="font-light text-xs tracking-[0.2em] uppercase border-b border-mc-charcoal pb-1 group-hover:text-mc-sand group-hover:border-mc-sand transition-colors duration-300" data-i18n="index.contact.form.submit">Envoyer le message</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 transform group-hover:translate-x-2 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                                </svg>
+                            </button>
+                        </div>
+
+                    </form>
                 </div>
             </div>
         </div>
