@@ -8,6 +8,8 @@
     <meta name="robots" content="noindex">
     <script src="i18n.js"></script>
     <script src="cookies.js"></script>
+    <script src="site-config.js"></script>
+    <script src="booking.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&display=swap" rel="stylesheet">
     <script>
@@ -59,6 +61,20 @@
             </div>
         </header>
 
+        <section id="rdv" data-ghl-booking-section class="py-20 bg-mc-white border-t border-mc-linen">
+            <div class="max-w-3xl mx-auto px-6 reveal-up">
+                <div class="text-center mb-10">
+                    <span class="text-mc-ocean uppercase tracking-widest text-xs font-medium block mb-4" data-i18n="booking.label">Prochaine étape</span>
+                    <h2 class="font-heading text-3xl md:text-4xl mb-4" data-i18n="merci.booking.title">Réservez un appel avec l'équipe</h2>
+                    <p class="font-light text-mc-charcoal/70 max-w-xl mx-auto" data-i18n="merci.booking.desc">Choisissez le moment qui vous convient. Mathieu ou Catherine confirmeront votre rendez-vous.</p>
+                </div>
+                <div data-ghl-booking data-booking-title="Réserver un rendez-vous MC Équipe" class="min-h-[120px] flex items-center justify-center">
+                    <p class="text-sm font-light text-mc-charcoal/40 text-center" data-i18n="booking.setup">Calendrier à configurer dans site-config.js (GoHighLevel).</p>
+                </div>
+                <p class="text-[10px] uppercase tracking-widest text-mc-charcoal/30 text-center mt-6" data-i18n="booking.note">Prise de rendez-vous en ligne via notre CRM.</p>
+            </div>
+        </section>
+
         <section class="py-20 bg-mc-linen">
             <div class="max-w-3xl mx-auto px-6 text-center reveal-up">
                 <h2 class="font-heading text-3xl mb-4" data-i18n="merci.urgent">Besoin d'une réponse urgente?</h2>
@@ -94,6 +110,13 @@
                 });
             }, { threshold: 0.1 });
             revealElements.forEach((el) => revealObserver.observe(el));
+
+            if (window.location.hash === '#rdv') {
+                const rdv = document.getElementById('rdv');
+                if (rdv) {
+                    setTimeout(() => rdv.scrollIntoView({ behavior: 'smooth', block: 'start' }), 300);
+                }
+            }
         });
     </script>
 </body>

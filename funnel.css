@@ -1,0 +1,116 @@
+.funnel-progress {
+  --funnel-track: rgba(61, 49, 44, 0.12);
+  --funnel-fill: #4f909b;
+}
+
+[data-form-theme='dark'] .funnel-progress,
+.funnel-form--dark .funnel-progress {
+  --funnel-track: rgba(255, 255, 255, 0.12);
+  --funnel-fill: #bbab9a;
+}
+
+.funnel-progress__track {
+  height: 2px;
+  width: 100%;
+  background: var(--funnel-track);
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.funnel-progress__fill {
+  height: 100%;
+  width: 0;
+  background: var(--funnel-fill);
+  border-radius: 999px;
+  transition: width 0.45s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.funnel-step[hidden] {
+  display: none !important;
+}
+
+.funnel-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding-top: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+.funnel-nav__spacer {
+  flex: 1;
+}
+
+.funnel-btn {
+  font-family: inherit;
+  font-size: 0.625rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  font-weight: 500;
+  transition: color 0.3s, border-color 0.3s, opacity 0.3s;
+}
+
+.funnel-btn--back {
+  background: none;
+  border: none;
+  padding: 0.5rem 0;
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.funnel-btn--back:hover {
+  opacity: 1;
+}
+
+.funnel-btn--next {
+  border-bottom: 1px solid currentColor;
+  background: none;
+  padding: 0.5rem 0;
+  cursor: pointer;
+}
+
+.funnel-consent {
+  display: flex;
+  gap: 0.75rem;
+  align-items: flex-start;
+  text-align: left;
+  margin-bottom: 1.5rem;
+}
+
+.funnel-consent input {
+  margin-top: 0.2rem;
+  flex-shrink: 0;
+  accent-color: #4f909b;
+}
+
+[data-form-theme='dark'] .funnel-consent input,
+.funnel-form--dark .funnel-consent input {
+  accent-color: #bbab9a;
+}
+
+.funnel-consent__text {
+  font-size: 0.8125rem;
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+.funnel-consent__text a {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.funnel-consent__text a:hover {
+  opacity: 0.8;
+}
+
+.funnel-step-error {
+  font-size: 0.75rem;
+  margin-top: 0.75rem;
+  color: #dc2626;
+}
+
+[data-form-theme='dark'] .funnel-step-error,
+.funnel-form--dark .funnel-step-error {
+  color: #fca5a5;
+}

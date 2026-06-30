@@ -7,6 +7,10 @@
     <meta name="description" data-i18n="meta.desc.military" content="Courtier accrédité et ancien militaire du régulier. Mathieu Michaud accompagne les membres des FAC lors d'une mutation à Valcartier, à Québec ou dans la région.">
     <script src="i18n.js"></script>
     <script src="cookies.js"></script>
+    <script src="site-config.js"></script>
+    <link rel="stylesheet" href="funnel.css">
+    <script src="funnel.js"></script>
+    <script src="booking.js"></script>
     <script src="forms.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&display=swap" rel="stylesheet">
@@ -205,10 +209,37 @@
                 </div>
 
                 <div class="w-full lg:w-7/12 reveal-up" style="transition-delay: 200ms;">
-                    <form action="https://formspree.io/f/xgoqbwek" method="POST" class="space-y-8 mt-4 lg:mt-0">
+                    <form action="https://formspree.io/f/xgoqbwek" method="POST" class="space-y-8 mt-4 lg:mt-0" data-funnel>
                         <input type="hidden" name="sujet" value="Transfert militaire">
                         <input type="hidden" name="_subject" value="MC Équipe - Transfert militaire">
                         <input type="hidden" name="_next" value="https://mcequipe.ca/merci.html">
+
+                        <div data-funnel-step>
+                            <h3 class="text-xs uppercase tracking-widest text-mc-charcoal/50 mb-6 border-b border-mc-charcoal/10 pb-2" data-i18n="funnel.step.profile">1. Votre situation</h3>
+                            <p class="text-[10px] uppercase tracking-widest text-mc-charcoal/40 mb-4" data-i18n="funnel.military.need">De quoi avez-vous besoin?</p>
+                            <div class="grid grid-cols-3 gap-3 mb-8">
+                                <label class="cursor-pointer"><input type="radio" name="besoin" value="Achat" class="sr-only peer" required checked><span class="block py-3 border border-mc-charcoal/15 text-center text-[10px] uppercase tracking-widest peer-checked:border-mc-ocean peer-checked:bg-mc-ocean peer-checked:text-white transition-all" data-i18n="funnel.intent.buy">Acheter</span></label>
+                                <label class="cursor-pointer"><input type="radio" name="besoin" value="Vente" class="sr-only peer"><span class="block py-3 border border-mc-charcoal/15 text-center text-[10px] uppercase tracking-widest peer-checked:border-mc-ocean peer-checked:bg-mc-ocean peer-checked:text-white transition-all" data-i18n="funnel.intent.sell">Vendre</span></label>
+                                <label class="cursor-pointer"><input type="radio" name="besoin" value="Achat et vente" class="sr-only peer"><span class="block py-3 border border-mc-charcoal/15 text-center text-[10px] uppercase tracking-widest peer-checked:border-mc-ocean peer-checked:bg-mc-ocean peer-checked:text-white transition-all" data-i18n="funnel.intent.both">Achat & vente</span></label>
+                            </div>
+                            <p class="text-[10px] uppercase tracking-widest text-mc-charcoal/40 mb-4" data-i18n="funnel.military.base">Secteur visé</p>
+                            <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 mb-8">
+                                <label class="cursor-pointer"><input type="radio" name="garnison" value="Valcartier" class="sr-only peer" required checked><span class="block py-3 border border-mc-charcoal/15 text-center text-[10px] uppercase tracking-widest peer-checked:border-mc-ocean peer-checked:bg-mc-ocean peer-checked:text-white transition-all" data-i18n="funnel.military.base.valcartier">Valcartier</span></label>
+                                <label class="cursor-pointer"><input type="radio" name="garnison" value="Québec" class="sr-only peer"><span class="block py-3 border border-mc-charcoal/15 text-center text-[10px] uppercase tracking-widest peer-checked:border-mc-ocean peer-checked:bg-mc-ocean peer-checked:text-white transition-all" data-i18n="funnel.military.base.quebec">Région de Québec</span></label>
+                                <label class="cursor-pointer"><input type="radio" name="garnison" value="Autre" class="sr-only peer"><span class="block py-3 border border-mc-charcoal/15 text-center text-[10px] uppercase tracking-widest peer-checked:border-mc-ocean peer-checked:bg-mc-ocean peer-checked:text-white transition-all" data-i18n="funnel.military.base.other">Autre</span></label>
+                            </div>
+                            <label for="military-echeancier" class="text-[10px] uppercase tracking-widest text-mc-charcoal/40 mb-3 block" data-i18n="funnel.field.timeline">Quel est votre échéancier?</label>
+                            <select id="military-echeancier" name="echeancier_posting" required class="w-full bg-transparent border-b border-mc-charcoal/20 py-3 text-sm font-light text-mc-charcoal focus:outline-none focus:border-mc-ocean">
+                                <option value="" disabled selected data-i18n="funnel.field.timeline">Quel est votre échéancier?</option>
+                                <option value="Dès que possible" data-i18n="funnel.timeline.asap">Dès que possible</option>
+                                <option value="Dans les 3 mois" data-i18n="funnel.timeline.3m">Dans les 3 mois</option>
+                                <option value="3 à 6 mois" data-i18n="funnel.timeline.6m">3 à 6 mois</option>
+                                <option value="Dans l'année" data-i18n="funnel.timeline.12m">Dans l'année</option>
+                            </select>
+                        </div>
+
+                        <div data-funnel-step>
+                            <h3 class="text-xs uppercase tracking-widest text-mc-charcoal/50 mb-6 border-b border-mc-charcoal/10 pb-2" data-i18n="funnel.step.contact">Vos coordonnées</h3>
 
                         <div class="relative group">
                             <label for="military-contact-nom" class="sr-only" data-i18n="index.contact.form.nameLabel">Nom complet</label>
@@ -234,14 +265,18 @@
                             <textarea id="military-contact-message" name="message" rows="4" required data-i18n-placeholder="military.contact.form.message" placeholder="Ma date de posting est... Je souhaite..."
                                       class="w-full bg-transparent border-b border-mc-charcoal/20 py-4 px-0 text-lg font-light text-mc-charcoal focus:outline-none focus:border-mc-ocean transition-colors resize-none placeholder-mc-charcoal/30"></textarea>
                         </div>
+                        </div>
 
-                        <div class="pt-8 text-right">
+                        <div data-funnel-step data-funnel-submit>
+                            <h3 class="text-xs uppercase tracking-widest text-mc-charcoal/50 mb-6 border-b border-mc-charcoal/10 pb-2" data-i18n="funnel.step.confirm">Confirmation</h3>
+                        <div class="pt-4 text-right">
                             <button type="submit" class="hover-trigger group inline-flex items-center gap-4 text-mc-charcoal">
                                 <span class="font-light text-xs tracking-[0.2em] uppercase border-b border-mc-charcoal pb-1 group-hover:text-mc-ocean group-hover:border-mc-ocean transition-colors duration-300" data-i18n="military.contact.form.submit">Envoyer la demande</span>
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 transform group-hover:translate-x-2 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17 8l4 4m0 0l-4 4m4-4H3" />
                                 </svg>
                             </button>
+                        </div>
                         </div>
 
                     </form>

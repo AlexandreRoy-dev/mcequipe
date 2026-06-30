@@ -33,6 +33,46 @@
     'nav.contact': 'Contact',
     'nav.lang': 'Language',
 
+    'funnel.step.project': '1. Your project',
+    'funnel.step.profile': '1. Your situation',
+    'funnel.step.details': '2. Details',
+    'funnel.step.contact': 'Your contact details',
+    'funnel.step.confirm': 'Confirmation',
+    'funnel.field.intent': 'What is your goal?',
+    'funnel.field.timeline': 'What is your timeline?',
+    'funnel.intent.buy': 'Buy',
+    'funnel.intent.sell': 'Sell',
+    'funnel.intent.both': 'Buy & sell',
+    'funnel.intent.evaluate': 'Evaluation',
+    'funnel.intent.invest': 'Invest',
+    'funnel.intent.other': 'Other',
+    'funnel.timeline.asap': 'As soon as possible',
+    'funnel.timeline.3m': 'Within 3 months',
+    'funnel.timeline.6m': '3 to 6 months',
+    'funnel.timeline.12m': 'Within the year',
+    'funnel.timeline.exploring': 'Just exploring',
+    'funnel.military.need': 'What do you need?',
+    'funnel.military.base': 'Target area',
+    'funnel.military.base.valcartier': 'CFB Valcartier',
+    'funnel.military.base.quebec': 'Québec City region',
+    'funnel.military.base.other': 'Other',
+    'funnel.international.budget': 'Investment budget',
+    'funnel.budget.under300': 'Under $300k',
+    'funnel.budget.300_500': '$300k - $500k',
+    'funnel.budget.500_1m': '$500k - $1M',
+    'funnel.budget.1m_plus': '$1M +',
+    'funnel.consent':
+      'I agree that MC Équipe may collect and use my personal information to contact me about my real estate project, in accordance with the <a href="politique-confidentialite.html" target="_blank" rel="noopener noreferrer">privacy policy</a>.',
+
+    'booking.label': 'Next step',
+    'booking.title': 'Book a call with the team',
+    'booking.desc':
+      'Choose a time that works for you. Mathieu or Catherine will confirm your appointment.',
+    'booking.or': 'Or book directly',
+    'booking.cta': 'Book an appointment',
+    'booking.note': 'Online scheduling powered by our CRM.',
+    'booking.setup': 'Calendar to configure in site-config.js (GoHighLevel).',
+
     'footer.copyright': '© 2026 MC Équipe - eXp Realty.',
     'footer.credit': 'Website by Roy Marketing',
     'footer.privacy': 'Privacy policy',
@@ -44,6 +84,8 @@
     'merci.privacy': 'All information remains strictly confidential.',
     'merci.cta.home': 'Back to home',
     'merci.cta.hypotheque': 'Need mortgage help?',
+    'merci.booking.title': 'Book a call with the team',
+    'merci.booking.desc': 'Choose a time that works for you. Mathieu or Catherine will confirm your appointment.',
     'merci.urgent': 'Need a quick response?',
     'merci.urgent.desc': 'Feel free to call us directly while we process your request.',
 
@@ -576,6 +618,13 @@
       btn.classList.toggle('lang-active', active);
       btn.setAttribute('aria-pressed', active ? 'true' : 'false');
     });
+
+    if (global.FunnelForms && typeof global.FunnelForms.refreshLang === 'function') {
+      global.FunnelForms.refreshLang();
+    }
+    if (global.MCBooking && typeof global.MCBooking.refresh === 'function') {
+      global.MCBooking.refresh();
+    }
   }
 
   function initEarly() {

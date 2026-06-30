@@ -17,8 +17,19 @@
 
   function thankYouUrl(form) {
     const nextField = form.querySelector('[name="_next"]');
-    if (nextField && nextField.value) return nextField.value;
-    return new URL(THANK_YOU_PATH, window.location.href).href;
+    let url;
+    if (nextField && nextField.value) {
+      url = nextField.value;
+    } else {
+      url = new URL(THANK_YOU_PATH, window.location.href).href;
+    }
+
+    const ghl = window.MC_SITE_CONFIG && window.MC_SITE_CONFIG.ghl;
+    if (ghl && (ghl.bookingCalendarId || ghl.bookingUrl)) {
+      const base = url.split('#')[0];
+      return base + '#rdv';
+    }
+    return url;
   }
 
   function showError(form, type) {
@@ -40,6 +51,17 @@
   async function handleSubmit(event) {
     const form = event.currentTarget;
     event.preventDefault();
+
+    const consent = form.querySelector('[name="consent_loi25"]');
+    if (consent && !consent.checked) {
+      consent.reportValidity();
+      return;
+    }
+
+    const consentDate = form.querySelector('[name="consent_date"]');
+    if (consentDate && consent && consent.checked) {
+      consentDate.value = new Date().toISOString();
+    }
 
     const submitBtn = form.querySelector('[type="submit"]');
     const statusEl = form.querySelector('.form-status');

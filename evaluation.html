@@ -6,6 +6,10 @@
     <title data-i18n="meta.title.evaluation">Évaluation Gratuite | MC Équipe</title>
     <script src="i18n.js"></script>
     <script src="cookies.js"></script>
+    <script src="site-config.js"></script>
+    <link rel="stylesheet" href="funnel.css">
+    <script src="funnel.js"></script>
+    <script src="booking.js"></script>
     <script src="forms.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&display=swap" rel="stylesheet">
@@ -135,12 +139,12 @@
             </div>
 
             <div class="bg-white/5 backdrop-blur-md border border-white/10 p-8 md:p-12 rounded-xl reveal-up">
-                <form action="https://formspree.io/f/xgoqbwek" method="POST" class="space-y-10">
+                <form action="https://formspree.io/f/xgoqbwek" method="POST" class="space-y-10" data-funnel data-form-theme="dark">
                     <input type="hidden" name="sujet" value="Évaluation gratuite">
                     <input type="hidden" name="_subject" value="MC Équipe - Évaluation gratuite">
                     <input type="hidden" name="_next" value="https://mcequipe.ca/merci.html">
 
-                    <div>
+                    <div data-funnel-step>
                         <h3 class="text-xs uppercase tracking-widest text-mc-sand mb-6 border-b border-white/20 pb-2" data-i18n="evaluation.form.prop">1. Votre Propriété</h3>
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                             <div class="md:col-span-2 relative group hover-trigger">
@@ -168,7 +172,7 @@
                         </div>
                     </div>
 
-                    <div>
+                    <div data-funnel-step>
                         <h3 class="text-xs uppercase tracking-widest text-mc-sand mb-6 border-b border-white/20 pb-2" data-i18n="evaluation.form.coords">2. Vos Coordonnées</h3>
                         <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
                             <div class="hover-trigger">
@@ -183,11 +187,13 @@
                         </div>
                     </div>
 
-                    <div class="text-center pt-8">
+                    <div data-funnel-step data-funnel-submit>
+                        <h3 class="text-xs uppercase tracking-widest text-mc-sand mb-6 border-b border-white/20 pb-2" data-i18n="funnel.step.confirm">Confirmation</h3>
+                    <div class="text-center pt-2">
                         <button type="submit" class="hover-trigger bg-mc-sand text-mc-charcoal px-12 py-4 text-xs uppercase tracking-[0.2em] font-medium rounded-sm hover:bg-white transition-all duration-500 shadow-[0_0_20px_rgba(187,171,154,0.3)] hover:shadow-[0_0_30px_rgba(255,255,255,0.5)]" data-i18n="evaluation.form.submit">
                             Recevoir mon évaluation
                         </button>
-                        <p class="text-[10px] uppercase tracking-widest text-white/40 mt-4" data-i18n="evaluation.form.privacy">Toutes les informations demeurent strictement confidentielles.</p>
+                    </div>
                     </div>
 
                 </form>
