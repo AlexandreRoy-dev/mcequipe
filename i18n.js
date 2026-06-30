@@ -21,13 +21,14 @@
     'meta.title.merci': 'Thank You | MC Équipe',
     'meta.desc.merci':
       'Your message has been sent. The MC Équipe team will respond shortly.',
-    'meta.title.hypotheque': 'Mortgage | MC Équipe × apoint',
+    'meta.title.hypotheque': 'Mortgage | MC Équipe',
     'meta.desc.hypotheque':
-      'apoint Hypothèque partner — free comparison across 20+ lenders. Purchase, renewal or refinancing with MC Équipe.',
+      'Mortgage services through our apoint partner. Free comparison across 20+ lenders. Purchase, renewal or refinancing.',
 
     'nav.services': 'Services',
     'nav.team': 'The Team',
     'nav.international': 'International',
+    'nav.hypotheque': 'Mortgage',
     'nav.listings': 'Listings',
     'nav.contact': 'Contact',
     'nav.lang': 'Language',
@@ -51,7 +52,7 @@
     'hypotheque.hero.tag': 'MC Équipe partner',
     'hypotheque.hero.title': 'A helping hand for <br><span class="italic text-apoint-lime">your mortgage.</span>',
     'hypotheque.hero.desc':
-      'MC Équipe partners with apoint Hypothèque for free, impartial, personalized guidance — access to 20+ financial institutions.',
+      'MC Équipe partners with apoint Hypothèque for free, impartial, personalized guidance, with access to 20+ financial institutions.',
     'hypotheque.cta': 'Book a free appointment',
     'hypotheque.cta.lead': 'Request a quote',
 
@@ -70,18 +71,18 @@
     'hypotheque.buy.title': 'Help with your current or future mortgage',
     'hypotheque.buy.p1':
       'Whether you are buying, refinancing or simply want to better understand your current mortgage, our apoint partner brokers are available to answer your questions and help you get the best terms for your plans.',
-    'hypotheque.buy.p2': 'Good guidance makes all the difference — simple, fast and no obligation.',
+    'hypotheque.buy.p2': 'Good guidance makes all the difference: simple, fast and no obligation.',
 
     'hypotheque.second.tag': 'Mortgage shopping',
     'hypotheque.second.title': 'What if your bank isn\'t your best option?',
     'hypotheque.second.p1':
-      'Your bank is only one window among many — it offers what it can, not what the whole market can offer. With apoint, access 20+ lenders, impartial guidance, and no credit impact without your authorization.',
+      'Your bank is only one window among many. It offers what it can, not what the whole market can offer. With apoint, access 20+ lenders, impartial guidance, and no credit impact without your authorization.',
     'hypotheque.second.p2': 'It costs nothing to compare, but it can pay off big.',
 
     'hypotheque.sell.tag': 'Future sellers',
     'hypotheque.sell.title': 'Refinance to sell better',
     'hypotheque.sell.p1':
-      'Planning to sell? You may be able to refinance to unlock equity and renovate before listing. Strategic upgrades — kitchen, bathroom or curb appeal — can increase your property\'s value and speed up the sale.',
+      'Planning to sell? You may be able to refinance to unlock equity and renovate before listing. Strategic upgrades (kitchen, bathroom or curb appeal) can increase your property\'s value and speed up the sale.',
     'hypotheque.sell.p2': 'Talk to apoint about refinancing to invest in improvements before selling with MC Équipe.',
 
     'hypotheque.explore.label': 'Real estate with MC Équipe',
@@ -89,7 +90,7 @@
     'hypotheque.team.title': 'Your MC Équipe team',
     'hypotheque.final.title': 'Ready to compare?',
     'hypotheque.final.desc':
-      'Book a slot with apoint — it\'s free, no obligation, and no credit impact without your consent.',
+      'Book a slot with apoint. It\'s free, no obligation, and no credit impact without your consent.',
 
     'meta.desc.international':
       'Invest in Mexico or Panama with confidence through MC Équipe. Turnkey service for Quebec buyers.',
@@ -195,7 +196,7 @@
     'index.mathieu.p2':
       'He architects the team’s listing strategies and created “The Buddy Broker” method, a system that guarantees follow-ups of absolute rigour.',
     'index.mathieu.p3':
-      'An accredited broker and former regular-force member, he supports CAF members during relocations — he has lived a posting himself.',
+      'An accredited broker and former regular-force member, he supports CAF members during relocations. He has lived a posting himself.',
     'index.catherine.role': 'Residential real estate broker',
     'index.catherine.p1':
       'Driven by a passion for architecture, spatial design and people, Catherine has a rare gift for revealing a property’s full potential. Her natural empathy and formidable negotiation skills build unshakeable trust.',
@@ -307,9 +308,9 @@
     'military.intro.tag': 'Recognized expertise',
     'military.intro.title': 'Understanding the urgency of a posting.',
     'military.intro.p1':
-      'A posting typically lasts two to three years, alone or with family. You are supported by the federal relocation system, including the home inspection week before you buy. Postings apply to regular-force members — every trade — not the reserve, whose status and work contracts differ. Mathieu Michaud, an accredited broker for CAF relocations, coordinates every step with the rigour your situation demands.',
+      'A posting typically lasts two to three years, alone or with family. You are supported by the federal relocation system, including the home inspection week before you buy. Postings apply to regular-force members (every trade), not the reserve, whose status and work contracts differ. Mathieu Michaud, an accredited broker for CAF relocations, coordinates every step with the rigour your situation demands.',
     'military.intro.p2':
-      'As soon as you know your posting, listing — and sometimes selling — your home should begin. Whether you are arriving at CFB Valcartier, leaving the Capitale-Nationale region or coordinating two transactions, our team builds a clear action plan with no surprises.',
+      'As soon as you know your posting, listing (and sometimes selling) your home should begin. Whether you are arriving at CFB Valcartier, leaving the Capitale-Nationale region or coordinating two transactions, our team builds a clear action plan with no surprises.',
     'military.intro.li1': 'Support aligned with the federal relocation program (BGRS)',
     'military.intro.li2': 'Deep knowledge of Valcartier, Québec City and surrounding areas',
     'military.intro.li3': 'Listing as soon as your posting is announced and buy / sell coordination',
@@ -320,7 +321,7 @@
       'Targeted search based on your criteria, schools, commute to the base and approved budget. Optimized showings for families travelling or working remotely from another province.',
     'military.s2.title': 'Departure & sale',
     'military.s2.desc':
-      'Market evaluation and listing as soon as your posting is confirmed — sometimes months before you leave — to maximize your home\'s value while respecting military timelines.',
+      'Market evaluation and listing as soon as your posting is confirmed, sometimes months before you leave, to maximize your home\'s value while respecting military timelines.',
     'military.s3.title': 'Simultaneous transactions',
     'military.s3.desc':
       'Managing conditions, financing deadlines and coordination between both markets to reduce stress and double-housing costs.',

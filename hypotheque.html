@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title data-i18n="meta.title.hypotheque">Hypothèque | MC Équipe × apoint</title>
-    <meta name="description" data-i18n="meta.desc.hypotheque" content="Partenaire apoint Hypothèque — comparaison gratuite auprès de 20+ institutions. Achat, renouvellement ou refinancement avec MC Équipe.">
+    <title data-i18n="meta.title.hypotheque">Hypothèque | MC Équipe</title>
+    <meta name="description" data-i18n="meta.desc.hypotheque" content="Service hypothécaire partenaire apoint. Comparaison gratuite auprès de 20+ institutions. Achat, renouvellement ou refinancement.">
     <script src="i18n.js"></script>
     <script src="cookies.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
@@ -40,10 +40,12 @@
 
     <nav id="navbar" class="fixed top-0 w-full z-50 px-8 py-6 flex justify-between items-center text-white transition-all duration-500">
         <a href="index.html" class="text-2xl font-heading tracking-widest uppercase hover-trigger">MC Équipe</a>
-        <div class="hidden md:flex gap-12 text-[11px] tracking-widest uppercase font-medium">
-            <a href="#apoint" class="hover-trigger hover:text-mc-sand transition-colors" data-i18n="hypotheque.nav.partner">Partenaire</a>
-            <a href="#situations" class="hover-trigger hover:text-mc-sand transition-colors" data-i18n="hypotheque.nav.situations">Votre situation</a>
-            <a href="#services" class="hover-trigger hover:text-mc-sand transition-colors" data-i18n="nav.services">Services</a>
+        <div class="hidden md:flex gap-12 text-[11px] tracking-widest uppercase font-medium nav-links">
+            <a href="index.html#services" class="hover-trigger hover:text-mc-sand transition-colors" data-i18n="nav.services">Services</a>
+            <a href="index.html#equipe" class="hover-trigger hover:text-mc-sand transition-colors" data-i18n="nav.team">L'Équipe</a>
+            <a href="international.html" class="hover-trigger hover:text-mc-ocean transition-colors" data-i18n="nav.international">International</a>
+            <a href="hypotheque.html" class="hover-trigger text-mc-sand transition-colors" data-i18n="nav.hypotheque">Hypothèque</a>
+            <a href="https://mathieumichaud.expquebec.com/fr/proprietes" data-i18n-href="listings" class="hover-trigger hover:text-mc-sand transition-colors" target="_blank" rel="noopener noreferrer" data-i18n="nav.listings">Propriétés</a>
         </div>
         <div class="flex items-center gap-4 md:gap-6 shrink-0">
             <div class="lang-toggle flex items-center gap-1.5 text-[10px] tracking-widest uppercase font-medium nav-lang" role="group" aria-label="Language">
@@ -62,7 +64,7 @@
             <img src="apoint-assets/Apoint-Logo-RGB-Cabinet-Vert-renverse.png" alt="apoint Hypothèque" class="h-14 md:h-16 w-auto mx-auto mb-10">
             <span class="text-apoint-lime uppercase tracking-[0.3em] text-xs font-bold block mb-6" data-i18n="hypotheque.hero.tag">Partenaire MC Équipe</span>
             <h1 class="font-heading text-5xl md:text-7xl text-white mb-8 leading-tight" data-i18n="hypotheque.hero.title" data-i18n-html>Un coup de main pour <br><span class="italic text-apoint-lime">votre hypothèque.</span></h1>
-            <p class="font-light text-lg text-white/80 leading-relaxed mb-10 max-w-2xl mx-auto" data-i18n="hypotheque.hero.desc">MC Équipe collabore avec apoint Hypothèque pour vous offrir un accompagnement gratuit, neutre et personnalisé — accès à plus de 20 institutions financières.</p>
+            <p class="font-light text-lg text-white/80 leading-relaxed mb-10 max-w-2xl mx-auto" data-i18n="hypotheque.hero.desc">MC Équipe collabore avec apoint Hypothèque pour vous offrir un accompagnement gratuit, neutre et personnalisé, avec accès à plus de 20 institutions financières.</p>
             <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
                 <a href="https://rdv.apoint.ca/mcequipeinternational" target="_blank" rel="noopener noreferrer" class="hover-trigger inline-block bg-apoint-lime text-apoint-green px-10 py-4 text-xs uppercase tracking-widest font-bold rounded-full hover:bg-white transition-all duration-300" data-i18n="hypotheque.cta">Prendre rendez-vous gratuit</a>
                 <a href="https://lead.apoint.ca/mcequipeinternational" target="_blank" rel="noopener noreferrer" class="hover-trigger inline-block border border-white/40 text-white px-10 py-4 text-xs uppercase tracking-widest rounded-full hover:bg-white hover:text-apoint-green transition-all duration-300" data-i18n="hypotheque.cta.lead">Demander une soumission</a>
@@ -109,7 +111,7 @@
                         <span class="text-mc-sand uppercase tracking-widest text-xs font-medium block mb-4 border-l-2 pl-3 border-mc-sand" data-i18n="hypotheque.buy.tag">Achat ou refinancement</span>
                         <h3 class="font-heading text-3xl md:text-4xl mb-6" data-i18n="hypotheque.buy.title">Un coup de main pour votre hypothèque actuelle ou future</h3>
                         <p class="font-light text-mc-charcoal/80 leading-relaxed mb-6" data-i18n="hypotheque.buy.p1">Que vous songiez à acheter, refinancer ou simplement mieux comprendre votre situation hypothécaire actuelle, nos courtiers partenaires apoint sont disponibles pour répondre à vos questions et vous aider à obtenir les meilleures conditions selon vos projets.</p>
-                        <p class="font-light text-sm text-mc-charcoal/60 mb-8" data-i18n="hypotheque.buy.p2">Un bon accompagnement fait toute la différence — c'est simple, rapide et sans engagement.</p>
+                        <p class="font-light text-sm text-mc-charcoal/60 mb-8" data-i18n="hypotheque.buy.p2">Un bon accompagnement fait toute la différence: c'est simple, rapide et sans engagement.</p>
                         <a href="https://rdv.apoint.ca/mcequipeinternational" target="_blank" rel="noopener noreferrer" class="hover-trigger text-[10px] uppercase tracking-[0.2em] font-bold border-b border-mc-charcoal pb-1 hover:text-mc-ocean hover:border-mc-ocean transition-colors" data-i18n="hypotheque.cta">Prendre rendez-vous gratuit →</a>
                     </div>
                 </div>
@@ -118,7 +120,7 @@
                     <div>
                         <span class="text-mc-ocean uppercase tracking-widest text-xs font-medium block mb-4 border-l-2 pl-3 border-mc-ocean" data-i18n="hypotheque.second.tag">Magasinage hypothécaire</span>
                         <h3 class="font-heading text-3xl md:text-4xl mb-6" data-i18n="hypotheque.second.title">Et si votre banque n'était pas votre meilleure option?</h3>
-                        <p class="font-light text-mc-charcoal/80 leading-relaxed mb-6" data-i18n="hypotheque.second.p1">Votre banque n'est qu'une vitrine parmi tant d'autres — elle vous offre ce qu'elle peut, pas ce que tout le marché peut offrir. Avec apoint, accédez à plus de 20 prêteurs, un accompagnement neutre, et aucune empreinte sur votre crédit sans votre autorisation.</p>
+                        <p class="font-light text-mc-charcoal/80 leading-relaxed mb-6" data-i18n="hypotheque.second.p1">Votre banque n'est qu'une vitrine parmi tant d'autres. Elle vous offre ce qu'elle peut, pas ce que tout le marché peut offrir. Avec apoint, accédez à plus de 20 prêteurs, un accompagnement neutre, et aucune empreinte sur votre crédit sans votre autorisation.</p>
                         <p class="font-light text-sm text-mc-charcoal/60 mb-8" data-i18n="hypotheque.second.p2">Ça ne coûte rien de comparer, mais ça peut rapporter gros.</p>
                         <a href="https://rdv.apoint.ca/mcequipeinternational" target="_blank" rel="noopener noreferrer" class="hover-trigger text-[10px] uppercase tracking-[0.2em] font-bold border-b border-mc-charcoal pb-1 hover:text-mc-ocean hover:border-mc-ocean transition-colors" data-i18n="hypotheque.cta">Prendre rendez-vous gratuit →</a>
                     </div>
@@ -134,7 +136,7 @@
                     <div class="order-1 lg:order-2">
                         <span class="text-mc-sand uppercase tracking-widest text-xs font-medium block mb-4 border-l-2 pl-3 border-mc-sand" data-i18n="hypotheque.sell.tag">Futurs vendeurs</span>
                         <h3 class="font-heading text-3xl md:text-4xl mb-6" data-i18n="hypotheque.sell.title">Refinancer pour mieux vendre</h3>
-                        <p class="font-light text-mc-charcoal/80 leading-relaxed mb-6" data-i18n="hypotheque.sell.p1">Vous envisagez de vendre? Il est possible de refinancer pour libérer de l'équité et rénover avant la mise en marché. Quelques rénovations stratégiques — cuisine, salle de bain ou façade — peuvent augmenter la valeur de votre propriété et accélérer la vente.</p>
+                        <p class="font-light text-mc-charcoal/80 leading-relaxed mb-6" data-i18n="hypotheque.sell.p1">Vous envisagez de vendre? Il est possible de refinancer pour libérer de l'équité et rénover avant la mise en marché. Quelques rénovations stratégiques (cuisine, salle de bain ou façade) peuvent augmenter la valeur de votre propriété et accélérer la vente.</p>
                         <p class="font-light text-sm text-mc-charcoal/60 mb-8" data-i18n="hypotheque.sell.p2">Discutez avec apoint pour voir comment refinancer et investir dans des améliorations avant de vendre avec MC Équipe.</p>
                         <a href="https://rdv.apoint.ca/mcequipeinternational" target="_blank" rel="noopener noreferrer" class="hover-trigger text-[10px] uppercase tracking-[0.2em] font-bold border-b border-mc-charcoal pb-1 hover:text-mc-ocean hover:border-mc-ocean transition-colors" data-i18n="hypotheque.cta">Prendre rendez-vous gratuit →</a>
                     </div>
@@ -190,7 +192,7 @@
                     <div class="text-center sm:text-left">
                         <h3 class="font-heading text-2xl mb-1">Mathieu <span class="italic text-mc-sand">Michaud</span></h3>
                         <p class="text-[10px] uppercase tracking-widest text-mc-sand mb-4" data-i18n="index.mathieu.role">Courtier Immobilier Résidentiel</p>
-                        <p class="font-light text-sm text-white/70 leading-relaxed mb-4" data-i18n="index.mathieu.p3">Courtier accrédité et ancien militaire du régulier, il accompagne les membres des FAC lors des mutations — il a lui-même vécu un posting.</p>
+                        <p class="font-light text-sm text-white/70 leading-relaxed mb-4" data-i18n="index.mathieu.p3">Courtier accrédité et ancien militaire du régulier, il accompagne les membres des FAC lors des mutations. Il a lui-même vécu un posting.</p>
                         <a href="mathieu.html" class="text-[10px] uppercase tracking-widest border-b border-white/40 pb-1 hover:text-mc-sand hover:border-mc-sand transition-colors" data-i18n="common.readBio">Lire sa biographie</a>
                     </div>
                 </div>
@@ -213,7 +215,7 @@
     <section class="py-24 bg-apoint-green text-white">
         <div class="max-w-3xl mx-auto px-6 text-center reveal-up">
             <h2 class="font-heading text-3xl md:text-4xl mb-4" data-i18n="hypotheque.final.title">Prêt à comparer?</h2>
-            <p class="font-light text-white/80 mb-10" data-i18n="hypotheque.final.desc">Réservez un créneau avec apoint — c'est gratuit, sans engagement et sans impact sur votre crédit sans votre consentement.</p>
+            <p class="font-light text-white/80 mb-10" data-i18n="hypotheque.final.desc">Réservez un créneau avec apoint. C'est gratuit, sans engagement et sans impact sur votre crédit sans votre consentement.</p>
             <a href="https://rdv.apoint.ca/mcequipeinternational" target="_blank" rel="noopener noreferrer" class="hover-trigger inline-block bg-apoint-lime text-apoint-green px-10 py-4 text-xs uppercase tracking-widest font-bold rounded-full hover:bg-white transition-all duration-300" data-i18n="hypotheque.cta">Prendre rendez-vous gratuit</a>
         </div>
     </section>
