@@ -207,7 +207,7 @@
     'index.hero.tag': 'Beyond expectations',
     'index.hero.title': 'Your partners <br><span class="italic font-light">in real estate.</span>',
     'index.hero.subtitle':
-      'Buying, selling & appraisals in Quebec.<br>Exclusive acquisitions in Mexico and Panama.',
+      'Buying, selling & appraisals in Quebec.<br>International real estate acquisitions.',
     'index.hero.cta': 'Discover our services',
 
     'index.services.label': 'Our expertise',
