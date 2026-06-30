@@ -21,8 +21,9 @@
     'meta.title.merci': 'Thank You | MC Équipe',
     'meta.desc.merci':
       'Your message has been sent. The MC Équipe team will respond shortly.',
-    'meta.desc.international':
-      'Invest in Mexico or Panama with confidence through MC Équipe. Turnkey service for Quebec buyers.',
+    'meta.title.hypotheque': 'Mortgage | MC Équipe × apoint',
+    'meta.desc.hypotheque':
+      'apoint Hypothèque partner — free comparison across 20+ lenders. Purchase, renewal or refinancing with MC Équipe.',
 
     'nav.services': 'Services',
     'nav.team': 'The Team',
@@ -41,8 +42,57 @@
       'Your request has been sent to our team. Mathieu or Catherine will respond as soon as possible.',
     'merci.privacy': 'All information remains strictly confidential.',
     'merci.cta.home': 'Back to home',
-    'merci.cta.services': 'Explore our services',
+    'merci.cta.hypotheque': 'Need mortgage help?',
     'merci.urgent': 'Need a quick response?',
+    'merci.urgent.desc': 'Feel free to call us directly while we process your request.',
+
+    'hypotheque.nav.partner': 'Partner',
+    'hypotheque.nav.situations': 'Your situation',
+    'hypotheque.hero.tag': 'MC Équipe partner',
+    'hypotheque.hero.title': 'A helping hand for <br><span class="italic text-apoint-lime">your mortgage.</span>',
+    'hypotheque.hero.desc':
+      'MC Équipe partners with apoint Hypothèque for free, impartial, personalized guidance — access to 20+ financial institutions.',
+    'hypotheque.cta': 'Book a free appointment',
+    'hypotheque.cta.lead': 'Request a quote',
+
+    'hypotheque.partner.label': 'Why apoint?',
+    'hypotheque.partner.title': '100% free service, no obligation',
+    'hypotheque.partner.intro':
+      'apoint Hypothèque is a mortgage brokerage with access to 20+ financial institutions. No impact on your credit file without your consent.',
+    'hypotheque.partner.li1': 'Fast, personalized comparison',
+    'hypotheque.partner.li2': 'Human, impartial guidance',
+    'hypotheque.partner.li3': 'Purchase, renewal or refinancing',
+
+    'hypotheque.audience.label': 'Based on your situation',
+    'hypotheque.audience.title': 'How apoint can help',
+
+    'hypotheque.buy.tag': 'Purchase or refinancing',
+    'hypotheque.buy.title': 'Help with your current or future mortgage',
+    'hypotheque.buy.p1':
+      'Whether you are buying, refinancing or simply want to better understand your current mortgage, our apoint partner brokers are available to answer your questions and help you get the best terms for your plans.',
+    'hypotheque.buy.p2': 'Good guidance makes all the difference — simple, fast and no obligation.',
+
+    'hypotheque.second.tag': 'Mortgage shopping',
+    'hypotheque.second.title': 'What if your bank isn\'t your best option?',
+    'hypotheque.second.p1':
+      'Your bank is only one window among many — it offers what it can, not what the whole market can offer. With apoint, access 20+ lenders, impartial guidance, and no credit impact without your authorization.',
+    'hypotheque.second.p2': 'It costs nothing to compare, but it can pay off big.',
+
+    'hypotheque.sell.tag': 'Future sellers',
+    'hypotheque.sell.title': 'Refinance to sell better',
+    'hypotheque.sell.p1':
+      'Planning to sell? You may be able to refinance to unlock equity and renovate before listing. Strategic upgrades — kitchen, bathroom or curb appeal — can increase your property\'s value and speed up the sale.',
+    'hypotheque.sell.p2': 'Talk to apoint about refinancing to invest in improvements before selling with MC Équipe.',
+
+    'hypotheque.explore.label': 'Real estate with MC Équipe',
+    'hypotheque.explore.title': 'Explore our services',
+    'hypotheque.team.title': 'Your MC Équipe team',
+    'hypotheque.final.title': 'Ready to compare?',
+    'hypotheque.final.desc':
+      'Book a slot with apoint — it\'s free, no obligation, and no credit impact without your consent.',
+
+    'meta.desc.international':
+      'Invest in Mexico or Panama with confidence through MC Équipe. Turnkey service for Quebec buyers.',
 
     'cookies.message':
       'This site uses essential cookies and third-party services required for it to function.',
