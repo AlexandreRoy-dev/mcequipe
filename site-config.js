@@ -6,6 +6,9 @@
  *   https://api.leadconnectorhq.com/widget/booking/YOUR_CALENDAR_ID
  *
  * Or paste the full scheduling link from Share → Link.
+ *
+ * Contact prefill: funnel forms save name/email/phone in sessionStorage;
+ * merci.html passes them to the calendar iframe as first_name, last_name, email, phone.
  */
 (function (global) {
   global.MC_SITE_CONFIG = {

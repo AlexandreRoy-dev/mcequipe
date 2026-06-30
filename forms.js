@@ -1,7 +1,7 @@
 /**
  * Formspree AJAX submit + redirect to merci.html
  */
-(function () {
+(function (global) {
   const THANK_YOU_PATH = 'merci.html';
 
   const MESSAGES = {
@@ -80,6 +80,9 @@
       });
 
       if (response.ok) {
+        if (global.MCGhlContact && typeof global.MCGhlContact.saveFromForm === 'function') {
+          global.MCGhlContact.saveFromForm(form);
+        }
         window.location.href = thankYouUrl(form);
         return;
       }
@@ -105,4 +108,4 @@
   } else {
     initForms();
   }
-})();
+})(window);
