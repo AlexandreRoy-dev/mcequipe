@@ -9,6 +9,8 @@
 
   const EN = {
     'meta.title.index': 'MC Équipe | Real estate reimagined',
+    'meta.desc.index':
+      'MC Équipe Real Estate — residential brokerage in Quebec, international acquisitions and eXp Realty recruitment. Mathieu Michaud and Catherine Aubé.',
     'meta.title.residentiel': 'Buy & Sell | MC Équipe',
     'meta.title.military': 'Military Relocation | MC Équipe',
     'meta.desc.military':
@@ -32,6 +34,9 @@
     'nav.listings': 'Listings',
     'nav.contact': 'Contact',
     'nav.lang': 'Language',
+    'nav.blogue': 'Blog',
+    'nav.rejoindre': 'Join us',
+    'nav.ressources': 'Resources',
 
     'funnel.step.project': '1. Your project',
     'funnel.step.profile': '1. Your situation',
@@ -493,6 +498,273 @@
     'international.contact.form.emailLabel': 'Email address',
     'international.contact.form.phoneLabel': 'Phone number',
     'international.contact.form.messageLabel': 'Your message',
+
+    'ressources.toBlogue': 'See the full blog (eXp recruitment + international) →',
+    'meta.title.ressources': 'Resources | Mexico & Panama | MC Équipe',
+    'meta.desc.ressources':
+      'Guides for Quebec buyers considering real estate in Mexico or Panama: market trends, buyer profiles and a secure acquisition method.',
+    'ressources.hero.tag': 'Shareable guides',
+    'ressources.hero.title':
+      'Mexico & Panama: <br><span class="italic text-mc-ocean">resources for Quebec buyers</span>',
+    'ressources.hero.desc':
+      'Market analysis, buyer profiles and a secure acquisition method. Share these articles with friends or your network considering retirement, investment or a sunny second home.',
+    'ressources.card1.tag': 'Market analysis',
+    'ressources.card1.title': 'Why Quebec buyers are looking at Mexico and Panama in 2026',
+    'ressources.card1.excerpt':
+      'Snowbirds, tourism stats and economic signals: what makes the market attractive for Canadian buyers outside the U.S.',
+    'ressources.card2.tag': 'Buyer profiles',
+    'ressources.card2.title': '5 Quebec buyer profiles in Mexico and Panama',
+    'ressources.card2.excerpt':
+      'Retirees, snowbirds, investors, families and pre-expats: motivations, conversation angles and real needs.',
+    'ressources.card3.tag': 'Method',
+    'ressources.card3.title': 'How to buy in the sun without skipping steps',
+    'ressources.card3.excerpt':
+      'Budget, lifestyle, taxes, financing and legal risk: a secure discovery method before choosing a property.',
+    'ressources.read': 'Read article',
+    'ressources.cta.title': 'Ready to compare Panama and Mexico for your project?',
+    'ressources.cta.desc':
+      'Book a strategy call with Mathieu and Catherine. French-language service, secure process and turnkey support.',
+    'ressources.cta.btn': 'Get in touch',
+
+    'international.ressources.label': 'Shareable guides',
+    'international.ressources.title': 'Resources for <br><span class="italic text-mc-sand">informed buyers.</span>',
+    'international.ressources.desc':
+      'Market analysis, buyer profiles and our secure acquisition method. Articles you can share with your network.',
+    'international.ressources.cta': 'View all resources',
+
+    'article.back': '← All resources',
+    'article.share': 'Copy link',
+    'article.cta.title': 'Discuss your project with MC Équipe',
+    'article.cta.desc':
+      'Turnkey acquisitions in Mexico and Panama. French-language service, eXp Global network and structured legal support.',
+    'article.cta.contact': 'Get in touch',
+
+    'meta.title.article.marche': 'Mexico & Panama Market 2026 | MC Équipe',
+    'meta.desc.article.marche':
+      'Canadian snowbirds are diversifying beyond the U.S. Mexico and Panama data, 2026 trends and what it means for Quebec buyers.',
+    'article.marche.tag': 'Market analysis · June 2026',
+    'article.marche.title': 'Why Quebec buyers are looking at Mexico and Panama in 2026',
+    'article.marche.lead':
+      'The target market is hot: retirement, investment, second homes and sun migration are drawing more Canadians outside the United States, especially to Mexico and Panama.',
+    'article.marche.next': 'Next: buyer profiles',
+    'article.marche.body':
+      '<h2>A shift among Canadian snowbirds</h2><p>According to Snowbird Advisor\'s 2025 survey, the share of respondents considering non-U.S. destinations rose from 12% the previous winter to 23%, a 92% increase. Mexico, Panama, Costa Rica, Spain and Portugal top the list.</p><p class="source-note">Source: Snowbird Advisor, 2025 survey.</p><p>For Quebec and francophone Canadian buyers, this opens a window: less competition on Florida markets, more opportunity where French-language service and legal validation matter most.</p><h2>Two strong signals to watch</h2><div class="stat-grid"><div class="stat-card"><strong>+6.1%</strong><span>International arrivals in Mexico. Tourism GDP +1.8%, visitor spending +3.5% (WTTC, May 2026).</span></div><div class="stat-card"><strong>3M+</strong><span>International visitors to Panama in 2025 (+8.4%). Tourism revenue ~US$6.6B (+9.7%).</span></div></div><p class="source-note">Sources: World Travel &amp; Tourism Council (Mexico, May 28, 2026); ATP data via Newsroom Panama (March 2026).</p><h2>What this means for a Quebec buyer</h2><ul><li><strong>Liquidity and services</strong>: more flights, infrastructure and professional property management in mature resort areas.</li><li><strong>Diversification</strong>: an asset in local currency or USD (Panama) can complement a Canada-heavy portfolio.</li><li><strong>Buying discipline</strong>: an active market also attracts aggressive sellers. Method matters as much as location.</li></ul><blockquote>Don\'t start with a property. Start with a method: real budget, lifestyle, comparable neighborhoods, taxes to validate, financing and exit plan.</blockquote><h2>Next step</h2><p>Identify your buyer profile (retiree, snowbird, investor, family or pre-expat), then compare Panama and Mexico against your actual criteria, not a brochure.</p>',
+
+    'meta.title.article.profils': 'Buyer Profiles Mexico & Panama | MC Équipe',
+    'meta.desc.article.profils':
+      'Retirees, snowbirds, investors, families and pre-expats: 5 Quebec buyer profiles in Mexico and Panama and how to support them.',
+    'article.profils.tag': 'Buyer profiles · June 2026',
+    'article.profils.title': '5 Quebec buyer profiles in Mexico and Panama',
+    'article.profils.lead':
+      'Not every sun project shares the same priorities. Here are the profiles we see most often in Quebec and Canada, with conversation angles that spark qualified dialogue.',
+    'article.profils.next': 'Next: acquisition method',
+    'article.profils.body':
+      '<div class="profile-card"><span class="tag">Profile A</span><h3>Retirees (55-75)</h3><p><strong>Motivation:</strong> cost of living, climate, perceived safety, healthcare, francophone or expat community.</p><p><strong>Angle:</strong> "Compare Panama and Mexico for your actual retirement, not the brochures."</p><p><strong>Need:</strong> human support, legal and tax validation, administrative simplicity.</p></div><div class="profile-card"><span class="tag">Profile B</span><h3>Snowbirds</h3><p><strong>Motivation:</strong> 2 to 6 months a year in the sun without leaving Canada permanently.</p><p><strong>Angle:</strong> "Buy vs rent: how many weeks per year before ownership makes sense?"</p><p><strong>Need:</strong> easy-to-maintain condo, security, airport access, transparent monthly costs.</p></div><div class="profile-card"><span class="tag">Profile C</span><h3>Investors</h3><p><strong>Motivation:</strong> short or mid-term rental, diversification outside Canada, USD or local-currency asset.</p><p><strong>Angle:</strong> "Gross yield vs net yield: fees, vacancy, management, taxes."</p><p><strong>Need:</strong> realistic numbers, reliable management, resale liquidity.</p></div><div class="profile-card"><span class="tag">Profile D</span><h3>Family second home</h3><p><strong>Motivation:</strong> lifestyle, recurring vacations, legacy for children or grandchildren.</p><p><strong>Angle:</strong> "A sunny base you can use now and resell later."</p><p><strong>Need:</strong> flight accessibility, neighborhood safety, remote maintenance.</p></div><div class="profile-card"><span class="tag">Profile E</span><h3>Pre-expat / international mobility</h3><p><strong>Motivation:</strong> test life outside Canada without selling everything in Quebec right away.</p><p><strong>Angle:</strong> "12-month plan: visit, compare, secure, decide."</p><p><strong>Need:</strong> immigration, healthcare, taxes, residency status (to validate with local professionals).</p></div><h2>How to use this guide</h2><p>Share the article that matches your contact\'s profile. The goal isn\'t to push a property, but to open a structured conversation about what truly matters to them.</p><p>MC Équipe supports Quebec buyers with French-language service, the eXp Global network and legal partners on the ground in Mexico and Panama.</p>',
+
+    'meta.title.article.methode': 'International Buying Method | MC Équipe',
+    'meta.desc.article.methode':
+      'Budget, lifestyle, taxes, financing and legal risk: the MC Équipe method to buy in Mexico or Panama without skipping steps.',
+    'article.methode.tag': 'Method · June 2026',
+    'article.methode.title': 'How to buy in the sun without skipping steps',
+    'article.methode.lead':
+      'The best ROI strategy doesn\'t start with a property. It starts with a secure discovery method: clarify budget, lifestyle, taxes and risks before signing anything.',
+    'article.methode.next': 'Back to market analysis',
+    'article.methode.body':
+      '<h2>The most common mistake</h2><p>Falling for a unit on a visit, then reverse-engineering budget, taxes and financing. Result: surprises on closing costs, HOA fees, rental management or tax status in Canada.</p><p>Our approach reverses the order: a structured conversation first, then a property shortlist aligned with validated criteria.</p><h2>The 8 pillars of the MC Équipe method</h2><ol><li><strong>Real total budget</strong>: purchase price, notary fees, taxes, furnishing, renovations, contingency reserve.</li><li><strong>Target lifestyle</strong>: beach, city, altitude, expat community, medical needs, day-to-day language.</li><li><strong>Comparable neighborhoods</strong>: Puerto Vallarta vs Mérida, Panama City vs Boquete, etc., on the same criteria.</li><li><strong>Taxes to validate</strong>: tax residency, rental income, Canadian reporting (with a cross-border tax specialist).</li><li><strong>Financing</strong>: equity, local loan if available, currency conversion timeline.</li><li><strong>Legal risk</strong>: title, restricted zone (fideicomiso in Mexico), condo bylaws, resale clauses.</li><li><strong>Rental management</strong>: operator, vacancy, commission, remote upkeep when you\'re not on site.</li><li><strong>Exit / resale</strong>: market liquidity, average time to sell, future buyer profile.</li></ol><h2>Mexico or Panama: the right question</h2><p>The question isn\'t "which country is better?" but "which country fits your profile?" A retiree seeking USD stability and pension incentives doesn\'t compare the same criteria as a short-term rental investor on the Riviera Maya.</p><blockquote>Compare Panama and Mexico for your actual retirement, presence calendar or investment model, not a sunset photo.</blockquote><h2>12-month plan (pre-expat or thoughtful project)</h2><ul><li><strong>Months 1-2:</strong> strategy call, profile and budget definition.</li><li><strong>Months 3-6:</strong> targeted visits to 2-3 areas, notary / property manager meetings.</li><li><strong>Months 6-9:</strong> comparative analysis, tax validation, property shortlist.</li><li><strong>Months 9-12:</strong> offer, due diligence, closing (often remotely with notarized power of attorney).</li></ul><h2>What MC Équipe brings</h2><p>100% French-language service, eXp Global network, local legal partners and end-to-end coordination. Catherine Aubé is your dedicated specialist for Mexico and Panama; Mathieu Michaud structures strategy and transaction rigour.</p><p>This article is informational and does not replace personalized legal, tax or financial advice.</p>',
+
+    'meta.title.rejoindreExp': 'Become an eXp Realty broker in Quebec | MC Équipe',
+    'meta.desc.rejoindreExp':
+      'Join eXp Realty in Quebec: change brokerages, understand the model, Revenue Share and benefits. eXp recruiter — MC Équipe Real Estate.',
+    'meta.title.rejoindreEquipe': 'Join MC Équipe Real Estate | Recruitment',
+    'meta.desc.rejoindreEquipe':
+      'Join a real estate team in Quebec: vision, coaching and benefits of MC Équipe Real Estate at eXp Realty.',
+    'meta.title.blogue': 'Blog | eXp recruitment & real estate | MC Équipe',
+    'meta.desc.blogue':
+      'Articles on joining eXp Realty, the eXp model, Revenue Share, and guides for international buyers. The MC Équipe blog.',
+
+    'index.recruit.label': 'Brokers',
+    'index.recruit.title': 'Join eXp <br><span class="italic text-mc-ocean">with MC Équipe.</span>',
+    'index.recruit.desc':
+      'Considering a brokerage change or joining a real estate team? Discover the eXp model and MC Équipe support.',
+    'index.recruit.cta1': 'Become an eXp broker',
+    'index.recruit.cta2': 'Read the blog',
+
+    'exp.hero.tag': 'eXp Realty recruitment',
+    'exp.hero.title': 'Become an eXp Realty <br><span class="italic text-mc-sand">broker in Quebec.</span>',
+    'exp.hero.desc':
+      'Exploring eXp, changing brokerages or talking to an eXp recruiter? Here are the essentials — and MC Équipe support.',
+    'exp.hero.cta': 'Talk with us',
+    'exp.hero.cta2': 'Read the blog',
+    'exp.why.label': 'Why eXp',
+    'exp.why.title': 'Why choose eXp Realty',
+    'exp.why.p1':
+      'eXp Realty is a cloud-first brokerage built on technology, a global network and a compensation model designed for autonomous agents. In Quebec, it attracts professionals who want to modernize their practice without losing the human touch.',
+    'exp.why.p2':
+      'At MC Équipe, we live this model daily: residential, international and team coaching. As eXp recruiters in Quebec, our role is to help you decide — clearly, without pressure.',
+    'exp.model.label': 'The model',
+    'exp.model.title': 'What changes when you join eXp',
+    'exp.model.s1.title': 'Autonomy & tools',
+    'exp.model.s1.desc':
+      'Collaborative platform, ongoing training and marketing tools designed to boost productivity.',
+    'exp.model.s2.title': 'Global network',
+    'exp.model.s2.desc':
+      'Access to an international agent network — useful for referrals, relocations and projects outside Quebec.',
+    'exp.model.s3.title': 'Revenue Share',
+    'exp.model.s3.desc':
+      'A revenue-sharing program tied to network growth. We explain how it works without jargon.',
+    'exp.model.link': 'Go deeper on the eXp model →',
+    'exp.faq.label': 'FAQ',
+    'exp.faq.title': 'Before you change brokerages',
+    'exp.faq.q1': 'How do I join eXp Realty in Quebec?',
+    'exp.faq.a1':
+      'A valid OACIQ licence is required. Then a call with an eXp recruiter (us) clarifies the model, fees, Revenue Share and onboarding. We guide you step by step.',
+    'exp.faq.q2': 'What are the fees at eXp?',
+    'exp.faq.a2':
+      'The fee structure differs from traditional brokerages (splits, platform fees, caps). We walk through it transparently on the call. See also our dedicated article on eXp fees.',
+    'exp.faq.q3': 'Can I join a team at the same time?',
+    'exp.faq.a3':
+      'Yes. Many agents join eXp and MC Équipe to get the national model plus local coaching. Discover our team benefits.',
+    'exp.team.label': 'Also',
+    'exp.team.title': 'Join MC Équipe Real Estate',
+    'exp.team.desc':
+      'Beyond the eXp brand, our team offers vision, mentorship and a growth environment for agents who want to go further together.',
+    'exp.team.cta': 'Discover the team',
+    'exp.contact.label': 'Next step',
+    'exp.contact.title': 'Talk to an <br><span class="italic text-mc-sand">eXp recruiter.</span>',
+    'exp.contact.desc':
+      'Fill out the form or book a call. We will answer your questions about eXp, changing brokerages and onboarding.',
+    'exp.form.intent': 'Your situation',
+    'exp.form.opt1': 'Join eXp',
+    'exp.form.opt2': 'Change brokerages',
+    'exp.form.opt3': 'Join the team',
+    'exp.form.opt4': 'Information',
+    'exp.form.message': 'I am interested in eXp because...',
+
+    'equipe.hero.tag': 'Team recruitment',
+    'equipe.hero.title': 'Join <br><span class="italic text-mc-sand">MC Équipe Real Estate.</span>',
+    'equipe.hero.desc':
+      'Vision, coaching and concrete benefits for agents who want to grow inside a structured team at eXp Realty.',
+    'equipe.hero.cta': 'Get in touch',
+    'equipe.hero.cta2': 'First: eXp Realty',
+    'equipe.vision.label': 'Our vision',
+    'equipe.vision.title': 'A team, not just a brand',
+    'equipe.vision.p1':
+      'MC Équipe Real Estate brings Mathieu Michaud and Catherine Aubé together around a rigorous practice: residential in Quebec, international acquisitions and uncompromising client service.',
+    'equipe.vision.p2':
+      'We welcome agents who want structure, mentorship and an environment where quality comes before volume.',
+    'equipe.benefits.label': 'Benefits',
+    'equipe.benefits.title': 'What you gain by joining us',
+    'equipe.benefits.s1.title': 'Real coaching',
+    'equipe.benefits.s1.desc':
+      'Onboarding, file follow-up and regular check-ins to accelerate your growth — without leaving you alone behind a login.',
+    'equipe.benefits.s2.title': 'Clear positioning',
+    'equipe.benefits.s2.desc':
+      'A coherent team brand (MC Équipe), distinctive niches (international, military, mortgage partner) and a site that works for you.',
+    'equipe.benefits.s3.title': 'eXp model + team',
+    'equipe.benefits.s3.desc':
+      'The best of both worlds: eXp flexibility and local team culture. Ideal if you want to join a real estate team without losing autonomy.',
+    'equipe.faces.title': 'Who supports you',
+    'equipe.mathieu.blurb':
+      'Strategy, transaction rigour and mentorship. He structures the approach and helps you perform in the eXp model.',
+    'equipe.catherine.blurb':
+      'Client relationships, international and human support. She is the relational heart of the team.',
+    'equipe.articles.title': 'Read about our coaching',
+    'equipe.articles.desc':
+      'How we support agents day to day — and what it really means to join a real estate team.',
+    'equipe.articles.cta': 'Read the article',
+    'equipe.contact.label': 'Next step',
+    'equipe.contact.title': 'Let\'s talk about <br><span class="italic text-mc-sand">your place.</span>',
+    'equipe.contact.desc':
+      'Tell us where you are. We will follow up to explore a possible affiliation with MC Équipe.',
+    'equipe.form.intent': 'Your interest',
+    'equipe.form.opt1': 'Join the team',
+    'equipe.form.opt2': 'eXp + team',
+    'equipe.form.opt3': 'Mentorship',
+    'equipe.form.opt4': 'Information',
+    'equipe.form.message': 'I would like to join MC Équipe because...',
+
+    'blogue.hero.tag': 'News & guides',
+    'blogue.hero.title': 'The MC Équipe <br><span class="italic text-mc-ocean">blog</span>',
+    'blogue.hero.desc':
+      'Content for agents exploring eXp Realty, and for Quebec buyers looking at Mexico and Panama.',
+    'blogue.cat.recrutement': 'Recruitment',
+    'blogue.cat.recrutementTitle': 'eXp Realty & career',
+    'blogue.cat.international': 'International',
+    'blogue.cat.internationalTitle': 'Mexico & Panama',
+    'blogue.r1.tag': 'eXp Realty',
+    'blogue.r1.title': 'Why choose eXp Realty',
+    'blogue.r1.excerpt': 'Why Quebec agents join eXp — beyond the marketing.',
+    'blogue.r2.tag': 'Model',
+    'blogue.r2.title': 'Benefits of the eXp model',
+    'blogue.r2.excerpt': 'Technology, training, network and flexibility: what the model changes in practice.',
+    'blogue.r3.tag': 'Comparison',
+    'blogue.r3.title': 'eXp vs traditional brokerages',
+    'blogue.r3.excerpt': 'Changing brokerages: what really differs between eXp and classic models.',
+    'blogue.r4.tag': 'Revenue Share',
+    'blogue.r4.title': 'How Revenue Share works',
+    'blogue.r4.excerpt': 'How revenue sharing works at eXp, in plain language.',
+    'blogue.r5.tag': 'Fees',
+    'blogue.r5.title': 'Fees at eXp',
+    'blogue.r5.excerpt': 'Cost structure, splits and what to clarify before signing.',
+    'blogue.r6.tag': 'MC Équipe',
+    'blogue.r6.title': 'How we support agents',
+    'blogue.r6.excerpt': 'What joining MC Équipe means: mentorship, culture and growth.',
+    'blogue.cta.title': 'Agent interested in eXp or our team?',
+    'blogue.cta.desc': 'Talk to an eXp recruiter in Quebec. No pressure — just clear answers.',
+    'blogue.cta.btn': 'Get in touch',
+
+    'article.back.blogue': '← All blog posts',
+    'article.cta.recrutement.title': 'Talk with an eXp recruiter',
+    'article.cta.recrutement.desc':
+      'MC Équipe supports agents exploring eXp Realty or a team affiliation in Quebec.',
+
+    'meta.title.article.pourquoiExp': 'Why choose eXp Realty | MC Équipe',
+    'meta.desc.article.pourquoiExp':
+      'Why Quebec real estate agents choose eXp Realty: model, network, autonomy and support.',
+    'article.pourquoiExp.tag': 'eXp Realty · July 2026',
+    'article.pourquoiExp.title': 'Why choose eXp Realty',
+    'article.pourquoiExp.lead':
+      'Beyond the slogans: what Quebec agents really evaluate before joining eXp Realty.',
+
+    'meta.title.article.avantagesExp': 'Benefits of the eXp model | MC Équipe',
+    'meta.desc.article.avantagesExp':
+      'Benefits of the eXp Realty model: tools, training, global network and flexibility for agents.',
+    'article.avantagesExp.tag': 'Model · July 2026',
+    'article.avantagesExp.title': 'Benefits of the eXp model',
+    'article.avantagesExp.lead':
+      'Four pillars of the eXp model — and how to evaluate them for your practice in Quebec.',
+
+    'meta.title.article.expVs': 'eXp vs traditional brokerages | MC Équipe',
+    'meta.desc.article.expVs':
+      'eXp Realty vs traditional brokerages: model, fees, culture and autonomy differences.',
+    'article.expVs.tag': 'Comparison · July 2026',
+    'article.expVs.title': 'eXp vs traditional brokerages',
+    'article.expVs.lead':
+      'Changing brokerages is not a paperwork detail. Here are useful comparison axes.',
+
+    'meta.title.article.revenueShare': 'How Revenue Share works | MC Équipe',
+    'meta.desc.article.revenueShare':
+      'How Revenue Share works at eXp Realty: principles, network logic and questions to ask.',
+    'article.revenueShare.tag': 'Revenue Share · July 2026',
+    'article.revenueShare.title': 'How Revenue Share works',
+    'article.revenueShare.lead':
+      'Revenue Share is often the most misunderstood — and most interesting — part of the eXp model.',
+
+    'meta.title.article.fraisExp': 'Fees at eXp | MC Équipe',
+    'meta.desc.article.fraisExp':
+      'Understanding fees at eXp Realty: splits, platform fees and points to clarify before joining.',
+    'article.fraisExp.tag': 'Fees · July 2026',
+    'article.fraisExp.title': 'Fees at eXp',
+    'article.fraisExp.lead':
+      'Before joining eXp Realty, clarify the cost structure. Here is the discussion framework we use with agents.',
+
+    'meta.title.article.accompagnement': 'MC Équipe agent coaching | MC Équipe',
+    'meta.desc.article.accompagnement':
+      'MC Équipe coaching for agents: mentorship, team vision and benefits of joining a real estate team.',
+    'article.accompagnement.tag': 'MC Équipe · July 2026',
+    'article.accompagnement.title': 'How we support agents',
+    'article.accompagnement.lead':
+      'Joining a real estate team means choosing an environment. Here is what MC Équipe puts in place for its agents.',
 
     'mathieu.role': 'Real estate broker',
     'mathieu.p1':

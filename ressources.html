@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="fr-CA" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="meta.title.ressources">Ressources | Mexique & Panama | MC Équipe</title>
+    <meta name="description" data-i18n="meta.desc.ressources" content="Guides et analyses pour les Québécois qui envisagent un achat immobilier au Mexique ou au Panama : marché, profils d'acheteurs et méthode d'acquisition sécurisée.">
+    <meta property="og:title" content="Ressources Mexique & Panama | MC Équipe">
+    <meta property="og:description" content="Guides partageables pour les acheteurs québécois intéressés par le Mexique et le Panama.">
+    <meta property="og:image" content="https://mcequipe.ca/images/international-plage.webp">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://mcequipe.ca/ressources.html">
+    <meta name="twitter:card" content="summary_large_image">
+    <script src="i18n.js"></script>
+    <script src="cookies.js"></script>
+    <link rel="stylesheet" href="articles.css">
+    <script src="articles.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        mc: { charcoal: '#3d312c', sand: '#bbab9a', white: '#ffffff', linen: '#efe9e2', ocean: '#4f909b' }
+                    },
+                    fontFamily: { heading: ['Optima', 'sans-serif'], body: ['"Montserrat"', 'sans-serif'] }
+                }
+            }
+        }
+    </script>
+    <style>
+        .font-heading { font-family: 'Optima', sans-serif; }
+        @media (min-width: 1024px) { body, a, button { cursor: none; } }
+        .custom-cursor { position: fixed; top: 0; left: 0; width: 12px; height: 12px; background-color: #4f909b; border-radius: 50%; pointer-events: none; z-index: 9999; transform: translate(-50%, -50%); transition: width 0.3s ease, height 0.3s ease; mix-blend-mode: difference; }
+        .custom-cursor.active { width: 60px; height: 60px; background-color: #bbab9a; mix-blend-mode: normal; opacity: 0.8; }
+        .reveal-up { opacity: 0; transform: translateY(30px); transition: opacity 1s cubic-bezier(0.16, 1, 0.3, 1), transform 1s cubic-bezier(0.16, 1, 0.3, 1); }
+        .reveal-up.is-visible { opacity: 1; transform: translateY(0); }
+        .nav-scrolled { background-color: rgba(255,255,255,0.95); backdrop-filter: blur(10px); border-bottom: 1px solid #efe9e2; color: #3d312c !important; }
+        .nav-scrolled .nav-btn { border-color: #3d312c; color: #3d312c; }
+        .nav-scrolled .nav-btn:hover { background-color: #3d312c; color: #fff; }
+    </style>
+</head>
+<body class="bg-mc-white text-mc-charcoal font-body antialiased selection:bg-mc-ocean selection:text-white overflow-x-hidden">
+
+    <div class="custom-cursor hidden lg:block" id="cursor"></div>
+
+    <nav id="navbar" class="fixed top-0 w-full z-50 px-8 py-6 flex justify-between items-center text-mc-charcoal bg-mc-white/95 backdrop-blur border-b border-mc-linen transition-all duration-500">
+        <a href="index.html" class="text-2xl font-heading tracking-widest uppercase hover-trigger">MC Équipe</a>
+        <div class="hidden lg:flex gap-8 text-[11px] tracking-widest uppercase font-medium nav-links">
+            <a href="index.html#services" class="hover-trigger hover:text-mc-ocean transition-colors" data-i18n="nav.services">Services</a>
+            <a href="index.html#equipe" class="hover-trigger hover:text-mc-ocean transition-colors" data-i18n="nav.team">L'Équipe</a>
+            <a href="international.html" class="hover-trigger hover:text-mc-ocean transition-colors" data-i18n="nav.international">International</a>
+            <a href="blogue.html" class="hover-trigger text-mc-ocean transition-colors" data-i18n="nav.blogue">Blogue</a>
+            <a href="rejoindre-exp.html" class="hover-trigger hover:text-mc-ocean transition-colors" data-i18n="nav.rejoindre">Rejoindre</a>
+            <a href="https://mathieumichaud.expquebec.com/fr/proprietes" data-i18n-href="listings" class="hover-trigger hover:text-mc-ocean transition-colors" target="_blank" rel="noopener noreferrer" data-i18n="nav.listings">Propriétés</a>
+        </div>
+        <div class="flex items-center gap-4 md:gap-6 shrink-0">
+            <div class="lang-toggle flex items-center gap-1.5 text-[10px] tracking-widest uppercase font-medium" role="group" aria-label="Language">
+                <button type="button" data-lang-set="fr" class="lang-btn hover-trigger transition-opacity">FR</button>
+                <span class="opacity-30 select-none" aria-hidden="true">|</span>
+                <button type="button" data-lang-set="en" class="lang-btn hover-trigger transition-opacity">EN</button>
+            </div>
+            <a href="international.html#contact" class="nav-btn hover-trigger border border-mc-charcoal px-6 py-3 text-[10px] uppercase tracking-widest hover:bg-mc-charcoal hover:text-white transition-all duration-500 rounded-full" data-i18n="nav.contact">Contact</a>
+        </div>
+    </nav>
+
+    <header class="pt-40 pb-20 bg-mc-linen">
+        <div class="max-w-4xl mx-auto px-6 lg:px-8 text-center reveal-up">
+            <span class="text-mc-ocean uppercase tracking-[0.3em] text-[10px] font-bold block mb-6" data-i18n="ressources.hero.tag">Guides partageables</span>
+            <h1 class="font-heading text-5xl md:text-6xl mb-6 leading-tight" data-i18n="ressources.hero.title" data-i18n-html>Mexique & Panama : <br><span class="italic text-mc-ocean">ressources pour acheteurs québécois</span></h1>
+            <p class="font-light text-mc-charcoal/75 max-w-2xl mx-auto leading-relaxed mb-8" data-i18n="ressources.hero.desc">
+                Analyses de marché, profils d'acheteurs et méthode d'acquisition sécurisée. Partagez ces articles avec vos proches ou votre réseau qui envisagent la retraite, l'investissement ou une résidence au soleil.
+            </p>
+            <p class="font-light text-sm text-mc-charcoal/60">
+                <a href="blogue.html" class="text-mc-ocean underline underline-offset-2 hover:text-mc-charcoal transition-colors" data-i18n="ressources.toBlogue">Voir tout le blogue (recrutement eXp + international) →</a>
+            </p>
+        </div>
+    </header>
+
+    <main class="py-20 bg-mc-white">
+        <div class="max-w-6xl mx-auto px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+                <article class="group reveal-up flex flex-col bg-mc-linen rounded-xl overflow-hidden hover-trigger">
+                    <a href="articles/marche-mexique-panama-2026.html" class="block aspect-[16/10] overflow-hidden">
+                        <img src="images/mexique-tulum.webp" alt="Marché immobilier Mexique" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                    </a>
+                    <div class="p-8 flex flex-col flex-1">
+                        <span class="text-[10px] uppercase tracking-widest text-mc-ocean mb-3" data-i18n="ressources.card1.tag">Analyse de marché</span>
+                        <h2 class="font-heading text-2xl mb-3 leading-snug">
+                            <a href="articles/marche-mexique-panama-2026.html" class="hover:text-mc-ocean transition-colors" data-i18n="ressources.card1.title">Pourquoi les Québécois regardent le Mexique et le Panama en 2026</a>
+                        </h2>
+                        <p class="font-light text-sm text-mc-charcoal/75 leading-relaxed mb-6 flex-1" data-i18n="ressources.card1.excerpt">Snowbirds, statistiques tourisme et signaux économiques : ce qui rend le marché chaud pour les acheteurs canadiens hors États-Unis.</p>
+                        <a href="articles/marche-mexique-panama-2026.html" class="text-[10px] uppercase tracking-widest border-b border-mc-charcoal pb-1 self-start group-hover:text-mc-ocean group-hover:border-mc-ocean transition-colors" data-i18n="ressources.read">Lire l'article</a>
+                    </div>
+                </article>
+
+                <article class="group reveal-up flex flex-col bg-mc-linen rounded-xl overflow-hidden hover-trigger" style="transition-delay: 100ms">
+                    <a href="articles/profils-acheteurs-mexique-panama.html" class="block aspect-[16/10] overflow-hidden">
+                        <img src="images/panama.webp" alt="Profils acheteurs Panama" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                    </a>
+                    <div class="p-8 flex flex-col flex-1">
+                        <span class="text-[10px] uppercase tracking-widest text-mc-ocean mb-3" data-i18n="ressources.card2.tag">Profils d'acheteurs</span>
+                        <h2 class="font-heading text-2xl mb-3 leading-snug">
+                            <a href="articles/profils-acheteurs-mexique-panama.html" class="hover:text-mc-ocean transition-colors" data-i18n="ressources.card2.title">5 profils d'acheteurs québécois au Mexique et au Panama</a>
+                        </h2>
+                        <p class="font-light text-sm text-mc-charcoal/75 leading-relaxed mb-6 flex-1" data-i18n="ressources.card2.excerpt">Retraités, snowbirds, investisseurs, familles et pré-expatriés : motivations, angles de conversation et besoins réels.</p>
+                        <a href="articles/profils-acheteurs-mexique-panama.html" class="text-[10px] uppercase tracking-widest border-b border-mc-charcoal pb-1 self-start group-hover:text-mc-ocean group-hover:border-mc-ocean transition-colors" data-i18n="ressources.read">Lire l'article</a>
+                    </div>
+                </article>
+
+                <article class="group reveal-up flex flex-col bg-mc-linen rounded-xl overflow-hidden hover-trigger" style="transition-delay: 200ms">
+                    <a href="articles/methode-achat-international.html" class="block aspect-[16/10] overflow-hidden">
+                        <img src="images/international-plage.webp" alt="Méthode d'achat international" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                    </a>
+                    <div class="p-8 flex flex-col flex-1">
+                        <span class="text-[10px] uppercase tracking-widest text-mc-ocean mb-3" data-i18n="ressources.card3.tag">Méthode</span>
+                        <h2 class="font-heading text-2xl mb-3 leading-snug">
+                            <a href="articles/methode-achat-international.html" class="hover:text-mc-ocean transition-colors" data-i18n="ressources.card3.title">Comment acheter au soleil sans brûler les étapes</a>
+                        </h2>
+                        <p class="font-light text-sm text-mc-charcoal/75 leading-relaxed mb-6 flex-1" data-i18n="ressources.card3.excerpt">Budget, style de vie, fiscalité, financement et risques juridiques : la méthode de découverte sécurisée avant de choisir une propriété.</p>
+                        <a href="articles/methode-achat-international.html" class="text-[10px] uppercase tracking-widest border-b border-mc-charcoal pb-1 self-start group-hover:text-mc-ocean group-hover:border-mc-ocean transition-colors" data-i18n="ressources.read">Lire l'article</a>
+                    </div>
+                </article>
+
+            </div>
+
+            <div class="mt-20 text-center reveal-up bg-mc-charcoal text-white rounded-xl px-8 py-14">
+                <h2 class="font-heading text-3xl md:text-4xl mb-4" data-i18n="ressources.cta.title">Prêt à comparer Panama et Mexique selon votre projet?</h2>
+                <p class="font-light text-white/70 max-w-xl mx-auto mb-8" data-i18n="ressources.cta.desc">Planifiez un appel stratégique avec Mathieu et Catherine. Service francophone, processus sécurisé et accompagnement clé en main.</p>
+                <a href="international.html#contact" class="hover-trigger inline-block bg-mc-ocean text-white px-10 py-4 text-xs uppercase tracking-widest rounded-full hover:bg-mc-sand hover:text-mc-charcoal transition-all duration-300" data-i18n="ressources.cta.btn">Prendre contact</a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-mc-charcoal text-white py-12 border-t border-white/10">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs font-light tracking-widest uppercase text-white/50">
+            <div class="flex flex-col sm:flex-row items-center gap-3 sm:gap-8 text-center sm:text-left">
+                <p data-i18n="footer.copyright">&copy; 2026 MC Équipe - eXp Agence Immobilière.</p>
+                <a href="politique-confidentialite.html" class="hover-trigger hover:text-white/70 transition-colors" data-i18n="footer.privacy">Politique de confidentialité</a>
+            </div>
+            <a href="https://roymarketing.ca" target="_blank" rel="noopener noreferrer" class="hover-trigger hover:text-white/70 transition-colors" data-i18n="footer.credit">Conception web par Roy Marketing</a>
+        </div>
+    </footer>
+</body>
+</html>

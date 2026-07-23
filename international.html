@@ -108,11 +108,12 @@
 
     <nav id="navbar" class="fixed top-0 w-full z-50 px-8 py-6 flex justify-between items-center text-white transition-all duration-500">
         <div class="text-2xl font-heading tracking-widest uppercase hover-trigger"><a href="index.html">MC Équipe</a></div>
-        <div class="hidden md:flex gap-12 text-[11px] tracking-widest uppercase font-medium nav-links">
+        <div class="hidden lg:flex gap-8 text-[11px] tracking-widest uppercase font-medium nav-links">
             <a href="index.html#services" class="hover-trigger hover:text-mc-sand transition-colors" data-i18n="nav.services">Services</a>
             <a href="index.html#equipe" class="hover-trigger hover:text-mc-sand transition-colors" data-i18n="nav.team">L'Équipe</a>
             <a href="international.html" class="hover-trigger text-mc-ocean transition-colors" data-i18n="nav.international">International</a>
-            <a href="hypotheque.html" class="hover-trigger hover:text-mc-sand transition-colors" data-i18n="nav.hypotheque">Hypothèque</a>
+            <a href="blogue.html" class="hover-trigger hover:text-mc-sand transition-colors" data-i18n="nav.blogue">Blogue</a>
+            <a href="rejoindre-exp.html" class="hover-trigger hover:text-mc-sand transition-colors" data-i18n="nav.rejoindre">Rejoindre</a>
             <a href="https://mathieumichaud.expquebec.com/fr/proprietes" data-i18n-href="listings" class="hover-trigger hover:text-mc-sand transition-colors" target="_blank" rel="noopener noreferrer" data-i18n="nav.listings">Propriétés</a>
         </div>
         <div class="flex items-center gap-4 md:gap-6 shrink-0">
@@ -317,6 +318,42 @@
                         Rencontrer Catherine
                     </a>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="ressources" class="py-32 bg-mc-linen">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="flex flex-col lg:flex-row items-end justify-between gap-10 mb-16 reveal-up">
+                <div class="max-w-2xl">
+                    <span class="text-mc-ocean uppercase tracking-widest text-xs font-medium block mb-4" data-i18n="international.ressources.label">Guides partageables</span>
+                    <h2 class="font-heading text-4xl md:text-5xl text-mc-charcoal leading-tight" data-i18n="international.ressources.title" data-i18n-html>Ressources pour <br><span class="italic text-mc-sand">acheteurs informés.</span></h2>
+                </div>
+                <p class="font-light text-mc-charcoal/75 max-w-md leading-relaxed reveal-up" data-i18n="international.ressources.desc">
+                    Analyses de marché, profils d'acheteurs et notre méthode d'acquisition sécurisée. Des articles à partager avec votre réseau.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 reveal-up">
+                <a href="articles/marche-mexique-panama-2026.html" class="hover-trigger group block bg-white p-8 rounded-xl border border-mc-charcoal/5 hover:border-mc-ocean/30 transition-colors">
+                    <span class="text-[10px] uppercase tracking-widest text-mc-ocean mb-3 block" data-i18n="ressources.card1.tag">Analyse de marché</span>
+                    <h3 class="font-heading text-xl mb-3 group-hover:text-mc-ocean transition-colors" data-i18n="ressources.card1.title">Pourquoi les Québécois regardent le Mexique et le Panama en 2026</h3>
+                    <span class="text-[10px] uppercase tracking-widest border-b border-mc-charcoal/30 pb-1 group-hover:border-mc-ocean transition-colors" data-i18n="ressources.read">Lire l'article</span>
+                </a>
+                <a href="articles/profils-acheteurs-mexique-panama.html" class="hover-trigger group block bg-white p-8 rounded-xl border border-mc-charcoal/5 hover:border-mc-ocean/30 transition-colors">
+                    <span class="text-[10px] uppercase tracking-widest text-mc-ocean mb-3 block" data-i18n="ressources.card2.tag">Profils d'acheteurs</span>
+                    <h3 class="font-heading text-xl mb-3 group-hover:text-mc-ocean transition-colors" data-i18n="ressources.card2.title">5 profils d'acheteurs québécois au Mexique et au Panama</h3>
+                    <span class="text-[10px] uppercase tracking-widest border-b border-mc-charcoal/30 pb-1 group-hover:border-mc-ocean transition-colors" data-i18n="ressources.read">Lire l'article</span>
+                </a>
+                <a href="articles/methode-achat-international.html" class="hover-trigger group block bg-white p-8 rounded-xl border border-mc-charcoal/5 hover:border-mc-ocean/30 transition-colors">
+                    <span class="text-[10px] uppercase tracking-widest text-mc-ocean mb-3 block" data-i18n="ressources.card3.tag">Méthode</span>
+                    <h3 class="font-heading text-xl mb-3 group-hover:text-mc-ocean transition-colors" data-i18n="ressources.card3.title">Comment acheter au soleil sans brûler les étapes</h3>
+                    <span class="text-[10px] uppercase tracking-widest border-b border-mc-charcoal/30 pb-1 group-hover:border-mc-ocean transition-colors" data-i18n="ressources.read">Lire l'article</span>
+                </a>
+            </div>
+
+            <div class="text-center mt-12 reveal-up">
+                <a href="ressources.html" class="hover-trigger inline-block border border-mc-charcoal text-mc-charcoal px-10 py-4 text-[10px] uppercase tracking-widest rounded-full hover:bg-mc-charcoal hover:text-white transition-all duration-300" data-i18n="international.ressources.cta">Voir toutes les ressources</a>
             </div>
         </div>
     </section>

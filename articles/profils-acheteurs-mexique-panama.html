@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="fr-CA" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="meta.title.article.profils">Profils acheteurs Mexique & Panama | MC Équipe</title>
+    <meta name="description" data-i18n="meta.desc.article.profils" content="Retraités, snowbirds, investisseurs, familles et pré-expatriés : 5 profils d'acheteurs québécois au Mexique et au Panama et comment les accompagner.">
+    <meta property="og:title" content="5 profils d'acheteurs québécois au Mexique et au Panama | MC Équipe">
+    <meta property="og:description" content="Motivations, angles de conversation et besoins réels pour chaque type d'acheteur.">
+    <meta property="og:image" content="https://mcequipe.ca/images/panama.webp">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://mcequipe.ca/articles/profils-acheteurs-mexique-panama.html">
+    <meta name="twitter:card" content="summary_large_image">
+    <script src="../i18n.js"></script>
+    <script src="../cookies.js"></script>
+    <link rel="stylesheet" href="../articles.css">
+    <script src="../articles.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = { theme: { extend: { colors: { mc: { charcoal: '#3d312c', sand: '#bbab9a', white: '#ffffff', linen: '#efe9e2', ocean: '#4f909b' } }, fontFamily: { heading: ['Optima', 'sans-serif'], body: ['"Montserrat"', 'sans-serif'] } } } };
+    </script>
+    <style>
+        .font-heading { font-family: 'Optima', sans-serif; }
+        @media (min-width: 1024px) { body, a, button { cursor: none; } }
+        .custom-cursor { position: fixed; top: 0; left: 0; width: 12px; height: 12px; background-color: #4f909b; border-radius: 50%; pointer-events: none; z-index: 9999; transform: translate(-50%, -50%); transition: width 0.3s ease, height 0.3s ease; mix-blend-mode: difference; }
+        .custom-cursor.active { width: 60px; height: 60px; background-color: #bbab9a; mix-blend-mode: normal; opacity: 0.8; }
+        .reveal-up { opacity: 0; transform: translateY(30px); transition: opacity 1s cubic-bezier(0.16, 1, 0.3, 1), transform 1s cubic-bezier(0.16, 1, 0.3, 1); }
+        .reveal-up.is-visible { opacity: 1; transform: translateY(0); }
+        .nav-scrolled { background-color: rgba(255,255,255,0.95); backdrop-filter: blur(10px); border-bottom: 1px solid #efe9e2; color: #3d312c !important; }
+        .nav-scrolled .nav-btn { border-color: #3d312c; color: #3d312c; }
+        .nav-scrolled .nav-btn:hover { background-color: #3d312c; color: #fff; }
+    </style>
+</head>
+<body class="bg-mc-white text-mc-charcoal font-body antialiased selection:bg-mc-ocean selection:text-white overflow-x-hidden">
+
+    <div class="custom-cursor hidden lg:block" id="cursor"></div>
+
+    <nav id="navbar" class="fixed top-0 w-full z-50 px-8 py-6 flex justify-between items-center text-mc-charcoal bg-mc-white/95 backdrop-blur border-b border-mc-linen transition-all duration-500">
+        <a href="../index.html" class="text-2xl font-heading tracking-widest uppercase hover-trigger">MC Équipe</a>
+        <div class="hidden md:flex gap-12 text-[11px] tracking-widest uppercase font-medium">
+            <a href="../blogue.html" class="hover-trigger text-mc-ocean transition-colors" data-i18n="nav.blogue">Blogue</a>
+            <a href="../international.html" class="hover-trigger hover:text-mc-ocean transition-colors" data-i18n="nav.international">International</a>
+        </div>
+        <div class="flex items-center gap-4 md:gap-6 shrink-0">
+            <div class="lang-toggle flex items-center gap-1.5 text-[10px] tracking-widest uppercase font-medium" role="group" aria-label="Language">
+                <button type="button" data-lang-set="fr" class="lang-btn hover-trigger transition-opacity">FR</button>
+                <span class="opacity-30 select-none" aria-hidden="true">|</span>
+                <button type="button" data-lang-set="en" class="lang-btn hover-trigger transition-opacity">EN</button>
+            </div>
+            <a href="../international.html#contact" class="nav-btn hover-trigger border border-mc-charcoal px-6 py-3 text-[10px] uppercase tracking-widest hover:bg-mc-charcoal hover:text-white transition-all duration-500 rounded-full" data-i18n="nav.contact">Contact</a>
+        </div>
+    </nav>
+
+    <header class="pt-36 pb-12 bg-mc-linen">
+        <div class="max-w-3xl mx-auto px-6 lg:px-8 reveal-up">
+            <a href="../ressources.html" class="text-[10px] uppercase tracking-widest text-mc-ocean hover:underline mb-6 inline-block" data-i18n="article.back">← Toutes les ressources</a>
+            <span class="text-[10px] uppercase tracking-widest text-mc-ocean block mb-4" data-i18n="article.profils.tag">Profils d'acheteurs · Juin 2026</span>
+            <h1 class="font-heading text-4xl md:text-5xl leading-tight mb-6" data-i18n="article.profils.title">5 profils d'acheteurs québécois au Mexique et au Panama</h1>
+            <p class="font-light text-mc-charcoal/75 leading-relaxed text-lg" data-i18n="article.profils.lead">Chaque projet soleil n'a pas les mêmes priorités. Voici les profils que nous rencontrons le plus souvent au Québec et au Canada, avec l'angle de conversation qui génère des échanges qualifiés.</p>
+            <div class="article-share mt-8">
+                <button type="button" class="hover-trigger" data-copy-link="https://mcequipe.ca/articles/profils-acheteurs-mexique-panama.html" data-i18n="article.share">Partager le lien</button>
+            </div>
+        </div>
+    </header>
+
+    <article class="py-16 bg-mc-white">
+        <div class="max-w-3xl mx-auto px-6 lg:px-8 reveal-up">
+            <div class="article-prose" data-i18n="article.profils.body" data-i18n-html>
+
+                <div class="profile-card">
+                    <span class="tag">Profil A</span>
+                    <h3>Retraités (55-75 ans)</h3>
+                    <p><strong>Motivation :</strong> coût de vie, climat, sécurité perçue, soins de santé, communauté francophone ou expat.</p>
+                    <p><strong>Angle :</strong> «&nbsp;Comparer Panama et Mexique selon votre retraite réelle, pas selon les brochures.&nbsp;»</p>
+                    <p><strong>Besoin :</strong> accompagnement humain, validation légale et fiscale, simplicité administrative.</p>
+                </div>
+
+                <div class="profile-card">
+                    <span class="tag">Profil B</span>
+                    <h3>Snowbirds</h3>
+                    <p><strong>Motivation :</strong> 2 à 6 mois par année au soleil, sans quitter définitivement le Canada.</p>
+                    <p><strong>Angle :</strong> «&nbsp;Acheter vs louer : à partir de combien de semaines par année ça devient logique?&nbsp;»</p>
+                    <p><strong>Besoin :</strong> copropriété facile à entretenir, sécurité, proximité aéroport, frais mensuels transparents.</p>
+                </div>
+
+                <div class="profile-card">
+                    <span class="tag">Profil C</span>
+                    <h3>Investisseurs</h3>
+                    <p><strong>Motivation :</strong> location court ou moyen terme, diversification hors Canada, actif en USD ou devise locale.</p>
+                    <p><strong>Angle :</strong> «&nbsp;Rendement brut vs rendement net : frais, vacance, gestion, fiscalité.&nbsp;»</p>
+                    <p><strong>Besoin :</strong> chiffres réalistes, gestion locative fiable, liquidité à la revente.</p>
+                </div>
+
+                <div class="profile-card">
+                    <span class="tag">Profil D</span>
+                    <h3>Résidence secondaire familiale</h3>
+                    <p><strong>Motivation :</strong> style de vie, vacances récurrentes, transmission aux enfants ou petits-enfants.</p>
+                    <p><strong>Angle :</strong> «&nbsp;Un pied-à-terre utilisable maintenant et revendable plus tard.&nbsp;»</p>
+                    <p><strong>Besoin :</strong> accessibilité des vols, sécurité du quartier, entretien à distance.</p>
+                </div>
+
+                <div class="profile-card">
+                    <span class="tag">Profil E</span>
+                    <h3>Pré-expatriation / mobilité internationale</h3>
+                    <p><strong>Motivation :</strong> tester une vie hors Canada sans vendre tout de suite au Québec.</p>
+                    <p><strong>Angle :</strong> «&nbsp;Plan 12 mois : visiter, comparer, sécuriser, décider.&nbsp;»</p>
+                    <p><strong>Besoin :</strong> immigration, santé, fiscalité, statut de résidence (à valider avec des professionnels locaux).</p>
+                </div>
+
+                <h2>Comment utiliser ce guide</h2>
+                <p>Partagez l'article qui correspond au profil de votre interlocuteur. L'objectif n'est pas de pousser une propriété, mais d'ouvrir une conversation structurée sur les critères qui comptent vraiment pour lui ou elle.</p>
+                <p>MC Équipe accompagne les acheteurs québécois avec un service francophone, un réseau eXp Global et des partenaires juridiques sur place au Mexique et au Panama.</p>
+
+            </div>
+        </div>
+    </article>
+
+    <section class="py-16 bg-mc-linen border-t border-mc-charcoal/10">
+        <div class="max-w-3xl mx-auto px-6 lg:px-8 text-center reveal-up">
+            <h2 class="font-heading text-3xl mb-4" data-i18n="article.cta.title">Discuter de votre projet avec MC Équipe</h2>
+            <p class="font-light text-mc-charcoal/75 mb-8" data-i18n="article.cta.desc">Acquisition clé en main au Mexique et au Panama. Service francophone, réseau eXp Global et accompagnement juridique structuré.</p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="../international.html#contact" class="hover-trigger inline-block bg-mc-ocean text-white px-10 py-4 text-xs uppercase tracking-widest rounded-full hover:bg-mc-charcoal transition-all" data-i18n="article.cta.contact">Prendre contact</a>
+                <a href="methode-achat-international.html" class="hover-trigger inline-block border border-mc-charcoal px-10 py-4 text-xs uppercase tracking-widest rounded-full hover:bg-mc-charcoal hover:text-white transition-all" data-i18n="article.profils.next">Article suivant : la méthode d'achat</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-mc-charcoal text-white py-12">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs font-light tracking-widest uppercase text-white/50">
+            <div class="flex flex-col sm:flex-row items-center gap-3 sm:gap-8 text-center sm:text-left">
+                <p data-i18n="footer.copyright">&copy; 2026 MC Équipe - eXp Agence Immobilière.</p>
+                <a href="../politique-confidentialite.html" class="hover-trigger hover:text-white/70 transition-colors" data-i18n="footer.privacy">Politique de confidentialité</a>
+            </div>
+            <a href="https://roymarketing.ca" target="_blank" rel="noopener noreferrer" class="hover-trigger hover:text-white/70 transition-colors" data-i18n="footer.credit">Conception web par Roy Marketing</a>
+        </div>
+    </footer>
+</body>
+</html>

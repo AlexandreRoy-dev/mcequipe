@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="fr-CA" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="meta.title.blogue">Blogue | Recrutement eXp &amp; immobilier | MC Équipe</title>
+    <meta name="description" data-i18n="meta.desc.blogue" content="Articles sur rejoindre eXp Realty, le modèle eXp, le Revenue Share, et guides pour acheteurs internationaux. Le blogue MC Équipe.">
+    <link rel="canonical" href="https://mcequipe.ca/blogue.html">
+    <meta property="og:title" content="Blogue | MC Équipe">
+    <meta property="og:description" content="Recrutement eXp, modèle immobilier et ressources pour acheteurs québécois.">
+    <meta property="og:image" content="https://mcequipe.ca/images/equipe-bureau.webp">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://mcequipe.ca/blogue.html">
+    <meta name="twitter:card" content="summary_large_image">
+    <script src="i18n.js"></script>
+    <script src="cookies.js"></script>
+    <link rel="stylesheet" href="articles.css">
+    <script src="articles.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: { mc: { charcoal: '#3d312c', sand: '#bbab9a', white: '#ffffff', linen: '#efe9e2', ocean: '#4f909b' } },
+                    fontFamily: { heading: ['Optima', 'sans-serif'], body: ['"Montserrat"', 'sans-serif'] }
+                }
+            }
+        }
+    </script>
+    <style>
+        .font-heading { font-family: 'Optima', sans-serif; }
+        @media (min-width: 1024px) { body, a, button { cursor: none; } }
+        .custom-cursor { position: fixed; top: 0; left: 0; width: 12px; height: 12px; background-color: #4f909b; border-radius: 50%; pointer-events: none; z-index: 9999; transform: translate(-50%, -50%); transition: width 0.3s ease, height 0.3s ease; mix-blend-mode: difference; }
+        .custom-cursor.active { width: 60px; height: 60px; background-color: #bbab9a; mix-blend-mode: normal; opacity: 0.8; }
+        .reveal-up { opacity: 0; transform: translateY(30px); transition: opacity 1s cubic-bezier(0.16, 1, 0.3, 1), transform 1s cubic-bezier(0.16, 1, 0.3, 1); }
+        .reveal-up.is-visible { opacity: 1; transform: translateY(0); }
+        .nav-scrolled { background-color: rgba(255,255,255,0.95); backdrop-filter: blur(10px); border-bottom: 1px solid #efe9e2; color: #3d312c !important; }
+        .nav-scrolled .nav-btn { border-color: #3d312c; color: #3d312c; }
+        .nav-scrolled .nav-btn:hover { background-color: #3d312c; color: #fff; }
+    </style>
+</head>
+<body class="bg-mc-white text-mc-charcoal font-body antialiased selection:bg-mc-ocean selection:text-white overflow-x-hidden">
+
+    <div class="custom-cursor hidden lg:block" id="cursor"></div>
+
+    <nav id="navbar" class="fixed top-0 w-full z-50 px-8 py-6 flex justify-between items-center text-mc-charcoal bg-mc-white/95 backdrop-blur border-b border-mc-linen transition-all duration-500">
+        <a href="index.html" class="text-2xl font-heading tracking-widest uppercase hover-trigger">MC Équipe</a>
+        <div class="hidden lg:flex gap-8 text-[11px] tracking-widest uppercase font-medium nav-links">
+            <a href="index.html#services" class="hover-trigger hover:text-mc-ocean transition-colors" data-i18n="nav.services">Services</a>
+            <a href="index.html#equipe" class="hover-trigger hover:text-mc-ocean transition-colors" data-i18n="nav.team">L'Équipe</a>
+            <a href="international.html" class="hover-trigger hover:text-mc-ocean transition-colors" data-i18n="nav.international">International</a>
+            <a href="blogue.html" class="hover-trigger text-mc-ocean transition-colors" data-i18n="nav.blogue">Blogue</a>
+            <a href="rejoindre-exp.html" class="hover-trigger hover:text-mc-ocean transition-colors" data-i18n="nav.rejoindre">Rejoindre</a>
+            <a href="https://mathieumichaud.expquebec.com/fr/proprietes" data-i18n-href="listings" class="hover-trigger hover:text-mc-ocean transition-colors" target="_blank" rel="noopener noreferrer" data-i18n="nav.listings">Propriétés</a>
+        </div>
+        <div class="flex items-center gap-4 md:gap-6 shrink-0">
+            <div class="lang-toggle flex items-center gap-1.5 text-[10px] tracking-widest uppercase font-medium" role="group" aria-label="Language">
+                <button type="button" data-lang-set="fr" class="lang-btn hover-trigger transition-opacity">FR</button>
+                <span class="opacity-30 select-none" aria-hidden="true">|</span>
+                <button type="button" data-lang-set="en" class="lang-btn hover-trigger transition-opacity">EN</button>
+            </div>
+            <a href="rejoindre-exp.html#contact" class="nav-btn hover-trigger border border-mc-charcoal px-6 py-3 text-[10px] uppercase tracking-widest hover:bg-mc-charcoal hover:text-white transition-all duration-500 rounded-full" data-i18n="nav.contact">Contact</a>
+        </div>
+    </nav>
+
+    <header class="pt-40 pb-20 bg-mc-linen">
+        <div class="max-w-4xl mx-auto px-6 lg:px-8 text-center reveal-up">
+            <span class="text-mc-ocean uppercase tracking-[0.3em] text-[10px] font-bold block mb-6" data-i18n="blogue.hero.tag">Actualités &amp; guides</span>
+            <h1 class="font-heading text-5xl md:text-6xl mb-6 leading-tight" data-i18n="blogue.hero.title" data-i18n-html>Le blogue <br><span class="italic text-mc-ocean">MC Équipe</span></h1>
+            <p class="font-light text-mc-charcoal/75 max-w-2xl mx-auto leading-relaxed" data-i18n="blogue.hero.desc">
+                Contenu pour courtiers qui explorent eXp Realty, et pour acheteurs québécois qui regardent le Mexique et le Panama.
+            </p>
+        </div>
+    </header>
+
+    <main class="py-20 bg-mc-white">
+        <div class="max-w-6xl mx-auto px-6 lg:px-8">
+
+            <section id="recrutement" class="mb-24">
+                <div class="mb-10 reveal-up">
+                    <span class="text-mc-ocean uppercase tracking-widest text-xs font-medium block mb-2" data-i18n="blogue.cat.recrutement">Recrutement</span>
+                    <h2 class="font-heading text-3xl md:text-4xl" data-i18n="blogue.cat.recrutementTitle">eXp Realty &amp; carrière</h2>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                    <article class="group reveal-up flex flex-col bg-mc-linen rounded-xl overflow-hidden hover-trigger">
+                        <a href="articles/pourquoi-choisir-exp-realty.html" class="block aspect-[16/10] overflow-hidden">
+                            <img src="images/equipe-bureau.webp" alt="Pourquoi choisir eXp Realty" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                        </a>
+                        <div class="p-8 flex flex-col flex-1">
+                            <span class="text-[10px] uppercase tracking-widest text-mc-ocean mb-3" data-i18n="blogue.r1.tag">eXp Realty</span>
+                            <h3 class="font-heading text-2xl mb-3 leading-snug">
+                                <a href="articles/pourquoi-choisir-exp-realty.html" class="hover:text-mc-ocean transition-colors" data-i18n="blogue.r1.title">Pourquoi choisir eXp Realty</a>
+                            </h3>
+                            <p class="font-light text-sm text-mc-charcoal/75 leading-relaxed mb-6 flex-1" data-i18n="blogue.r1.excerpt">Les raisons pour lesquelles des courtiers québécois rejoignent eXp — au-delà du marketing.</p>
+                            <a href="articles/pourquoi-choisir-exp-realty.html" class="text-[10px] uppercase tracking-widest border-b border-mc-charcoal pb-1 self-start group-hover:text-mc-ocean group-hover:border-mc-ocean transition-colors" data-i18n="ressources.read">Lire l'article</a>
+                        </div>
+                    </article>
+
+                    <article class="group reveal-up flex flex-col bg-mc-linen rounded-xl overflow-hidden hover-trigger" style="transition-delay:80ms">
+                        <a href="articles/avantages-modele-exp.html" class="block aspect-[16/10] overflow-hidden">
+                            <img src="images/exterieur-propriete.webp" alt="Avantages du modèle eXp" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                        </a>
+                        <div class="p-8 flex flex-col flex-1">
+                            <span class="text-[10px] uppercase tracking-widest text-mc-ocean mb-3" data-i18n="blogue.r2.tag">Modèle</span>
+                            <h3 class="font-heading text-2xl mb-3 leading-snug">
+                                <a href="articles/avantages-modele-exp.html" class="hover:text-mc-ocean transition-colors" data-i18n="blogue.r2.title">Les avantages du modèle eXp</a>
+                            </h3>
+                            <p class="font-light text-sm text-mc-charcoal/75 leading-relaxed mb-6 flex-1" data-i18n="blogue.r2.excerpt">Technologie, formation, réseau et flexibilité : ce que le modèle change concrètement.</p>
+                            <a href="articles/avantages-modele-exp.html" class="text-[10px] uppercase tracking-widest border-b border-mc-charcoal pb-1 self-start group-hover:text-mc-ocean group-hover:border-mc-ocean transition-colors" data-i18n="ressources.read">Lire l'article</a>
+                        </div>
+                    </article>
+
+                    <article class="group reveal-up flex flex-col bg-mc-linen rounded-xl overflow-hidden hover-trigger" style="transition-delay:160ms">
+                        <a href="articles/exp-vs-bannieres-traditionnelles.html" class="block aspect-[16/10] overflow-hidden">
+                            <img src="images/vente-quebec.webp" alt="eXp vs bannières traditionnelles" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                        </a>
+                        <div class="p-8 flex flex-col flex-1">
+                            <span class="text-[10px] uppercase tracking-widest text-mc-ocean mb-3" data-i18n="blogue.r3.tag">Comparaison</span>
+                            <h3 class="font-heading text-2xl mb-3 leading-snug">
+                                <a href="articles/exp-vs-bannieres-traditionnelles.html" class="hover:text-mc-ocean transition-colors" data-i18n="blogue.r3.title">eXp vs les bannières traditionnelles</a>
+                            </h3>
+                            <p class="font-light text-sm text-mc-charcoal/75 leading-relaxed mb-6 flex-1" data-i18n="blogue.r3.excerpt">Changer de bannière : ce qui diffère vraiment entre eXp et les modèles classiques.</p>
+                            <a href="articles/exp-vs-bannieres-traditionnelles.html" class="text-[10px] uppercase tracking-widest border-b border-mc-charcoal pb-1 self-start group-hover:text-mc-ocean group-hover:border-mc-ocean transition-colors" data-i18n="ressources.read">Lire l'article</a>
+                        </div>
+                    </article>
+
+                    <article class="group reveal-up flex flex-col bg-mc-linen rounded-xl overflow-hidden hover-trigger">
+                        <a href="articles/fonctionnement-revenue-share.html" class="block aspect-[16/10] overflow-hidden">
+                            <img src="images/header-residentiel.webp" alt="Revenue Share eXp" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                        </a>
+                        <div class="p-8 flex flex-col flex-1">
+                            <span class="text-[10px] uppercase tracking-widest text-mc-ocean mb-3" data-i18n="blogue.r4.tag">Revenue Share</span>
+                            <h3 class="font-heading text-2xl mb-3 leading-snug">
+                                <a href="articles/fonctionnement-revenue-share.html" class="hover:text-mc-ocean transition-colors" data-i18n="blogue.r4.title">Le fonctionnement du Revenue Share</a>
+                            </h3>
+                            <p class="font-light text-sm text-mc-charcoal/75 leading-relaxed mb-6 flex-1" data-i18n="blogue.r4.excerpt">Comment fonctionne le partage de revenus chez eXp, en langage clair.</p>
+                            <a href="articles/fonctionnement-revenue-share.html" class="text-[10px] uppercase tracking-widest border-b border-mc-charcoal pb-1 self-start group-hover:text-mc-ocean group-hover:border-mc-ocean transition-colors" data-i18n="ressources.read">Lire l'article</a>
+                        </div>
+                    </article>
+
+                    <article class="group reveal-up flex flex-col bg-mc-linen rounded-xl overflow-hidden hover-trigger" style="transition-delay:80ms">
+                        <a href="articles/frais-chez-exp.html" class="block aspect-[16/10] overflow-hidden">
+                            <img src="images/evaluation-maison.webp" alt="Frais chez eXp" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                        </a>
+                        <div class="p-8 flex flex-col flex-1">
+                            <span class="text-[10px] uppercase tracking-widest text-mc-ocean mb-3" data-i18n="blogue.r5.tag">Frais</span>
+                            <h3 class="font-heading text-2xl mb-3 leading-snug">
+                                <a href="articles/frais-chez-exp.html" class="hover:text-mc-ocean transition-colors" data-i18n="blogue.r5.title">Les frais chez eXp</a>
+                            </h3>
+                            <p class="font-light text-sm text-mc-charcoal/75 leading-relaxed mb-6 flex-1" data-i18n="blogue.r5.excerpt">Structure de coûts, partages et ce qu'il faut clarifier avant de signer.</p>
+                            <a href="articles/frais-chez-exp.html" class="text-[10px] uppercase tracking-widest border-b border-mc-charcoal pb-1 self-start group-hover:text-mc-ocean group-hover:border-mc-ocean transition-colors" data-i18n="ressources.read">Lire l'article</a>
+                        </div>
+                    </article>
+
+                    <article class="group reveal-up flex flex-col bg-mc-linen rounded-xl overflow-hidden hover-trigger" style="transition-delay:160ms">
+                        <a href="articles/accompagnement-mc-equipe-courtiers.html" class="block aspect-[16/10] overflow-hidden">
+                            <img src="images/interior-luxe.webp" alt="Accompagnement MC Équipe" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                        </a>
+                        <div class="p-8 flex flex-col flex-1">
+                            <span class="text-[10px] uppercase tracking-widest text-mc-ocean mb-3" data-i18n="blogue.r6.tag">MC Équipe</span>
+                            <h3 class="font-heading text-2xl mb-3 leading-snug">
+                                <a href="articles/accompagnement-mc-equipe-courtiers.html" class="hover:text-mc-ocean transition-colors" data-i18n="blogue.r6.title">Notre accompagnement auprès des courtiers</a>
+                            </h3>
+                            <p class="font-light text-sm text-mc-charcoal/75 leading-relaxed mb-6 flex-1" data-i18n="blogue.r6.excerpt">Ce que signifie rejoindre MC Équipe : mentorat, culture et croissance.</p>
+                            <a href="articles/accompagnement-mc-equipe-courtiers.html" class="text-[10px] uppercase tracking-widest border-b border-mc-charcoal pb-1 self-start group-hover:text-mc-ocean group-hover:border-mc-ocean transition-colors" data-i18n="ressources.read">Lire l'article</a>
+                        </div>
+                    </article>
+
+                </div>
+            </section>
+
+            <section id="international">
+                <div class="mb-10 reveal-up">
+                    <span class="text-mc-ocean uppercase tracking-widest text-xs font-medium block mb-2" data-i18n="blogue.cat.international">International</span>
+                    <h2 class="font-heading text-3xl md:text-4xl" data-i18n="blogue.cat.internationalTitle">Mexique &amp; Panama</h2>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+                    <article class="group reveal-up flex flex-col bg-mc-linen rounded-xl overflow-hidden hover-trigger">
+                        <a href="articles/marche-mexique-panama-2026.html" class="block aspect-[16/10] overflow-hidden">
+                            <img src="images/mexique-tulum.webp" alt="Marché Mexique Panama" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                        </a>
+                        <div class="p-8 flex flex-col flex-1">
+                            <span class="text-[10px] uppercase tracking-widest text-mc-ocean mb-3" data-i18n="ressources.card1.tag">Analyse de marché</span>
+                            <h3 class="font-heading text-2xl mb-3 leading-snug">
+                                <a href="articles/marche-mexique-panama-2026.html" class="hover:text-mc-ocean transition-colors" data-i18n="ressources.card1.title">Pourquoi les Québécois regardent le Mexique et le Panama en 2026</a>
+                            </h3>
+                            <a href="articles/marche-mexique-panama-2026.html" class="text-[10px] uppercase tracking-widest border-b border-mc-charcoal pb-1 self-start mt-auto group-hover:text-mc-ocean group-hover:border-mc-ocean transition-colors" data-i18n="ressources.read">Lire l'article</a>
+                        </div>
+                    </article>
+
+                    <article class="group reveal-up flex flex-col bg-mc-linen rounded-xl overflow-hidden hover-trigger" style="transition-delay:100ms">
+                        <a href="articles/profils-acheteurs-mexique-panama.html" class="block aspect-[16/10] overflow-hidden">
+                            <img src="images/panama.webp" alt="Profils acheteurs" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                        </a>
+                        <div class="p-8 flex flex-col flex-1">
+                            <span class="text-[10px] uppercase tracking-widest text-mc-ocean mb-3" data-i18n="ressources.card2.tag">Profils d'acheteurs</span>
+                            <h3 class="font-heading text-2xl mb-3 leading-snug">
+                                <a href="articles/profils-acheteurs-mexique-panama.html" class="hover:text-mc-ocean transition-colors" data-i18n="ressources.card2.title">5 profils d'acheteurs québécois au Mexique et au Panama</a>
+                            </h3>
+                            <a href="articles/profils-acheteurs-mexique-panama.html" class="text-[10px] uppercase tracking-widest border-b border-mc-charcoal pb-1 self-start mt-auto group-hover:text-mc-ocean group-hover:border-mc-ocean transition-colors" data-i18n="ressources.read">Lire l'article</a>
+                        </div>
+                    </article>
+
+                    <article class="group reveal-up flex flex-col bg-mc-linen rounded-xl overflow-hidden hover-trigger" style="transition-delay:200ms">
+                        <a href="articles/methode-achat-international.html" class="block aspect-[16/10] overflow-hidden">
+                            <img src="images/international-plage.webp" alt="Méthode d'achat" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                        </a>
+                        <div class="p-8 flex flex-col flex-1">
+                            <span class="text-[10px] uppercase tracking-widest text-mc-ocean mb-3" data-i18n="ressources.card3.tag">Méthode</span>
+                            <h3 class="font-heading text-2xl mb-3 leading-snug">
+                                <a href="articles/methode-achat-international.html" class="hover:text-mc-ocean transition-colors" data-i18n="ressources.card3.title">Comment acheter au soleil sans brûler les étapes</a>
+                            </h3>
+                            <a href="articles/methode-achat-international.html" class="text-[10px] uppercase tracking-widest border-b border-mc-charcoal pb-1 self-start mt-auto group-hover:text-mc-ocean group-hover:border-mc-ocean transition-colors" data-i18n="ressources.read">Lire l'article</a>
+                        </div>
+                    </article>
+
+                </div>
+            </section>
+
+            <div class="mt-20 text-center reveal-up bg-mc-charcoal text-white rounded-xl px-8 py-14">
+                <h2 class="font-heading text-3xl md:text-4xl mb-4" data-i18n="blogue.cta.title">Courtier intéressé par eXp ou notre équipe?</h2>
+                <p class="font-light text-white/70 max-w-xl mx-auto mb-8" data-i18n="blogue.cta.desc">Parlez à un recruteur eXp Québec. Sans pression — juste des réponses claires.</p>
+                <a href="rejoindre-exp.html#contact" class="hover-trigger inline-block bg-mc-ocean text-white px-10 py-4 text-xs uppercase tracking-widest rounded-full hover:bg-mc-sand hover:text-mc-charcoal transition-all duration-300" data-i18n="blogue.cta.btn">Prendre contact</a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-mc-charcoal text-white py-12 border-t border-white/10">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs font-light tracking-widest uppercase text-white/50">
+            <div class="flex flex-col sm:flex-row items-center gap-3 sm:gap-8 text-center sm:text-left">
+                <p data-i18n="footer.copyright">&copy; 2026 MC Équipe - eXp Agence Immobilière.</p>
+                <a href="politique-confidentialite.html" class="hover-trigger hover:text-white/70 transition-colors" data-i18n="footer.privacy">Politique de confidentialité</a>
+            </div>
+            <a href="https://roymarketing.ca" target="_blank" rel="noopener noreferrer" class="hover-trigger hover:text-white/70 transition-colors" data-i18n="footer.credit">Conception web par Roy Marketing</a>
+        </div>
+    </footer>
+</body>
+</html>
