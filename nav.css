@@ -1,0 +1,137 @@
+/* Mobile navigation — MC Équipe */
+.mobile-nav-toggle {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  width: 40px;
+  height: 40px;
+  padding: 8px;
+  margin: 0;
+  border: 0;
+  background: transparent;
+  color: inherit;
+  z-index: 60;
+  flex-shrink: 0;
+}
+
+.mobile-nav-toggle span {
+  display: block;
+  width: 100%;
+  height: 1.5px;
+  background: currentColor;
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.25s ease;
+  transform-origin: center;
+}
+
+.mobile-nav-toggle.is-open span:nth-child(1) {
+  transform: translateY(6.5px) rotate(45deg);
+}
+
+.mobile-nav-toggle.is-open span:nth-child(2) {
+  opacity: 0;
+}
+
+.mobile-nav-toggle.is-open span:nth-child(3) {
+  transform: translateY(-6.5px) rotate(-45deg);
+}
+
+@media (min-width: 1024px) {
+  .mobile-nav-toggle {
+    display: none !important;
+  }
+}
+
+/* Hide desktop Contact on small screens — it lives in the panel */
+@media (max-width: 1023px) {
+  #navbar > .flex.shrink-0 > .nav-btn,
+  #navbar > .flex.items-center > a[href*="contact"],
+  #navbar > .flex.items-center > a[href*="#contact"],
+  nav#navbar .nav-btn {
+    display: none !important;
+  }
+}
+
+/* When menu is open: keep bar readable over the linen panel */
+#navbar.mobile-nav-active {
+  z-index: 70;
+  background: #efe9e2 !important;
+  color: #3d312c !important;
+  border-bottom: 1px solid rgba(61, 49, 44, 0.1);
+  backdrop-filter: none;
+}
+
+#navbar.mobile-nav-active a,
+#navbar.mobile-nav-active .lang-btn {
+  color: #3d312c !important;
+}
+
+.mobile-nav-panel {
+  position: fixed;
+  inset: 0;
+  z-index: 60;
+  background: #efe9e2;
+  color: #3d312c;
+  display: flex;
+  flex-direction: column;
+  padding: 6.5rem 2rem 2.5rem;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 0.4s cubic-bezier(0.16, 1, 0.3, 1), visibility 0.4s;
+}
+
+.mobile-nav-panel.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.mobile-nav-panel nav {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  flex: 1;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.mobile-nav-panel nav a {
+  font-family: 'Optima', sans-serif;
+  font-size: 1.75rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding: 1rem 0;
+  border-bottom: 1px solid rgba(61, 49, 44, 0.12);
+  color: #3d312c;
+  transition: color 0.25s ease;
+}
+
+.mobile-nav-panel nav a:hover,
+.mobile-nav-panel nav a:focus {
+  color: #4f909b;
+  outline: none;
+}
+
+.mobile-nav-panel .mobile-nav-cta {
+  margin-top: 2rem;
+  display: inline-flex;
+  align-self: flex-start;
+  border: 1px solid #3d312c;
+  padding: 0.85rem 1.75rem;
+  font-size: 0.625rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  border-radius: 9999px;
+  color: #3d312c;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.mobile-nav-panel .mobile-nav-cta:hover {
+  background: #3d312c;
+  color: #fff;
+}
+
+body.mobile-nav-open {
+  overflow: hidden;
+}

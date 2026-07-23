@@ -6,6 +6,7 @@
     <title data-i18n="meta.title.catherine">Catherine Aubé | MC Équipe</title>
     <script src="i18n.js"></script>
     <script src="cookies.js"></script>
+    <link rel="stylesheet" href="nav.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&display=swap" rel="stylesheet">
     
@@ -53,13 +54,14 @@
 
     <div class="custom-cursor hidden lg:block" id="cursor"></div>
 
-    <nav class="w-full z-50 px-8 py-6 flex justify-between items-center bg-mc-white border-b border-mc-linen">
+    <nav id="navbar" class="w-full z-50 px-8 py-6 flex justify-between items-center bg-mc-white border-b border-mc-linen">
         <a href="index.html" class="text-2xl font-heading tracking-widest uppercase hover-trigger text-mc-charcoal">MC Équipe</a>
-        <div class="hidden md:flex gap-12 text-[11px] tracking-widest uppercase font-medium text-mc-charcoal">
+        <div class="hidden lg:flex gap-8 text-[11px] tracking-widest uppercase font-medium nav-links text-mc-charcoal">
             <a href="index.html#services" class="hover-trigger hover:text-mc-sand transition-colors" data-i18n="nav.services">Services</a>
             <a href="index.html#equipe" class="hover-trigger text-mc-sand transition-colors" data-i18n="nav.team">L'Équipe</a>
             <a href="international.html" class="hover-trigger hover:text-mc-ocean transition-colors" data-i18n="nav.international">International</a>
-            <a href="hypotheque.html" class="hover-trigger hover:text-mc-sand transition-colors" data-i18n="nav.hypotheque">Hypothèque</a>
+            <a href="blogue.html" class="hover-trigger hover:text-mc-sand transition-colors" data-i18n="nav.blogue">Blogue</a>
+            <a href="rejoindre-exp.html" class="hover-trigger hover:text-mc-sand transition-colors" data-i18n="nav.rejoindre">Rejoindre</a>
             <a href="https://mathieumichaud.expquebec.com/fr/proprietes" data-i18n-href="listings" class="hover-trigger hover:text-mc-sand transition-colors" target="_blank" rel="noopener noreferrer" data-i18n="nav.listings">Propriétés</a>
         </div>
         <div class="flex items-center gap-4 md:gap-6 shrink-0">
@@ -68,7 +70,7 @@
                 <span class="opacity-30 select-none" aria-hidden="true">|</span>
                 <button type="button" data-lang-set="en" class="lang-btn hover-trigger transition-opacity">EN</button>
             </div>
-            <a href="index.html#contact" class="hover-trigger border border-mc-charcoal text-mc-charcoal px-6 py-3 text-[10px] uppercase tracking-widest hover:bg-mc-charcoal hover:text-white transition-all duration-500 rounded-full" data-i18n="nav.contact">Contact</a>
+            <a href="index.html#contact" class="nav-btn hover-trigger border border-mc-charcoal text-mc-charcoal px-6 py-3 text-[10px] uppercase tracking-widest hover:bg-mc-charcoal hover:text-white transition-all duration-500 rounded-full" data-i18n="nav.contact">Contact</a>
         </div>
     </nav>
 
@@ -163,5 +165,6 @@
             revealElements.forEach(el => revealObserver.observe(el));
         });
     </script>
+    <script src="nav.js"></script>
 </body>
 </html>
