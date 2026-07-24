@@ -10,7 +10,7 @@
   const EN = {
     'meta.title.index': 'MC Équipe | Real estate reimagined',
     'meta.desc.index':
-      'MC Équipe Real Estate — residential brokerage in Quebec, international acquisitions and eXp Realty recruitment. Mathieu Michaud and Catherine Aubé.',
+      'MC Équipe Real Estate - residential brokerage in Quebec, international acquisitions and eXp Realty recruitment. Mathieu Michaud and Catherine Aubé.',
     'meta.title.residentiel': 'Buy & Sell | MC Équipe',
     'meta.title.military': 'Military Relocation | MC Équipe',
     'meta.desc.military':
@@ -402,6 +402,7 @@
     'military.contact.form.submit': 'Send request',
 
     'mathieu.military.link': 'Military relocation, accredited broker',
+    'mathieu.recruit.link': 'Mathieu Michaud - eXp Quebec recruitment',
 
     'evaluation.hero.tag': 'Fair market value',
     'evaluation.hero.title': 'Free <span class="italic font-light">Evaluation</span>',
@@ -574,7 +575,7 @@
 
     'meta.title.rejoindreExp': 'Become an eXp Realty broker in Quebec | MC Équipe',
     'meta.desc.rejoindreExp':
-      'Join eXp Realty in Quebec: change brokerages, understand the model, Revenue Share and benefits. eXp recruiter — MC Équipe Real Estate.',
+      'Join eXp Realty in Quebec: change brokerages, understand the model, Revenue Share and benefits. eXp recruiter - MC Équipe Real Estate.',
     'meta.title.rejoindreEquipe': 'Join MC Équipe Real Estate | Recruitment',
     'meta.desc.rejoindreEquipe':
       'Join a real estate team in Quebec: vision, coaching and benefits of MC Équipe Real Estate at eXp Realty.',
@@ -592,38 +593,77 @@
     'exp.hero.tag': 'eXp Realty recruitment',
     'exp.hero.title': 'Become an eXp Realty <br><span class="italic text-mc-sand">broker in Quebec.</span>',
     'exp.hero.desc':
-      'Exploring eXp, changing brokerages or talking to an eXp recruiter? Here are the essentials — and MC Équipe support.',
+      'Exploring eXp, changing brokerages or talking to an eXp recruiter? Here are the essentials - and MC Équipe support.',
     'exp.hero.cta': 'Talk with us',
     'exp.hero.cta2': 'Read the blog',
     'exp.why.label': 'Why eXp',
-    'exp.why.title': 'Why choose eXp Realty',
+    'exp.why.title': 'Where pros grow',
     'exp.why.p1':
-      'eXp Realty is a cloud-first brokerage built on technology, a global network and a compensation model designed for autonomous agents. In Quebec, it attracts professionals who want to modernize their practice without losing the human touch.',
+      'eXp Realty is a global community built to transform the brokerage experience. Agents attend live training, collaborate in real time and access a professional environment designed to help them excel, wherever they are.',
     'exp.why.p2':
-      'At MC Équipe, we live this model daily: residential, international and team coaching. As eXp recruiters in Quebec, our role is to help you decide — clearly, without pressure.',
+      'Compared with traditional offices, eXp\'s virtual campus removes unnecessary commuting and opens international collaboration: coaching, meetings and best-practice sharing with industry experts.',
+    'exp.why.p3':
+      'At MC Équipe, we live this model in Quebec every day. As eXp recruiters, our role is to help you decide clearly, with no pressure, and to support your onboarding.',
     'exp.model.label': 'The model',
-    'exp.model.title': 'What changes when you join eXp',
-    'exp.model.s1.title': 'Autonomy & tools',
+    'exp.model.title': 'What agents value at eXp',
+    'exp.model.intro':
+      'Four concrete pillars as presented for Quebec. We walk through them in detail on a call.',
+    'exp.model.s1.title': 'Work from anywhere',
     'exp.model.s1.desc':
-      'Collaborative platform, ongoing training and marketing tools designed to boost productivity.',
-    'exp.model.s2.title': 'Global network',
+      'eXp\'s virtual professional environment lets you collaborate and learn in real time without depending on a physical office. Training, coaching and team meetings are available from anywhere.',
+    'exp.model.s1.desc2':
+      'You build your practice while benefiting from a powerful network and collaboration that goes beyond Quebec.',
+    'exp.model.s2.title': 'Shareholder opportunity',
     'exp.model.s2.desc':
-      'Access to an international agent network — useful for referrals, relocations and projects outside Quebec.',
-    'exp.model.s3.title': 'Revenue Share',
+      'Agents can build their business while having the opportunity to buy shares in eXp World Holdings, the parent company. Milestones (such as a first transaction) may also open equity rewards.',
+    'exp.model.s2.desc2':
+      'The idea: take part in the company\'s growth, not just wear a brand. We clarify options and conditions in your conversation with us.',
+    'exp.model.s3.title': 'Powerful technology',
     'exp.model.s3.desc':
-      'A revenue-sharing program tied to network growth. We explain how it works without jargon.',
+      'Access to advanced brokerage tools (lead attraction, transactions, content marketing, optional advertising) without the extra fees typical of traditional models.',
+    'exp.model.s3.desc2':
+      'More than 15 hours of live training each week, plus technical, real-estate and financial support so your systems run efficiently wherever you are.',
+    'exp.model.s4.title': 'Maximize your earnings',
+    'exp.model.s4.desc':
+      'The virtual-office model aims to remove traditional add-on costs: no desk fees, franchise fees or royalties. Agents typically keep 80 to 100% of their commissions depending on their path.',
+    'exp.model.s4.desc2':
+      'Revenue Share (sponsorship-related revenue sharing) and recognition programs such as Icon Agent awards complete the model. These shares do not reduce sponsored agents\' commissions. We explain how it works without jargon.',
     'exp.model.link': 'Go deeper on the eXp model →',
+    'exp.model.link2': 'Understand Revenue Share →',
+    'exp.model.link3': 'See fees at eXp →',
+    'exp.culture.label': 'Culture',
+    'exp.culture.title': 'Values that guide the company',
+    'exp.culture.desc':
+      'At eXp, values support the vision and team culture. If they resonate with you, the model is more likely to be a fit.',
+    'exp.culture.v1.title': 'Community',
+    'exp.culture.v1.desc': 'Be a good neighbour and leave a lasting legacy.',
+    'exp.culture.v2.title': 'Service',
+    'exp.culture.v2.desc': 'Create positive change in the company and the local community.',
+    'exp.culture.v3.title': 'Collaboration',
+    'exp.culture.v3.desc': 'We are all in the same industry: helping each other is part of the model.',
+    'exp.culture.v4.title': 'Sustainability',
+    'exp.culture.v4.desc': 'Think long-term for the company and family, financially and environmentally.',
+    'exp.culture.v5.title': 'Transparency',
+    'exp.culture.v5.desc': 'Pull back the curtain on how things work.',
+    'exp.culture.v6.title': 'Integrity',
+    'exp.culture.v6.desc': 'Do the right thing.',
+    'exp.culture.v7.title': 'Innovation',
+    'exp.culture.v7.desc': 'The best way to predict the future is to invent it.',
+    'exp.culture.v8.title': 'Adaptability',
+    'exp.culture.v8.desc': 'Face change and adapt in order to grow.',
+    'exp.culture.v9.title': 'Fun',
+    'exp.culture.v9.desc': 'Do not take yourself too seriously.',
     'exp.faq.label': 'FAQ',
     'exp.faq.title': 'Before you change brokerages',
     'exp.faq.q1': 'How do I join eXp Realty in Quebec?',
     'exp.faq.a1':
-      'A valid OACIQ licence is required. Then a call with an eXp recruiter (us) clarifies the model, fees, Revenue Share and onboarding. We guide you step by step.',
+      'A valid OACIQ licence is required in Quebec. Then a call with an eXp recruiter (MC Équipe) clarifies the cloud model, training, tools, Revenue Share and onboarding. We guide you step by step.',
     'exp.faq.q2': 'What are the fees at eXp?',
     'exp.faq.a2':
-      'The fee structure differs from traditional brokerages (splits, platform fees, caps). We walk through it transparently on the call. See also our dedicated article on eXp fees.',
+      'The model aims to avoid traditional desk, franchise and royalty fees. Agents often keep 80 to 100% of commissions depending on their path. We review this transparently on a call, and our fees article goes deeper.',
     'exp.faq.q3': 'Can I join a team at the same time?',
     'exp.faq.a3':
-      'Yes. Many agents join eXp and MC Équipe to get the national model plus local coaching. Discover our team benefits.',
+      'Yes. Many agents join eXp and MC Équipe to combine the national model (technology, network, Revenue Share) with local support. Discover what our team offers.',
     'exp.team.label': 'Also',
     'exp.team.title': 'Join MC Équipe Real Estate',
     'exp.team.desc':
@@ -656,7 +696,7 @@
     'equipe.benefits.title': 'What you gain by joining us',
     'equipe.benefits.s1.title': 'Real coaching',
     'equipe.benefits.s1.desc':
-      'Onboarding, file follow-up and regular check-ins to accelerate your growth — without leaving you alone behind a login.',
+      'Onboarding, file follow-up and regular check-ins to accelerate your growth - without leaving you alone behind a login.',
     'equipe.benefits.s2.title': 'Clear positioning',
     'equipe.benefits.s2.desc':
       'A coherent team brand (MC Équipe), distinctive niches (international, military, mortgage partner) and a site that works for you.',
@@ -670,7 +710,7 @@
       'Client relationships, international and human support. She is the relational heart of the team.',
     'equipe.articles.title': 'Read about our coaching',
     'equipe.articles.desc':
-      'How we support agents day to day — and what it really means to join a real estate team.',
+      'How we support agents day to day - and what it really means to join a real estate team.',
     'equipe.articles.cta': 'Read the article',
     'equipe.contact.label': 'Next step',
     'equipe.contact.title': 'Let\'s talk about <br><span class="italic text-mc-sand">your place.</span>',
@@ -693,7 +733,7 @@
     'blogue.cat.internationalTitle': 'Mexico & Panama',
     'blogue.r1.tag': 'eXp Realty',
     'blogue.r1.title': 'Why choose eXp Realty',
-    'blogue.r1.excerpt': 'Why Quebec agents join eXp — beyond the marketing.',
+    'blogue.r1.excerpt': 'Why Quebec agents join eXp - beyond the marketing.',
     'blogue.r2.tag': 'Model',
     'blogue.r2.title': 'Benefits of the eXp model',
     'blogue.r2.excerpt': 'Technology, training, network and flexibility: what the model changes in practice.',
@@ -710,7 +750,7 @@
     'blogue.r6.title': 'How we support agents',
     'blogue.r6.excerpt': 'What joining MC Équipe means: mentorship, culture and growth.',
     'blogue.cta.title': 'Agent interested in eXp or our team?',
-    'blogue.cta.desc': 'Talk to an eXp recruiter in Quebec. No pressure — just clear answers.',
+    'blogue.cta.desc': 'Talk to an eXp recruiter in Quebec. No pressure - just clear answers.',
     'blogue.cta.btn': 'Get in touch',
 
     'article.back.blogue': '← All blog posts',
@@ -732,7 +772,7 @@
     'article.avantagesExp.tag': 'Model · July 2026',
     'article.avantagesExp.title': 'Benefits of the eXp model',
     'article.avantagesExp.lead':
-      'Four pillars of the eXp model — and how to evaluate them for your practice in Quebec.',
+      'Four pillars of the eXp model - and how to evaluate them for your practice in Quebec.',
 
     'meta.title.article.expVs': 'eXp vs traditional brokerages | MC Équipe',
     'meta.desc.article.expVs':
@@ -748,7 +788,7 @@
     'article.revenueShare.tag': 'Revenue Share · July 2026',
     'article.revenueShare.title': 'How Revenue Share works',
     'article.revenueShare.lead':
-      'Revenue Share is often the most misunderstood — and most interesting — part of the eXp model.',
+      'Revenue Share is often the most misunderstood - and most interesting - part of the eXp model.',
 
     'meta.title.article.fraisExp': 'Fees at eXp | MC Équipe',
     'meta.desc.article.fraisExp':
@@ -787,6 +827,7 @@
     'catherine.p3':
       'Beyond Quebec, Catherine leads our overseas acquisition service. Whether a retirement project in Mexico or an investment in Panama, she demystifies cross-border legal processes and offers secure support from the first virtual visit to key handoff.',
     'catherine.cta': 'Email Catherine',
+    'catherine.recruit.link': 'Catherine Aubé - eXp Quebec recruitment',
     'catherine.horizon.title': 'Horizons <br><span class="italic text-mc-ocean">without borders.</span>',
     'catherine.horizon.title': 'Horizons <br><span class="italic text-mc-ocean">without borders.</span>',
     'catherine.horizon.tag': 'Mexico & Panama acquisitions',

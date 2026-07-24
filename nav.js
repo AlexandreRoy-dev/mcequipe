@@ -1,5 +1,5 @@
 /**
- * MC Équipe — mobile navigation
+ * MC Équipe  -  mobile navigation
  * Injects a hamburger + full-screen panel from existing .nav-links.
  */
 (function () {
@@ -85,7 +85,7 @@
       { href: 'index.html#equipe', fr: "L'Équipe", en: 'The Team', key: 'nav.team' },
       { href: 'international.html', fr: 'International', en: 'International', key: 'nav.international' },
       { href: 'blogue.html', fr: 'Blogue', en: 'Blog', key: 'nav.blogue' },
-      { href: 'rejoindre-exp.html', fr: 'Rejoindre', en: 'Join us', key: 'nav.rejoindre' },
+      { href: 'devenir-courtier-exp-quebec.html', fr: 'Rejoindre', en: 'Join us', key: 'nav.rejoindre' },
       {
         href: 'https://mathieumichaud.expquebec.com/fr/proprietes',
         fr: 'Propriétés',

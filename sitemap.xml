@@ -11,7 +11,7 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://mcequipe.ca/rejoindre-exp.html</loc>
+    <loc>https://mcequipe.ca/devenir-courtier-exp-quebec.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -112,6 +112,26 @@
   </url>
   <url>
     <loc>https://mcequipe.ca/articles/accompagnement-mc-equipe-courtiers.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://mcequipe.ca/rejoindre-exp-realty-quebec.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://mcequipe.ca/recrutement-exp-quebec.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://mcequipe.ca/recrutement-exp-quebec-mathieu-michaud.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://mcequipe.ca/recrutement-exp-quebec-catherine-aube.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>

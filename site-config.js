@@ -1,5 +1,5 @@
 /**
- * MC Équipe site config — update GHL calendar settings here.
+ * MC Équipe site config  -  update GHL calendar settings here.
  *
  * In GoHighLevel: Calendars → [your calendar] → ⋮ → Share → Embed Code
  * Copy the calendar ID from the iframe URL:
@@ -11,10 +11,10 @@
  * merci.html passes them to the calendar iframe as first_name, last_name, email, phone.
  *
  * GHL consent checkbox (English "I confirm that I want to receive content…"):
- *   Cannot be changed from this site — edit in GoHighLevel:
+ *   Cannot be changed from this site  -  edit in GoHighLevel:
  *   Calendars → [Consultation MC Équipe] → Forms / Forms & Payments
  *
- *   Recommended: turn OFF "Show consent checkbox" — visitors already accept
+ *   Recommended: turn OFF "Show consent checkbox"  -  visitors already accept
  *   Loi 25 consent on merci.html (French) before the calendar loads.
  *
  *   If you keep it, paste this French text in the consent message field:

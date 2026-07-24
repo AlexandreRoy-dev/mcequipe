@@ -1,5 +1,5 @@
 /**
- * GoHighLevel calendar — French contact layer, then calendar with prefill.
+ * GoHighLevel calendar  -  French contact layer, then calendar with prefill.
  */
 (function () {
   const EMBED_BASE = 'https://api.leadconnectorhq.com/widget/booking/';

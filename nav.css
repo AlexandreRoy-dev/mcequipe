@@ -1,4 +1,4 @@
-/* Mobile navigation — MC Équipe */
+/* Mobile navigation  -  MC Équipe */
 .mobile-nav-toggle {
   display: inline-flex;
   flex-direction: column;
@@ -42,7 +42,7 @@
   }
 }
 
-/* Hide desktop Contact on small screens — it lives in the panel */
+/* Hide desktop Contact on small screens  -  it lives in the panel */
 @media (max-width: 1023px) {
   #navbar > .flex.shrink-0 > .nav-btn,
   #navbar > .flex.items-center > a[href*="contact"],
