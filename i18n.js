@@ -154,7 +154,7 @@
       'Book a slot with apoint. It\'s free, no obligation, and no credit impact without your consent.',
 
     'meta.desc.international':
-      'Buy a home or an investment property abroad with MC Équipe. French-language support and the eXp Global network, for Quebec buyers.',
+      'Buy a home or an investment property abroad with MC Équipe. Service in French, English and Spanish, through the eXp Global network.',
 
     'cookies.message':
       'This site uses essential cookies and third-party services required for it to function.',
@@ -242,7 +242,7 @@
     'index.s3.tag': 'Abroad',
     'index.s3.title': 'International Buying',
     'index.s3.desc':
-      'A home or an investment property abroad. French-language support, legally framed, via the eXp Global network.',
+      'A home or an investment property abroad. Service in French, English and Spanish, legally framed, via the eXp Global network.',
 
     'index.s4.tag': 'Forces armées canadiennes',
     'index.s4.title': 'Transfert Militaire',
@@ -305,7 +305,7 @@
     'index.faq.title': 'Frequently asked questions',
     'index.faq.q1': 'How does buying abroad work?',
     'index.faq.a1':
-      'We offer turnkey support. Through eXp Global we work with local brokers, lawyers and notaries in the market you choose. We stay with you from viewings (virtual or in person) through to closing, in French, with the legal file framed before any offer.',
+      'We offer turnkey support. Through eXp Global we work with local brokers, lawyers and notaries in the market you choose. We stay with you from viewings (virtual or in person) through to closing, in French, English or Spanish, with the legal file framed before any offer.',
     'index.faq.q2': 'What does the free property evaluation include?',
     'index.faq.a2':
       'Our evaluation is based on a rigorous comparative market analysis (CMA). We review recently sold comparable properties in your area, current market trends and your home’s unique features to determine fair market value, with no obligation.',
@@ -436,9 +436,9 @@
     'international.hero.title':
       'Buy beyond borders.<br><span class="italic font-light text-white">Live or invest.</span>',
     'international.hero.desc':
-      'A home, retirement or rental asset. French-language support, through the eXp Global network.',
+      'A home, retirement or rental asset. Service in French, English and Spanish, through the eXp Global network.',
     'international.hero.b1': 'Legal file framed',
-    'international.hero.b2': 'French-language service',
+    'international.hero.b2': 'French, English, Spanish',
     'international.form.title': 'Frame your project',
     'international.form.sub': 'No obligation',
     'international.form.name': 'Full name',
@@ -478,7 +478,7 @@
     'international.method.s4.desc':
       'Offer, due diligence, often a remote closing. If the property is a rental, we connect local management before the first empty week.',
 
-    'international.markets.title': 'Not two countries. A network.',
+    'international.markets.title': 'A network, on the ground.',
     'international.markets.lead':
       'The market opens where your use and your numbers hold. Americas, Europe, the Caribbean or elsewhere: we first check whether the file can be opened.',
     'international.markets.m1.title': 'Americas',
@@ -499,7 +499,7 @@
     'international.team.p1':
       'Mathieu structures the numbers and the transaction. Catherine holds the human thread and coordination with partners on site. A purchase outside Canada is treated like a Quebec deal: clarity, follow-up, no clause left in the fog.',
     'international.team.p2':
-      'Catherine leads international acquisitions: a home, retirement or a rental. She remains your French-language contact from the first call to the keys.',
+      'Catherine leads international acquisitions: a home, retirement or a rental. She remains your contact in French, English or Spanish from the first call to the keys.',
     'international.team.cta': 'Meet Catherine',
 
     'international.faq.title': 'Frequently asked questions',
@@ -550,7 +550,7 @@
     'ressources.card2.tag': 'Buyer profiles',
     'ressources.card2.title': '5 Quebec buyer profiles in Mexico and Panama',
     'ressources.card2.excerpt':
-      'Retirees, snowbirds, investors, families and pre-expats: motivations, conversation angles and real needs.',
+      'Retirees, snowbirds, investors, families and pre-expats: motivations, advantages and real needs.',
     'ressources.card3.tag': 'Method',
     'ressources.card3.title': 'How to buy in the sun without skipping steps',
     'ressources.card3.excerpt':
@@ -558,7 +558,7 @@
     'ressources.read': 'Read article',
     'ressources.cta.title': 'Ready to frame your project outside Canada?',
     'ressources.cta.desc':
-      'Book a strategy call with Mathieu and Catherine. French-language service, secure process and turnkey support.',
+      'Book a strategy call with Mathieu and Catherine. Service in French, English and Spanish, secure process and turnkey support.',
     'ressources.cta.btn': 'Get in touch',
 
     'international.ressources.title': 'Guides for <span class="italic text-mc-sand">informed buyers.</span>',
@@ -570,7 +570,7 @@
     'article.share': 'Copy link',
     'article.cta.title': 'Discuss your project with MC Équipe',
     'article.cta.desc':
-      'Buy a home or an investment property abroad. French-language service, eXp Global network and structured legal support.',
+      'Buy a home or an investment property abroad. Service in French, English and Spanish, eXp Global network and structured legal support.',
     'article.cta.contact': 'Get in touch',
 
     'meta.title.article.marche': 'Mexico & Panama Market 2026 | MC Équipe',
@@ -586,14 +586,14 @@
 
     'meta.title.article.profils': 'Buyer Profiles Mexico & Panama | MC Équipe',
     'meta.desc.article.profils':
-      'Retirees, snowbirds, investors, families and pre-expats: 5 Quebec buyer profiles in Mexico and Panama and how to support them.',
+      'Retirees, snowbirds, investors, families and pre-expats: 5 Quebec buyer profiles in Mexico and Panama, and the advantage of each project.',
     'article.profils.tag': 'Buyer profiles · June 2026',
     'article.profils.title': '5 Quebec buyer profiles in Mexico and Panama',
     'article.profils.lead':
-      'Not every sun project shares the same priorities. Here are the profiles we see most often in Quebec and Canada, with conversation angles that spark qualified dialogue.',
+      'Not every sun project shares the same priorities. Here are the profiles we see most often, and what each one gains when the file is framed properly.',
     'article.profils.next': 'Next: acquisition method',
     'article.profils.body':
-      '<div class="profile-card"><span class="tag">Profile A</span><h3>Retirees (55-75)</h3><p><strong>Motivation:</strong> cost of living, climate, perceived safety, healthcare, francophone or expat community.</p><p><strong>Angle:</strong> "Compare Panama and Mexico for your actual retirement, not the brochures."</p><p><strong>Need:</strong> human support, legal and tax validation, administrative simplicity.</p></div><div class="profile-card"><span class="tag">Profile B</span><h3>Snowbirds</h3><p><strong>Motivation:</strong> 2 to 6 months a year in the sun without leaving Canada permanently.</p><p><strong>Angle:</strong> "Buy vs rent: how many weeks per year before ownership makes sense?"</p><p><strong>Need:</strong> easy-to-maintain condo, security, airport access, transparent monthly costs.</p></div><div class="profile-card"><span class="tag">Profile C</span><h3>Investors</h3><p><strong>Motivation:</strong> short or mid-term rental, diversification outside Canada, USD or local-currency asset.</p><p><strong>Angle:</strong> "Gross yield vs net yield: fees, vacancy, management, taxes."</p><p><strong>Need:</strong> realistic numbers, reliable management, resale liquidity.</p></div><div class="profile-card"><span class="tag">Profile D</span><h3>Family second home</h3><p><strong>Motivation:</strong> lifestyle, recurring vacations, legacy for children or grandchildren.</p><p><strong>Angle:</strong> "A sunny base you can use now and resell later."</p><p><strong>Need:</strong> flight accessibility, neighborhood safety, remote maintenance.</p></div><div class="profile-card"><span class="tag">Profile E</span><h3>Pre-expat / international mobility</h3><p><strong>Motivation:</strong> test life outside Canada without selling everything in Quebec right away.</p><p><strong>Angle:</strong> "12-month plan: visit, compare, secure, decide."</p><p><strong>Need:</strong> immigration, healthcare, taxes, residency status (to validate with local professionals).</p></div><h2>How to use this guide</h2><p>Share the article that matches your contact\'s profile. The goal isn\'t to push a property, but to open a structured conversation about what truly matters to them.</p><p>MC Équipe supports Quebec buyers with French-language service, the eXp Global network and legal partners on the ground in Mexico and Panama.</p>',
+      '<div class="profile-card"><span class="tag">Profile A</span><h3>Retirees (55-75)</h3><p><strong>Motivation:</strong> cost of living, climate, perceived safety, healthcare, francophone or expat community.</p><p><strong>Advantage:</strong> you compare countries against your real retirement (health, flights, day-to-day life), not a brochure photo.</p><p><strong>Need:</strong> human support, legal and tax validation, administrative simplicity.</p></div><div class="profile-card"><span class="tag">Profile B</span><h3>Snowbirds</h3><p><strong>Motivation:</strong> 2 to 6 months a year in the sun without leaving Canada permanently.</p><p><strong>Advantage:</strong> you know how many weeks in the sun it takes before buying beats renting, before you sign.</p><p><strong>Need:</strong> easy-to-maintain condo, security, airport access, transparent monthly costs.</p></div><div class="profile-card"><span class="tag">Profile C</span><h3>Investors</h3><p><strong>Motivation:</strong> short or mid-term rental, diversification outside Canada, USD or local-currency asset.</p><p><strong>Advantage:</strong> you see net yield after fees, vacancy, management and tax, not just the advertised gross.</p><p><strong>Need:</strong> realistic numbers, reliable management, resale liquidity.</p></div><div class="profile-card"><span class="tag">Profile D</span><h3>Family second home</h3><p><strong>Motivation:</strong> lifestyle, recurring vacations, legacy for children or grandchildren.</p><p><strong>Advantage:</strong> a home you use now, and can resell later without getting stuck.</p><p><strong>Need:</strong> flight accessibility, neighborhood safety, remote maintenance.</p></div><div class="profile-card"><span class="tag">Profile E</span><h3>Pre-expat / international mobility</h3><p><strong>Motivation:</strong> test life outside Canada without selling everything in Quebec right away.</p><p><strong>Advantage:</strong> a 12-month plan to visit, compare and decide, without selling Quebec too soon.</p><p><strong>Need:</strong> immigration, healthcare, taxes, residency status (to validate with local professionals).</p></div><h2>How to use this guide</h2><p>Find the profile that looks like you. The goal is not to push a property, but to clarify the criteria that actually matter to you.</p><p>MC Équipe supports Quebec buyers in French, English and Spanish, with the eXp Global network and legal partners on the ground in Mexico and Panama.</p>',
 
     'meta.title.article.methode': 'International Buying Method | MC Équipe',
     'meta.desc.article.methode':
@@ -604,7 +604,7 @@
       'The best ROI strategy doesn\'t start with a property. It starts with a secure discovery method: clarify budget, lifestyle, taxes and risks before signing anything.',
     'article.methode.next': 'Back to market analysis',
     'article.methode.body':
-      '<h2>The most common mistake</h2><p>Falling for a unit on a visit, then reverse-engineering budget, taxes and financing. Result: surprises on closing costs, HOA fees, rental management or tax status in Canada.</p><p>Our approach reverses the order: a structured conversation first, then a property shortlist aligned with validated criteria.</p><h2>The 8 pillars of the MC Équipe method</h2><ol><li><strong>Real total budget</strong>: purchase price, notary fees, taxes, furnishing, renovations, contingency reserve.</li><li><strong>Target lifestyle</strong>: beach, city, altitude, expat community, medical needs, day-to-day language.</li><li><strong>Comparable neighborhoods</strong>: Puerto Vallarta vs Mérida, Panama City vs Boquete, etc., on the same criteria.</li><li><strong>Taxes to validate</strong>: tax residency, rental income, Canadian reporting (with a cross-border tax specialist).</li><li><strong>Financing</strong>: equity, local loan if available, currency conversion timeline.</li><li><strong>Legal risk</strong>: title, restricted zone (fideicomiso in Mexico), condo bylaws, resale clauses.</li><li><strong>Rental management</strong>: operator, vacancy, commission, remote upkeep when you\'re not on site.</li><li><strong>Exit / resale</strong>: market liquidity, average time to sell, future buyer profile.</li></ol><h2>Mexico or Panama: the right question</h2><p>The question isn\'t "which country is better?" but "which country fits your profile?" A retiree seeking USD stability and pension incentives doesn\'t compare the same criteria as a short-term rental investor on the Riviera Maya.</p><blockquote>Compare Panama and Mexico for your actual retirement, presence calendar or investment model, not a sunset photo.</blockquote><h2>12-month plan (pre-expat or thoughtful project)</h2><ul><li><strong>Months 1-2:</strong> strategy call, profile and budget definition.</li><li><strong>Months 3-6:</strong> targeted visits to 2-3 areas, notary / property manager meetings.</li><li><strong>Months 6-9:</strong> comparative analysis, tax validation, property shortlist.</li><li><strong>Months 9-12:</strong> offer, due diligence, closing (often remotely with notarized power of attorney).</li></ul><h2>What MC Équipe brings</h2><p>100% French-language service, eXp Global network, local legal partners and end-to-end coordination. Catherine Aubé is your dedicated specialist for Mexico and Panama; Mathieu Michaud structures strategy and transaction rigour.</p><p>This article is informational and does not replace personalized legal, tax or financial advice.</p>',
+      '<h2>The most common mistake</h2><p>Falling for a unit on a visit, then reverse-engineering budget, taxes and financing. Result: surprises on closing costs, HOA fees, rental management or tax status in Canada.</p><p>Our approach reverses the order: a structured conversation first, then a property shortlist aligned with validated criteria.</p><h2>The 8 pillars of the MC Équipe method</h2><ol><li><strong>Real total budget</strong>: purchase price, notary fees, taxes, furnishing, renovations, contingency reserve.</li><li><strong>Target lifestyle</strong>: beach, city, altitude, expat community, medical needs, day-to-day language.</li><li><strong>Comparable neighborhoods</strong>: Puerto Vallarta vs Mérida, Panama City vs Boquete, etc., on the same criteria.</li><li><strong>Taxes to validate</strong>: tax residency, rental income, Canadian reporting (with a cross-border tax specialist).</li><li><strong>Financing</strong>: equity, local loan if available, currency conversion timeline.</li><li><strong>Legal risk</strong>: title, restricted zone (fideicomiso in Mexico), condo bylaws, resale clauses.</li><li><strong>Rental management</strong>: operator, vacancy, commission, remote upkeep when you\'re not on site.</li><li><strong>Exit / resale</strong>: market liquidity, average time to sell, future buyer profile.</li></ol><h2>Mexico or Panama: the right question</h2><p>The question isn\'t "which country is better?" but "which country fits your profile?" A retiree seeking USD stability and pension incentives doesn\'t compare the same criteria as a short-term rental investor on the Riviera Maya.</p><blockquote>Compare Panama and Mexico for your actual retirement, presence calendar or investment model, not a sunset photo.</blockquote><h2>12-month plan (pre-expat or thoughtful project)</h2><ul><li><strong>Months 1-2:</strong> strategy call, profile and budget definition.</li><li><strong>Months 3-6:</strong> targeted visits to 2-3 areas, notary / property manager meetings.</li><li><strong>Months 6-9:</strong> comparative analysis, tax validation, property shortlist.</li><li><strong>Months 9-12:</strong> offer, due diligence, closing (often remotely with notarized power of attorney).</li></ul><h2>What MC Équipe brings</h2><p>Service in French, English and Spanish, eXp Global network, local legal partners and end-to-end coordination. Catherine Aubé is your dedicated specialist for Mexico and Panama; Mathieu Michaud structures strategy and transaction rigour.</p><p>This article is informational and does not replace personalized legal, tax or financial advice.</p>',
 
     'meta.title.rejoindreExp': 'Become an eXp Realty broker in Quebec | MC Équipe',
     'meta.desc.rejoindreExp':
@@ -858,7 +858,7 @@
     'catherine.p2':
       'A specialist in personalized guidance, she is the relational heart of the firm. She excels at understanding clients’ lifestyle needs to guide them toward the right investment. Her staging expertise ensures optimal aesthetic positioning on the market.',
     'catherine.p3':
-      'Beyond Quebec, Catherine leads international acquisitions. A home, retirement or a rental: she demystifies cross-border legal processes and remains your French-language contact from the first virtual visit to the keys.',
+      'Beyond Quebec, Catherine leads international acquisitions. A home, retirement or a rental: she demystifies cross-border legal processes and remains your contact in French, English or Spanish from the first virtual visit to the keys.',
     'catherine.cta': 'Email Catherine',
     'catherine.recruit.link': 'Catherine Aubé - eXp Quebec recruitment',
     'catherine.horizon.title': 'Horizons <br><span class="italic text-mc-ocean">without borders.</span>',
