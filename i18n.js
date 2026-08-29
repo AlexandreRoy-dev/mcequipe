@@ -8,9 +8,12 @@
   const LISTINGS_EN = 'https://mathieumichaud.expquebec.com/en/proprietes';
 
   const EN = {
-    'meta.title.index': 'MC Équipe | Real estate reimagined',
+    'meta.title.index': 'MC Équipe | eXp real estate brokers in Quebec',
     'meta.desc.index':
-      'MC Équipe Real Estate - residential brokerage in Quebec, international acquisitions and eXp Realty recruitment. Mathieu Michaud and Catherine Aubé.',
+      'MC Équipe is a Quebec eXp Realty team led by Mathieu Michaud and Catherine Aubé. Buy, sell, evaluate, military relocation, international acquisitions. Service in French, English and Spanish.',
+    'meta.title.about': 'About MC Équipe | eXp real estate brokers in Quebec',
+    'meta.desc.about':
+      'MC Équipe is the team of Mathieu Michaud and Catherine Aubé at eXp Realty in Quebec. Buy, sell, evaluate, military relocation, international. Service in French, English and Spanish.',
     'meta.title.residentiel': 'Buy & Sell | MC Équipe',
     'meta.title.military': 'Military Relocation | MC Équipe',
     'meta.desc.military':
@@ -18,7 +21,11 @@
     'meta.title.evaluation': 'Free Home Evaluation | MC Équipe',
     'meta.title.international': 'Buy & Invest Abroad | MC Équipe',
     'meta.title.mathieu': 'Mathieu Michaud | MC Équipe',
+    'meta.desc.mathieu':
+      'Mathieu Michaud, eXp Realty broker in Quebec. Buy, sell, evaluate, CAF military relocation and The Buddy Broker method. MC Équipe.',
     'meta.title.catherine': 'Catherine Aubé | MC Équipe',
+    'meta.desc.catherine':
+      'Catherine Aubé, eXp Realty broker in Quebec. International acquisitions and support in French, English and Spanish. MC Équipe.',
     'meta.title.privacy': 'Privacy Policy | MC Équipe',
     'meta.title.merci': 'Thank You | MC Équipe',
     'meta.desc.merci':
@@ -37,6 +44,41 @@
     'nav.blogue': 'Blog',
     'nav.rejoindre': 'Join us',
     'nav.ressources': 'Resources',
+    'footer.about': 'About',
+
+    'index.identity.tag': 'Who we are',
+    'index.identity.title': 'The Quebec team behind the file.',
+    'index.identity.p':
+      'MC Équipe is a team of eXp Realty brokers in Quebec, led by Mathieu Michaud and Catherine Aubé. Residential buy and sell, free evaluations, CAF military relocation, and international acquisitions through eXp Global. Service in French, English and Spanish.',
+
+    'about.tag': 'About',
+    'about.title': 'MC Équipe, eXp brokers in Quebec.',
+    'about.lead1':
+      'MC Équipe is a team of eXp Realty brokers in Quebec, led by Mathieu Michaud and Catherine Aubé.',
+    'about.lead2':
+      'The team works with buyers and sellers across the province: residential buy and sell, evaluations, military relocation, and purchases abroad through the eXp Global network. Service is in French, English and Spanish.',
+    'about.facts.title': 'In a few facts',
+    'about.facts.org': 'Organization',
+    'about.facts.orgv': 'eXp Realty team (eXp Agence Immobilière), Quebec',
+    'about.facts.area': 'Territory',
+    'about.facts.areav': 'Quebec, Capitale-Nationale, Valcartier, and international markets via eXp Global',
+    'about.facts.lang': 'Languages',
+    'about.facts.langv': 'French, English, Spanish',
+    'about.facts.web': 'Official site',
+    'about.facts.phone': 'Phones',
+    'about.facts.email': 'Email',
+    'about.facts.office': 'Office',
+    'about.people.title': 'The brokers',
+    'about.people.mathieu':
+      'Residential real estate broker. Buy, sell, evaluate. Former regular-force member, accredited broker for Canadian Armed Forces relocations. Creator of The Buddy Broker method.',
+    'about.people.catherine':
+      'Real estate broker. Residential guidance and international acquisitions (a home, retirement or a rental). Your contact in French, English or Spanish from the first call to the keys.',
+    'about.services.title': 'What the team does',
+    'about.services.s1': 'Residential buy and sell in Quebec',
+    'about.services.s2': 'Free property evaluation',
+    'about.services.s3': 'International acquisitions, live there or invest',
+    'about.services.s4': 'Military relocation, Valcartier and the Quebec City region',
+    'about.services.s5': 'eXp Realty recruitment in Quebec',
 
     'funnel.step.project': '1. Your project',
     'funnel.step.profile': '1. Your situation',
@@ -1025,6 +1067,20 @@
     captureDefaults();
     applyLanguage(getStoredLang());
   }
+
+  function loadEntity() {
+    if (typeof document === 'undefined') return;
+    var current = document.currentScript;
+    var src = 'entity.js';
+    if (current && current.src) {
+      src = current.src.replace(/i18n\.js(\?.*)?$/, 'entity.js');
+    }
+    var s = document.createElement('script');
+    s.src = src;
+    s.defer = true;
+    (document.head || document.documentElement).appendChild(s);
+  }
+  loadEntity();
 
   global.I18n = { initEarly, init, applyLanguage, getLang: getStoredLang, refresh };
   initEarly();

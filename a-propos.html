@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="fr-CA" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="meta.title.about">À propos de MC Équipe | Courtiers immobiliers eXp au Québec</title>
+    <meta name="description" data-i18n="meta.desc.about" content="MC Équipe est l'équipe de Mathieu Michaud et Catherine Aubé chez eXp Realty au Québec. Achat, vente, évaluation, transfert militaire, international. Service en français, anglais et espagnol.">
+    <link rel="canonical" href="https://mcequipe.ca/a-propos.html">
+    <meta property="og:title" content="À propos de MC Équipe | Courtiers eXp au Québec">
+    <meta property="og:description" content="Équipe de courtiers immobiliers eXp Realty au Québec. Mathieu Michaud et Catherine Aubé. Service en français, anglais et espagnol.">
+    <meta property="og:image" content="https://mcequipe.ca/images/equipe-bureau.webp">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://mcequipe.ca/a-propos.html">
+    <meta property="og:locale" content="fr_CA">
+    <meta property="og:locale:alternate" content="en_CA">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="geo.region" content="CA-QC">
+    <meta name="geo.placename" content="Québec">
+    <meta name="author" content="MC Équipe">
+    <script type="application/ld+json" data-mc-entity-static="1">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": ["RealEstateAgent", "Organization"],
+          "@id": "https://mcequipe.ca/#organization",
+          "name": "MC Équipe",
+          "alternateName": ["MC Equipe", "MC Équipe Immobilier"],
+          "url": "https://mcequipe.ca/",
+          "logo": "https://mcequipe.ca/images/equipe-bureau.webp",
+          "image": "https://mcequipe.ca/images/equipe-bureau.webp",
+          "description": "MC Équipe est une équipe de courtiers immobiliers eXp Realty au Québec, dirigée par Mathieu Michaud et Catherine Aubé. Achat et vente résidentiels, évaluation, transfert militaire, acquisitions internationales et recrutement eXp. Service en français, anglais et espagnol.",
+          "email": "info@mcequipe.com",
+          "telephone": ["+1-418-655-8090", "+1-418-952-0925"],
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "1111 Blvd. Dr. Frederik-Philips #601",
+            "addressLocality": "Saint-Laurent",
+            "addressRegion": "QC",
+            "postalCode": "H4M 2X6",
+            "addressCountry": "CA"
+          },
+          "areaServed": [
+            { "@type": "AdministrativeArea", "name": "Québec" },
+            { "@type": "City", "name": "Québec" },
+            { "@type": "Place", "name": "Base Valcartier" }
+          ],
+          "knowsLanguage": ["fr", "en", "es"],
+          "parentOrganization": { "@type": "Organization", "name": "eXp Realty", "url": "https://expquebec.com/" },
+          "sameAs": ["https://mathieumichaud.expquebec.com/fr/proprietes"]
+        },
+        {
+          "@type": "AboutPage",
+          "@id": "https://mcequipe.ca/a-propos.html#webpage",
+          "url": "https://mcequipe.ca/a-propos.html",
+          "name": "À propos de MC Équipe",
+          "inLanguage": "fr-CA",
+          "about": { "@id": "https://mcequipe.ca/#organization" },
+          "speakable": { "@type": "SpeakableSpecification", "cssSelector": ["#mc-about-lead"] }
+        }
+      ]
+    }
+    </script>
+    <script src="i18n.js"></script>
+    <script src="cookies.js"></script>
+    <link rel="stylesheet" href="nav.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        mc: { charcoal: '#3d312c', sand: '#bbab9a', silver: '#c4c4c3', white: '#ffffff', linen: '#efe9e2', ocean: '#4f909b' }
+                    },
+                    fontFamily: { heading: ['Optima', 'sans-serif'], body: ['"Montserrat"', 'sans-serif'] }
+                }
+            }
+        }
+    </script>
+    <style>
+        .font-heading { font-family: 'Optima', sans-serif; }
+        @media (min-width: 1024px) { body, a, button { cursor: none; } }
+        .custom-cursor { position: fixed; top: 0; left: 0; width: 12px; height: 12px; background-color: #bbab9a; border-radius: 50%; pointer-events: none; z-index: 9999; transform: translate(-50%, -50%); transition: width 0.3s ease, height 0.3s ease; mix-blend-mode: difference; }
+        .custom-cursor.active { width: 60px; height: 60px; opacity: 0.8; }
+        .reveal-up { opacity: 0; transform: translateY(50px); transition: opacity 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94), transform 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94); }
+        .reveal-up.is-visible { opacity: 1; transform: translateY(0); }
+        .fact dt { font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase; color: #bbab9a; margin-bottom: 0.4rem; }
+        .fact dd { font-weight: 300; margin-bottom: 1.5rem; }
+    </style>
+</head>
+<body class="bg-mc-white text-mc-charcoal font-body antialiased selection:bg-mc-ocean selection:text-white overflow-x-hidden">
+
+    <div class="custom-cursor hidden lg:block" id="cursor"></div>
+
+    <nav id="navbar" class="w-full z-50 px-8 py-6 flex justify-between items-center bg-mc-white border-b border-mc-linen">
+        <a href="index.html" class="text-2xl font-heading tracking-widest uppercase hover-trigger text-mc-charcoal">MC Équipe</a>
+        <div class="hidden lg:flex gap-8 text-[11px] tracking-widest uppercase font-medium nav-links text-mc-charcoal">
+            <a href="index.html#services" class="hover-trigger hover:text-mc-sand transition-colors" data-i18n="nav.services">Services</a>
+            <a href="index.html#equipe" class="hover-trigger hover:text-mc-sand transition-colors" data-i18n="nav.team">L'Équipe</a>
+            <a href="international.html" class="hover-trigger hover:text-mc-ocean transition-colors" data-i18n="nav.international">International</a>
+            <a href="blogue.html" class="hover-trigger hover:text-mc-sand transition-colors" data-i18n="nav.blogue">Blogue</a>
+            <a href="devenir-courtier-exp-quebec.html" class="hover-trigger hover:text-mc-sand transition-colors" data-i18n="nav.rejoindre">Rejoindre</a>
+            <a href="https://mathieumichaud.expquebec.com/fr/proprietes" data-i18n-href="listings" class="hover-trigger hover:text-mc-sand transition-colors" target="_blank" rel="noopener noreferrer" data-i18n="nav.listings">Propriétés</a>
+        </div>
+        <div class="flex items-center gap-4 md:gap-6 shrink-0">
+            <div class="lang-toggle flex items-center gap-1.5 text-[10px] tracking-widest uppercase font-medium" role="group" aria-label="Language">
+                <button type="button" data-lang-set="fr" class="lang-btn hover-trigger transition-opacity">FR</button>
+                <span class="opacity-30 select-none" aria-hidden="true">|</span>
+                <button type="button" data-lang-set="en" class="lang-btn hover-trigger transition-opacity">EN</button>
+            </div>
+            <a href="index.html#contact" class="nav-btn hover-trigger border border-mc-charcoal text-mc-charcoal px-6 py-3 text-[10px] uppercase tracking-widest hover:bg-mc-charcoal hover:text-white transition-all duration-500 rounded-full" data-i18n="nav.contact">Contact</a>
+        </div>
+    </nav>
+
+    <main>
+        <header class="pt-20 pb-16 px-6 lg:px-8 max-w-3xl mx-auto">
+            <p class="text-mc-ocean uppercase tracking-[0.3em] text-[10px] font-bold mb-6" data-i18n="about.tag">À propos</p>
+            <h1 class="font-heading text-5xl md:text-6xl leading-[1.1] mb-8" data-i18n="about.title">MC Équipe, courtiers eXp au Québec.</h1>
+            <div id="mc-about-lead" class="font-light text-lg text-mc-charcoal/80 leading-relaxed space-y-5">
+                <p data-i18n="about.lead1">MC Équipe est une équipe de courtiers immobiliers eXp Realty au Québec, dirigée par Mathieu Michaud et Catherine Aubé.</p>
+                <p data-i18n="about.lead2">Elle accompagne les acheteurs et les vendeurs partout dans la province: achat et vente résidentiels, évaluation, transfert militaire, et acquisitions à l'étranger via le réseau eXp Global. Le service se fait en français, en anglais et en espagnol.</p>
+            </div>
+        </header>
+
+        <section class="py-20 bg-mc-linen">
+            <div class="max-w-3xl mx-auto px-6 lg:px-8 reveal-up">
+                <h2 class="font-heading text-3xl md:text-4xl mb-10" data-i18n="about.facts.title">En quelques faits</h2>
+                <dl class="fact grid sm:grid-cols-2 gap-x-12">
+                    <div>
+                        <dt data-i18n="about.facts.org">Organisation</dt>
+                        <dd data-i18n="about.facts.orgv">Équipe eXp Realty (eXp Agence Immobilière), Québec</dd>
+                    </div>
+                    <div>
+                        <dt data-i18n="about.facts.area">Territoire</dt>
+                        <dd data-i18n="about.facts.areav">Québec, Capitale-Nationale, Valcartier, et marchés internationaux via eXp Global</dd>
+                    </div>
+                    <div>
+                        <dt data-i18n="about.facts.lang">Langues</dt>
+                        <dd data-i18n="about.facts.langv">Français, anglais, espagnol</dd>
+                    </div>
+                    <div>
+                        <dt data-i18n="about.facts.web">Site officiel</dt>
+                        <dd><a href="https://mcequipe.ca/" class="hover:text-mc-ocean">mcequipe.ca</a></dd>
+                    </div>
+                    <div>
+                        <dt data-i18n="about.facts.phone">Téléphones</dt>
+                        <dd>Mathieu: <a href="tel:4186558090">(418) 655-8090</a><br>Catherine: <a href="tel:4189520925">(418) 952-0925</a></dd>
+                    </div>
+                    <div>
+                        <dt data-i18n="about.facts.email">Courriel</dt>
+                        <dd><a href="mailto:info@mcequipe.com" class="hover:text-mc-ocean">info@mcequipe.com</a></dd>
+                    </div>
+                    <div class="sm:col-span-2">
+                        <dt data-i18n="about.facts.office">Bureau</dt>
+                        <dd>1111 Blvd. Dr. Frederik-Philips #601, Saint-Laurent, QC H4M 2X6</dd>
+                    </div>
+                </dl>
+            </div>
+        </section>
+
+        <section class="py-20">
+            <div class="max-w-3xl mx-auto px-6 lg:px-8 reveal-up">
+                <h2 class="font-heading text-3xl md:text-4xl mb-10" data-i18n="about.people.title">Les courtiers</h2>
+                <div class="space-y-10">
+                    <article>
+                        <h3 class="font-heading text-2xl mb-2">Mathieu Michaud</h3>
+                        <p class="font-light text-mc-charcoal/75 leading-relaxed mb-3" data-i18n="about.people.mathieu">Courtier immobilier résidentiel. Achat, vente, évaluation. Ancien militaire du régulier, courtier accrédité pour les mutations des Forces armées canadiennes. Créateur de la méthode The Buddy Broker.</p>
+                        <a href="mathieu.html" class="text-[10px] uppercase tracking-widest border-b border-mc-charcoal/30 pb-1 hover:border-mc-ocean hover:text-mc-ocean" data-i18n="common.readBio">Lire sa biographie</a>
+                    </article>
+                    <article>
+                        <h3 class="font-heading text-2xl mb-2">Catherine Aubé</h3>
+                        <p class="font-light text-mc-charcoal/75 leading-relaxed mb-3" data-i18n="about.people.catherine">Courtière immobilière. Accompagnement résidentiel et acquisitions internationales (résidence, retraite ou locatif). Interlocutrice en français, anglais ou espagnol du premier appel jusqu'aux clés.</p>
+                        <a href="catherine.html" class="text-[10px] uppercase tracking-widest border-b border-mc-charcoal/30 pb-1 hover:border-mc-ocean hover:text-mc-ocean" data-i18n="common.readBio">Lire sa biographie</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-20 bg-mc-charcoal text-white">
+            <div class="max-w-3xl mx-auto px-6 lg:px-8 reveal-up">
+                <h2 class="font-heading text-3xl md:text-4xl mb-10" data-i18n="about.services.title">Ce que l'équipe fait</h2>
+                <ul class="space-y-5 font-light text-white/80">
+                    <li><a href="residentiel.html" class="hover:text-mc-sand" data-i18n="about.services.s1">Achat et vente résidentiels au Québec</a></li>
+                    <li><a href="evaluation.html" class="hover:text-mc-sand" data-i18n="about.services.s2">Évaluation immobilière gratuite</a></li>
+                    <li><a href="international.html" class="hover:text-mc-sand" data-i18n="about.services.s3">Acquisitions internationales, habiter ou investir</a></li>
+                    <li><a href="transfert-militaire.html" class="hover:text-mc-sand" data-i18n="about.services.s4">Transfert militaire, Valcartier et région de Québec</a></li>
+                    <li><a href="devenir-courtier-exp-quebec.html" class="hover:text-mc-sand" data-i18n="about.services.s5">Recrutement eXp Realty au Québec</a></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-mc-linen text-mc-charcoal py-12 border-t border-mc-sand/20">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs font-light tracking-widest uppercase text-mc-charcoal/50">
+            <div class="flex flex-col sm:flex-row items-center gap-3 sm:gap-8 text-center sm:text-left">
+                <p data-i18n="footer.copyright">&copy; 2026 MC Équipe - eXp Agence Immobilière.</p>
+                <a href="politique-confidentialite.html" class="hover-trigger hover:text-mc-charcoal/80 transition-colors" data-i18n="footer.privacy">Politique de confidentialité</a>
+            </div>
+            <a href="https://roymarketing.ca" target="_blank" rel="noopener noreferrer" class="hover-trigger hover:text-mc-charcoal/70 transition-colors" data-i18n="footer.credit">Conception web par Roy Marketing</a>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const cursor = document.getElementById('cursor');
+            if (cursor && window.innerWidth >= 1024) {
+                document.addEventListener('mousemove', (e) => {
+                    cursor.style.left = e.clientX + 'px';
+                    cursor.style.top = e.clientY + 'px';
+                });
+                document.querySelectorAll('.hover-trigger, a, button').forEach((el) => {
+                    el.addEventListener('mouseenter', () => cursor.classList.add('active'));
+                    el.addEventListener('mouseleave', () => cursor.classList.remove('active'));
+                });
+            }
+            const revealElements = document.querySelectorAll('.reveal-up');
+            const revealObserver = new IntersectionObserver((entries, observer) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.5 });
+            revealElements.forEach((el) => revealObserver.observe(el));
+        });
+    </script>
+    <script src="nav.js"></script>
+</body>
+</html>

@@ -3,42 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title data-i18n="meta.title.index">MC Équipe | L'immobilier repensé</title>
-    <meta name="description" data-i18n="meta.desc.index" content="MC Équipe Immobilier  -  courtage résidentiel au Québec, acquisitions internationales et recrutement eXp Realty. Mathieu Michaud et Catherine Aubé.">
+    <title data-i18n="meta.title.index">MC Équipe | Courtiers immobiliers eXp au Québec</title>
+    <meta name="description" data-i18n="meta.desc.index" content="MC Équipe est une équipe de courtiers eXp Realty au Québec, dirigée par Mathieu Michaud et Catherine Aubé. Achat, vente, évaluation, transfert militaire, international. Service en français, anglais et espagnol.">
     <link rel="canonical" href="https://mcequipe.ca/">
-    <meta property="og:title" content="MC Équipe | L'immobilier repensé">
-    <meta property="og:description" content="Courtage résidentiel au Québec, acquisitions internationales et accompagnement pour rejoindre eXp Realty.">
+    <link rel="alternate" type="text/plain" href="https://mcequipe.ca/llms.txt" title="llms.txt">
+    <meta property="og:title" content="MC Équipe | Courtiers immobiliers eXp au Québec">
+    <meta property="og:description" content="Équipe de courtiers eXp Realty au Québec. Achat, vente, évaluation, transfert militaire et acquisitions internationales. Service en français, anglais et espagnol.">
     <meta property="og:image" content="https://mcequipe.ca/images/equipe-bureau.webp">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://mcequipe.ca/">
+    <meta property="og:locale" content="fr_CA">
+    <meta property="og:locale:alternate" content="en_CA">
     <meta name="twitter:card" content="summary_large_image">
-    <script type="application/ld+json">
+    <meta name="geo.region" content="CA-QC">
+    <meta name="geo.placename" content="Québec">
+    <meta name="author" content="MC Équipe">
+    <script type="application/ld+json" data-mc-entity-static="1">
     {
       "@context": "https://schema.org",
-      "@type": "RealEstateAgent",
-      "name": "MC Équipe",
-      "url": "https://mcequipe.ca/",
-      "logo": "https://mcequipe.ca/images/equipe-bureau.webp",
-      "image": "https://mcequipe.ca/images/equipe-bureau.webp",
-      "description": "Équipe de courtiers immobiliers eXp Realty au Québec. Résidentiel, international et recrutement.",
-      "email": "info@mcequipe.com",
-      "telephone": "+1-418-655-8090",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "1111 Blvd. Dr. Frederik-Philips #601",
-        "addressLocality": "Saint-Laurent",
-        "addressRegion": "QC",
-        "postalCode": "H4M 2X6",
-        "addressCountry": "CA"
-      },
-      "areaServed": {
-        "@type": "AdministrativeArea",
-        "name": "Québec"
-      },
-      "parentOrganization": {
-        "@type": "Organization",
-        "name": "eXp Realty"
-      }
+      "@graph": [
+        {
+          "@type": ["RealEstateAgent", "Organization"],
+          "@id": "https://mcequipe.ca/#organization",
+          "name": "MC Équipe",
+          "alternateName": ["MC Equipe", "MC Équipe Immobilier"],
+          "url": "https://mcequipe.ca/",
+          "logo": "https://mcequipe.ca/images/equipe-bureau.webp",
+          "image": "https://mcequipe.ca/images/equipe-bureau.webp",
+          "description": "MC Équipe est une équipe de courtiers immobiliers eXp Realty au Québec, dirigée par Mathieu Michaud et Catherine Aubé. Achat et vente résidentiels, évaluation, transfert militaire, acquisitions internationales et recrutement eXp. Service en français, anglais et espagnol.",
+          "email": "info@mcequipe.com",
+          "telephone": ["+1-418-655-8090", "+1-418-952-0925"],
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "1111 Blvd. Dr. Frederik-Philips #601",
+            "addressLocality": "Saint-Laurent",
+            "addressRegion": "QC",
+            "postalCode": "H4M 2X6",
+            "addressCountry": "CA"
+          },
+          "areaServed": [
+            { "@type": "AdministrativeArea", "name": "Québec" },
+            { "@type": "City", "name": "Québec" },
+            { "@type": "Place", "name": "Base Valcartier" }
+          ],
+          "knowsLanguage": ["fr", "en", "es"],
+          "founder": [
+            { "@type": "Person", "@id": "https://mcequipe.ca/#mathieu-michaud", "name": "Mathieu Michaud", "url": "https://mcequipe.ca/mathieu.html" },
+            { "@type": "Person", "@id": "https://mcequipe.ca/#catherine-aube", "name": "Catherine Aubé", "url": "https://mcequipe.ca/catherine.html" }
+          ],
+          "parentOrganization": { "@type": "Organization", "name": "eXp Realty", "url": "https://expquebec.com/" },
+          "sameAs": ["https://mathieumichaud.expquebec.com/fr/proprietes"]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://mcequipe.ca/#website",
+          "url": "https://mcequipe.ca/",
+          "name": "MC Équipe",
+          "inLanguage": ["fr-CA", "en-CA"],
+          "publisher": { "@id": "https://mcequipe.ca/#organization" }
+        },
+        {
+          "@type": "FAQPage",
+          "@id": "https://mcequipe.ca/#faq",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Comment fonctionne le processus d'achat à l'étranger ?",
+              "acceptedAnswer": { "@type": "Answer", "text": "Nous vous offrons un accompagnement clé en main. Via eXp Global, nous travaillons avec des courtiers, avocats et notaires locaux dans le marché retenu. Nous vous accompagnons des visites jusqu'à la signature, en français, anglais ou espagnol, avec un dossier juridique cadré avant toute offre." }
+            },
+            {
+              "@type": "Question",
+              "name": "En quoi consiste l'évaluation gratuite de ma propriété ?",
+              "acceptedAnswer": { "@type": "Answer", "text": "Notre évaluation est basée sur une analyse comparative du marché (ACM) rigoureuse, sans obligation de votre part." }
+            },
+            {
+              "@type": "Question",
+              "name": "Qu'est-ce que la méthode The Buddy Broker ?",
+              "acceptedAnswer": { "@type": "Answer", "text": "Outil exclusif d'organisation et de suivi créé par Mathieu Michaud, pour qu'aucun détail du dossier ne soit laissé au hasard." }
+            }
+          ]
+        }
+      ]
     }
     </script>
     <script src="i18n.js"></script>
@@ -205,6 +250,17 @@
             </a>
         </div>
     </header>
+
+    <section id="mc-identity" class="py-20 bg-mc-linen">
+        <div class="max-w-3xl mx-auto px-6 lg:px-8 text-center reveal-up">
+            <p class="text-mc-ocean uppercase tracking-[0.3em] text-[10px] font-bold mb-5" data-i18n="index.identity.tag">Qui nous sommes</p>
+            <h2 class="font-heading text-3xl md:text-4xl text-mc-charcoal mb-6 leading-[1.15]" data-i18n="index.identity.title">L'équipe québécoise derrière le dossier.</h2>
+            <p class="font-light text-mc-charcoal/75 leading-relaxed text-base md:text-lg mb-8" data-i18n="index.identity.p">
+                MC Équipe est une équipe de courtiers eXp Realty au Québec, dirigée par Mathieu Michaud et Catherine Aubé. Achat et vente résidentiels, évaluation gratuite, transfert militaire FAC, et acquisitions internationales via eXp Global. Service en français, anglais et espagnol.
+            </p>
+            <a href="a-propos.html" class="hover-trigger inline-block text-[10px] uppercase tracking-widest border-b border-mc-charcoal/40 pb-1 hover:text-mc-ocean hover:border-mc-ocean" data-i18n="footer.about">À propos</a>
+        </div>
+    </section>
 
 <section id="services" class="py-32 bg-mc-white">
         <div class="max-w-7xl mx-auto px-6 lg:px-8">
@@ -735,6 +791,7 @@
         <div class="max-w-7xl mx-auto px-6 lg:px-8 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs font-light tracking-widest uppercase text-white/50">
             <div class="flex flex-col sm:flex-row items-center gap-3 sm:gap-8 text-center sm:text-left">
                 <p data-i18n="footer.copyright">&copy; 2026 MC Équipe - eXp Agence Immobilière.</p>
+                <a href="a-propos.html" class="hover-trigger hover:text-white/70 transition-colors" data-i18n="footer.about">À propos</a>
                 <a href="politique-confidentialite.html" class="hover-trigger hover:text-white/70 transition-colors" data-i18n="footer.privacy">Politique de confidentialité</a>
             </div>
             <a href="https://roymarketing.ca" target="_blank" rel="noopener noreferrer" class="hover-trigger hover:text-white/70 transition-colors" data-i18n="footer.credit">Conception web par Roy Marketing</a>

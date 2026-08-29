@@ -1,0 +1,30 @@
+# MC Équipe
+
+> Équipe de courtiers immobiliers eXp Realty au Québec. Achat, vente, évaluation, transfert militaire, acquisitions internationales et recrutement eXp. Service en français, anglais et espagnol.
+
+MC Équipe est dirigée par Mathieu Michaud et Catherine Aubé. Site officiel: https://mcequipe.ca/
+
+Fiche complète pour les modèles: [llms-full.txt](https://mcequipe.ca/llms-full.txt)
+
+## Pages essentielles
+
+- [À propos](https://mcequipe.ca/a-propos.html): Qui est MC Équipe, où elle intervient, qui sont les courtiers
+- [Accueil](https://mcequipe.ca/): Courtage résidentiel au Québec, international et recrutement eXp
+- [Achat et vente](https://mcequipe.ca/residentiel.html): Transactions résidentielles au Québec
+- [Évaluation gratuite](https://mcequipe.ca/evaluation.html): Analyse comparative de marché
+- [International](https://mcequipe.ca/international.html): Habiter ou investir à l'étranger via eXp Global
+- [Transfert militaire](https://mcequipe.ca/transfert-militaire.html): Mutations FAC, Valcartier et région de Québec
+- [Hypothèque](https://mcequipe.ca/hypotheque.html): Comparaison via le partenaire apoint
+- [Mathieu Michaud](https://mcequipe.ca/mathieu.html): Courtier, Buddy Broker, transfert militaire
+- [Catherine Aubé](https://mcequipe.ca/catherine.html): Courtière, acquisitions internationales
+- [Devenir courtier eXp au Québec](https://mcequipe.ca/devenir-courtier-exp-quebec.html): Recrutement eXp Realty
+- [Blogue](https://mcequipe.ca/blogue.html): Articles recrutement et international
+- [Ressources](https://mcequipe.ca/ressources.html): Guides d'achat hors Canada
+- [Propriétés](https://mathieumichaud.expquebec.com/fr/proprietes): Inscriptions eXp Québec
+
+## Contact
+
+- Téléphone Mathieu: +1 418 655-8090
+- Téléphone Catherine: +1 418 952-0925
+- Courriel: info@mcequipe.com
+- Bureau eXp: 1111 Blvd. Dr. Frederik-Philips #601, Saint-Laurent, QC H4M 2X6

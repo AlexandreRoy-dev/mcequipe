@@ -41,7 +41,51 @@
     showToast(toastMessage());
   });
 
+  function injectArticleSchema() {
+    if (!document.querySelector('.article-prose')) return;
+    if (document.querySelector('script[data-mc-article]')) return;
+    var titleEl = document.querySelector('h1');
+    var descEl = document.querySelector('meta[name="description"]');
+    var imageEl = document.querySelector('meta[property="og:image"]');
+    var urlEl = document.querySelector('link[rel="canonical"], meta[property="og:url"]');
+    var headline = titleEl ? titleEl.textContent.replace(/\s+/g, ' ').trim() : document.title;
+    var url = urlEl
+      ? urlEl.getAttribute('href') || urlEl.getAttribute('content')
+      : window.location.href;
+    var image = imageEl ? imageEl.getAttribute('content') : 'https://mcequipe.ca/images/equipe-bureau.webp';
+    var desc = descEl ? descEl.getAttribute('content') : '';
+    var data = {
+      '@context': 'https://schema.org',
+      '@type': 'Article',
+      headline: headline,
+      description: desc,
+      image: image,
+      url: url,
+      inLanguage: document.documentElement.lang || 'fr-CA',
+      author: {
+        '@type': 'Organization',
+        name: 'MC Équipe',
+        url: 'https://mcequipe.ca/'
+      },
+      publisher: {
+        '@type': 'Organization',
+        name: 'MC Équipe',
+        url: 'https://mcequipe.ca/',
+        logo: {
+          '@type': 'ImageObject',
+          url: 'https://mcequipe.ca/images/equipe-bureau.webp'
+        }
+      }
+    };
+    var el = document.createElement('script');
+    el.type = 'application/ld+json';
+    el.setAttribute('data-mc-article', '1');
+    el.textContent = JSON.stringify(data);
+    document.head.appendChild(el);
+  }
+
   document.addEventListener('DOMContentLoaded', function () {
+    injectArticleSchema();
     var navbar = document.getElementById('navbar');
     if (navbar) {
       window.addEventListener('scroll', function () {
