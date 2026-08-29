@@ -73,7 +73,7 @@
         url: 'https://mcequipe.ca/',
         logo: {
           '@type': 'ImageObject',
-          url: 'https://mcequipe.ca/images/equipe-bureau.webp'
+          url: 'https://mcequipe.ca/images/mc-equipe-mark.png'
         }
       }
     };

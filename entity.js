@@ -91,7 +91,7 @@
     alternateName: ['MC Equipe', 'MC Équipe Immobilier', 'MC Equipe Immobilier'],
     legalName: 'MC Équipe',
     url: ORIGIN + '/',
-    logo: ORIGIN + '/images/equipe-bureau.webp',
+    logo: ORIGIN + '/images/mc-equipe-mark.png',
     image: ORIGIN + '/images/equipe-bureau.webp',
     description:
       'MC Équipe est une équipe de courtiers immobiliers eXp Realty au Québec, dirigée par Mathieu Michaud et Catherine Aubé. Achat et vente résidentiels, évaluation gratuite, transfert militaire, acquisitions internationales et recrutement eXp. Service en français, anglais et espagnol.',

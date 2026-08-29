@@ -541,7 +541,8 @@
     'international.team.p1':
       'Mathieu structures the numbers and the transaction. Catherine holds the human thread and coordination with partners on site. A purchase outside Canada is treated like a Quebec deal: clarity, follow-up, no clause left in the fog.',
     'international.team.p2':
-      'Catherine leads international acquisitions: a home, retirement or a rental. She remains your contact in French, English or Spanish from the first call to the keys.',
+      'Together they lead international acquisitions: a home, retirement or a rental. They remain your contacts in French, English or Spanish from the first call to the keys.',
+    'international.team.ctaMathieu': 'Meet Mathieu',
     'international.team.cta': 'Meet Catherine',
 
     'international.faq.title': 'Frequently asked questions',
@@ -1065,19 +1066,41 @@
     applyLanguage(getStoredLang());
   }
 
+  function assetBase() {
+    var current = document.currentScript;
+    if (current && current.src) {
+      return current.src.replace(/i18n\.js(\?.*)?$/, '');
+    }
+    return '';
+  }
+
   function loadEntity() {
     if (typeof document === 'undefined') return;
-    var current = document.currentScript;
-    var src = 'entity.js';
-    if (current && current.src) {
-      src = current.src.replace(/i18n\.js(\?.*)?$/, 'entity.js');
-    }
     var s = document.createElement('script');
-    s.src = src;
+    s.src = assetBase() + 'entity.js';
     s.defer = true;
     (document.head || document.documentElement).appendChild(s);
   }
+
+  function injectIcons() {
+    if (typeof document === 'undefined' || !document.head) return;
+    if (document.querySelector('link[rel="icon"]')) return;
+    var base = assetBase();
+    [
+      { rel: 'icon', type: 'image/svg+xml', href: base + 'favicon.svg' },
+      { rel: 'icon', href: base + 'favicon.ico', sizes: 'any' },
+      { rel: 'apple-touch-icon', href: base + 'apple-touch-icon.png' },
+    ].forEach(function (attrs) {
+      var link = document.createElement('link');
+      Object.keys(attrs).forEach(function (key) {
+        link.setAttribute(key, attrs[key]);
+      });
+      document.head.appendChild(link);
+    });
+  }
+
   loadEntity();
+  injectIcons();
 
   global.I18n = { initEarly, init, applyLanguage, getLang: getStoredLang, refresh };
   initEarly();

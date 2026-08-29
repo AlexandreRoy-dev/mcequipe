@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="MC Équipe">
+  <rect width="64" height="64" rx="8" fill="#3d312c"/>
+  <text x="32" y="40" text-anchor="middle" fill="#efe9e2" font-family="Optima, Palatino Linotype, Palatino, Georgia, serif" font-size="22" font-weight="500" letter-spacing="1.5">MC</text>
+  <rect x="18" y="48" width="28" height="1.5" fill="#4f909b"/>
+</svg>
