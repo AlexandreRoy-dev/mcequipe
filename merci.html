@@ -11,8 +11,6 @@
     <link rel="stylesheet" href="nav.css">
     <script src="site-config.js"></script>
     <script src="ghl-contact.js"></script>
-    <link rel="stylesheet" href="booking.css">
-    <script src="booking.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&display=swap" rel="stylesheet">
     <script>
@@ -72,63 +70,6 @@
             </div>
         </header>
 
-        <section id="rdv" data-ghl-booking-section class="ghl-booking-section py-24 md:py-32 border-t border-mc-charcoal/5">
-            <div class="max-w-6xl mx-auto px-6 lg:px-8 reveal-up">
-                <div class="text-center mb-12 max-w-2xl mx-auto">
-                    <span class="text-mc-ocean uppercase tracking-widest text-xs font-medium block mb-4" data-i18n="booking.label">Prochaine étape</span>
-                    <h2 class="font-heading text-3xl md:text-5xl mb-4 text-mc-charcoal" data-i18n="merci.booking.title">Réservez un appel avec l'équipe</h2>
-                    <p class="font-light text-mc-charcoal/70" data-i18n="merci.booking.desc">Choisissez le moment qui vous convient. Mathieu ou Catherine confirmeront votre rendez-vous.</p>
-                </div>
-                <div class="booking-flow max-w-xl mx-auto" data-booking-flow>
-                    <p class="text-center text-sm font-light text-mc-charcoal/60 mb-8" data-booking-slot-hint hidden data-i18n="booking.form.slotHint">
-                        Choisissez la date et l'heure qui vous conviennent ci-dessous.
-                    </p>
-
-                    <div data-booking-contact-step class="booking-contact-card">
-                        <form data-booking-contact-form class="booking-contact-form" novalidate>
-                            <h3 class="font-heading text-2xl text-mc-charcoal mb-2" data-i18n="booking.form.title">Vos coordonnées</h3>
-                            <p class="text-sm font-light text-mc-charcoal/70 mb-8" data-i18n="booking.form.desc">
-                                Remplissez ce court formulaire, puis choisissez votre créneau dans le calendrier.
-                            </p>
-                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-5 mb-5">
-                                <div>
-                                    <label for="booking-prenom" class="booking-field-label" data-i18n="booking.form.firstName">Prénom</label>
-                                    <input type="text" id="booking-prenom" name="prenom" required autocomplete="given-name"
-                                        class="booking-field-input" data-i18n-placeholder="booking.form.firstNamePh" placeholder="Prénom">
-                                </div>
-                                <div>
-                                    <label for="booking-nom" class="booking-field-label" data-i18n="booking.form.lastName">Nom</label>
-                                    <input type="text" id="booking-nom" name="nom" required autocomplete="family-name"
-                                        class="booking-field-input" data-i18n-placeholder="booking.form.lastNamePh" placeholder="Nom">
-                                </div>
-                                <div class="sm:col-span-2">
-                                    <label for="booking-email" class="booking-field-label" data-i18n="booking.form.email">Courriel</label>
-                                    <input type="email" id="booking-email" name="email" required autocomplete="email"
-                                        class="booking-field-input" data-i18n-placeholder="booking.form.emailPh" placeholder="votre@courriel.com">
-                                </div>
-                                <div class="sm:col-span-2">
-                                    <label for="booking-telephone" class="booking-field-label" data-i18n="booking.form.phone">Téléphone</label>
-                                    <input type="tel" id="booking-telephone" name="telephone" required autocomplete="tel"
-                                        class="booking-field-input" data-i18n-placeholder="booking.form.phonePh" placeholder="(418) 555-1234">
-                                </div>
-                            </div>
-                            <label class="booking-consent flex gap-3 items-start text-sm font-light text-mc-charcoal/80 mb-8 cursor-pointer">
-                                <input type="checkbox" name="consent_loi25" required class="mt-1 shrink-0 accent-mc-ocean">
-                                <span data-i18n="booking.form.consent" data-i18n-html>J'accepte que MC Équipe collecte et utilise mes renseignements personnels pour planifier mon rendez-vous, conformément à la <a href="politique-confidentialite.html" target="_blank" rel="noopener noreferrer" class="text-mc-ocean hover:underline">politique de confidentialité</a>.</span>
-                            </label>
-                            <button type="submit" class="booking-submit w-full sm:w-auto" data-i18n="booking.form.submit">
-                                Continuer vers le calendrier
-                            </button>
-                        </form>
-                    </div>
-
-                    <div data-ghl-booking data-booking-title="Réserver un rendez-vous MC Équipe" hidden class="min-h-[120px]">
-                        <p class="text-sm font-light text-mc-charcoal/40 text-center" data-i18n="booking.setup">Calendrier à configurer dans site-config.js (GoHighLevel).</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
         <section class="py-20 bg-mc-linen">
             <div class="max-w-3xl mx-auto px-6 text-center reveal-up">
                 <h2 class="font-heading text-3xl mb-4" data-i18n="merci.urgent">Besoin d'une réponse urgente?</h2>
@@ -164,13 +105,6 @@
                 });
             }, { threshold: 0.1 });
             revealElements.forEach((el) => revealObserver.observe(el));
-
-            if (window.location.hash === '#rdv') {
-                const rdv = document.getElementById('rdv');
-                if (rdv) {
-                    setTimeout(() => rdv.scrollIntoView({ behavior: 'smooth', block: 'start' }), 300);
-                }
-            }
         });
     </script>
     <script src="nav.js"></script>

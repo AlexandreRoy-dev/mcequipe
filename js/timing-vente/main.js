@@ -513,7 +513,7 @@ function leadThanks() {
     <div class="eval-card mt-10 text-center">
       <p class="font-heading text-2xl text-white">Bien reçu.</p>
       <p class="mt-3 text-white/65">Votre analyse est prête ci-dessous. Un courtier vous appellera pour confirmer les résultats.</p>
-      <a href="merci.html" class="eval-btn eval-btn-primary inline-flex mt-6">Réserver un appel</a>
+      <a href="index.html#contact" class="eval-btn eval-btn-primary inline-flex mt-6">Nous contacter</a>
     </div>
   `;
 }

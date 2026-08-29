@@ -24,11 +24,6 @@
       url = new URL(THANK_YOU_PATH, window.location.href).href;
     }
 
-    const ghl = window.MC_SITE_CONFIG && window.MC_SITE_CONFIG.ghl;
-    if (ghl && (ghl.bookingCalendarId || ghl.bookingUrl)) {
-      const base = url.split('#')[0];
-      return base + '#rdv';
-    }
     return url;
   }
 

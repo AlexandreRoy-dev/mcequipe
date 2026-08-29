@@ -747,7 +747,7 @@
     'exp.contact.label': 'Next step',
     'exp.contact.title': 'Talk to an <br><span class="italic text-mc-sand">eXp recruiter.</span>',
     'exp.contact.desc':
-      'Fill out the form or book a call. We will answer your questions about eXp, changing brokerages and onboarding.',
+      'Fill out the form. We will answer your questions about eXp, changing brokerages and onboarding.',
     'exp.form.intent': 'Your situation',
     'exp.form.opt1': 'Join eXp',
     'exp.form.opt2': 'Change brokerages',
@@ -1022,9 +1022,6 @@
 
     if (global.FunnelForms && typeof global.FunnelForms.refreshLang === 'function') {
       global.FunnelForms.refreshLang();
-    }
-    if (global.MCBooking && typeof global.MCBooking.refresh === 'function') {
-      global.MCBooking.refresh();
     }
   }
 
