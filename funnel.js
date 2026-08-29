@@ -1,7 +1,7 @@
 /**
  * Multi-step qualification funnels for Formspree forms.
  */
-(function () {
+(function (global) {
   const PRIVACY_URL = 'politique-confidentialite.html';
 
   const COPY = {

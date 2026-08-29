@@ -16,7 +16,7 @@
     'meta.desc.military':
       'Accredited broker and former regular-force member. Mathieu Michaud supports CAF members during relocations to Valcartier, Québec City and the surrounding region.',
     'meta.title.evaluation': 'Free Home Evaluation | MC Équipe',
-    'meta.title.international': 'International Acquisition | MC Équipe',
+    'meta.title.international': 'Buy & Invest Abroad | MC Équipe',
     'meta.title.mathieu': 'Mathieu Michaud | MC Équipe',
     'meta.title.catherine': 'Catherine Aubé | MC Équipe',
     'meta.title.privacy': 'Privacy Policy | MC Équipe',
@@ -61,7 +61,7 @@
     'funnel.military.base.valcartier': 'CFB Valcartier',
     'funnel.military.base.quebec': 'Québec City region',
     'funnel.military.base.other': 'Other',
-    'funnel.international.budget': 'Investment budget',
+    'funnel.international.budget': 'Project budget',
     'funnel.budget.under300': 'Under $300k',
     'funnel.budget.300_500': '$300k - $500k',
     'funnel.budget.500_1m': '$500k - $1M',
@@ -154,7 +154,7 @@
       'Book a slot with apoint. It\'s free, no obligation, and no credit impact without your consent.',
 
     'meta.desc.international':
-      'Invest in Mexico or Panama with confidence through MC Équipe. Turnkey service for Quebec buyers.',
+      'Buy a home or an investment property abroad with MC Équipe. French-language support and the eXp Global network, for Quebec buyers.',
 
     'cookies.message':
       'This site uses essential cookies and third-party services required for it to function.',
@@ -239,10 +239,10 @@
     'index.s2.title': 'Free Evaluation',
     'index.s2.desc':
       'Get an accurate read on the market through our rigorous, confidential analysis.',
-    'index.s3.tag': 'Southern investment',
+    'index.s3.tag': 'Abroad',
     'index.s3.title': 'International Buying',
     'index.s3.desc':
-      'Mexico & Panama. A turnkey, legally secure acquisition tailored to Quebec investors.',
+      'A home or an investment property abroad. French-language support, legally framed, via the eXp Global network.',
 
     'index.s4.tag': 'Forces armées canadiennes',
     'index.s4.title': 'Transfert Militaire',
@@ -262,7 +262,7 @@
     'index.catherine.p1':
       'Driven by a passion for architecture, spatial design and people, Catherine has a rare gift for revealing a property’s full potential. Her natural empathy and formidable negotiation skills build unshakeable trust.',
     'index.catherine.p2':
-      'A specialist in personalized guidance, she is the relational heart of the firm. Whether it’s a first purchase in Quebec or a retirement project in Mexico, Catherine ensures a smooth, transparent and deeply human experience.',
+      'A specialist in personalized guidance, she is the relational heart of the firm. Whether it’s a first purchase in Quebec or a home or investment abroad, Catherine keeps the process clear and human.',
 
     'index.consult.label': 'Your bespoke project',
     'index.consult.title': 'Start your <span class="italic text-mc-sand">acquisition.</span>',
@@ -271,8 +271,8 @@
     'index.consult.dest': '1. Destination',
     'index.consult.dest.qc': 'Quebec',
     'index.consult.dest.qcSub': 'Residential',
-    'index.consult.dest.south': 'South',
-    'index.consult.dest.southSub': 'Mexico & Panama',
+    'index.consult.dest.south': 'International',
+    'index.consult.dest.southSub': 'Live or invest',
     'index.consult.budget': '2. Budget range',
     'index.consult.coords': '3. Your contact details',
     'index.consult.submit': 'Request a consultation',
@@ -305,7 +305,7 @@
     'index.faq.title': 'Frequently asked questions',
     'index.faq.q1': 'How does buying abroad work?',
     'index.faq.a1':
-      'We offer a turnkey service. We work with trusted local lawyers and notaries in Mexico and Panama to secure the transaction. We support you from viewings (virtual or in person) through to closing, removing language barriers and legal uncertainty.',
+      'We offer turnkey support. Through eXp Global we work with local brokers, lawyers and notaries in the market you choose. We stay with you from viewings (virtual or in person) through to closing, in French, with the legal file framed before any offer.',
     'index.faq.q2': 'What does the free property evaluation include?',
     'index.faq.a2':
       'Our evaluation is based on a rigorous comparative market analysis (CMA). We review recently sold comparable properties in your area, current market trends and your home’s unique features to determine fair market value, with no obligation.',
@@ -319,7 +319,7 @@
     'index.contact.label': 'Let’s discuss your vision',
     'index.contact.title': 'Get in <br><span class="italic text-mc-sand">touch.</span>',
     'index.contact.desc':
-      'Whether you need a confidential valuation in Quebec or an acquisition in the tropics, our team is here to deliver bespoke service.',
+      'Whether you need a confidential valuation in Quebec or a purchase abroad, our team is here to frame the file.',
     'index.contact.phone': 'Phone',
     'index.contact.email': 'Email',
     'index.contact.office': 'Office',
@@ -432,68 +432,102 @@
     'evaluation.form.timeline.year': 'Within the year',
     'evaluation.form.timeline.curiosity': 'Market curiosity only',
 
-    'international.hero.tag': 'Overseas acquisition',
+    'international.hero.tag': 'International acquisition',
     'international.hero.title':
-      'Your foothold <br><span class="block mt-2 pl-12 lg:pl-24"><span class="italic text-white font-light">in the tropics.</span></span>',
+      'Buy beyond borders.<br><span class="italic font-light text-white">Live or invest.</span>',
     'international.hero.desc':
-      'Mexico & Panama. A turnkey, legally secure acquisition designed exclusively for Quebec investors.',
-    'international.hero.b1': 'Friction-free legal process',
+      'A home, retirement or rental asset. French-language support, through the eXp Global network.',
+    'international.hero.b1': 'Legal file framed',
     'international.hero.b2': 'French-language service',
-    'international.form.title': 'Access the portfolio',
-    'international.form.sub': 'Exclusive selection',
+    'international.form.title': 'Frame your project',
+    'international.form.sub': 'No obligation',
     'international.form.name': 'Full name',
     'international.form.email': 'Email address',
     'international.form.phone': 'Phone number',
-    'international.form.dest': 'Destination of interest',
-    'international.form.submit': 'Receive the selection',
+    'international.form.intent': 'Your intention',
+    'international.form.intent.live': 'Live there',
+    'international.form.intent.invest': 'Invest',
+    'international.form.intent.both': 'Both',
+    'international.form.dest': 'Target destination',
+    'international.form.destPh': 'Country, city or region',
+    'international.form.submit': 'Send my request',
 
-    'international.adv.label': 'The MC Équipe advantage',
-    'international.adv.title': 'Simplify the exotic,<br>secure excellence.',
-    'international.adv.s1.title': 'Legal security',
-    'international.adv.s1.desc':
-      'Network of partner law firms. We validate every title (fideicomiso) before any transaction.',
-    'international.adv.s2.title': 'French-language support',
-    'international.adv.s2.desc':
-      'From contract review to closing, we remove language barriers. You understand every clause.',
-    'international.adv.s3.title': 'Privileged access',
-    'international.adv.s3.desc':
-      'Through the eXp Global network, we access exclusive pre-sales and the market’s strongest developer projects.',
+    'international.paths.title': 'Live or invest abroad',
+    'international.paths.live.kicker': 'A home abroad',
+    'international.paths.live.title': 'Live elsewhere.',
+    'international.paths.live.desc':
+      'Second home, retirement or mobility. We start from your calendar, flights and day-to-day language, not a brochure photo.',
+    'international.paths.invest.kicker': 'Rental investment',
+    'international.paths.invest.title': 'Put an asset to work.',
+    'international.paths.invest.desc':
+      'Diversify outside Canada, look at true net yield, and plan remote management. The country follows the numbers, not the other way around.',
 
-    'international.mx.desc':
-      'A dynamic world-class market, ideal for short-term rental returns and an idyllic lifestyle.',
-    'international.pa.desc':
-      'A stable economic hub using the US dollar, with major tax incentives for foreign retirees.',
+    'international.method.title': 'The project first. The country second.',
+    'international.method.lead':
+      'Buying outside Canada is not a holiday. We frame use, real budget and constraints, then open the market that holds.',
+    'international.method.s1.title': 'Frame use and budget',
+    'international.method.s1.desc':
+      'Live there, rent it, or both. Purchase price, closing costs, furniture, reserve. Without that frame, the rest is real-estate tourism.',
+    'international.method.s2.title': 'Activate a local network',
+    'international.method.s2.desc':
+      'eXp Global connects us to brokers on the ground. Viewings, comparables and neighbourhood reads come from someone who works there, not from a brochure.',
+    'international.method.s3.title': 'Secure title and tax',
+    'international.method.s3.desc':
+      'Every country has its own ownership rules. Local lawyers and notaries validate title. A cross-border tax specialist settles residency and rental income.',
+    'international.method.s4.title': 'Close, then manage',
+    'international.method.s4.desc':
+      'Offer, due diligence, often a remote closing. If the property is a rental, we connect local management before the first empty week.',
 
-    'international.team.label': 'People first',
-    'international.team.title': 'The duo behind<br>your project.',
+    'international.markets.title': 'Not two countries. A network.',
+    'international.markets.lead':
+      'The market opens where your use and your numbers hold. Americas, Europe, the Caribbean or elsewhere: we first check whether the file can be opened.',
+    'international.markets.m1.title': 'Americas',
+    'international.markets.m1.desc':
+      'Homes and rentals, north to south. We compare a country to your real calendar, not to a sun slogan.',
+    'international.markets.m2.title': 'Cities and hubs',
+    'international.markets.m2.desc':
+      'Apartments, condos, assets in a strong currency. Useful when yield and liquidity weigh more than the beach.',
+    'international.markets.m3.title': 'Europe',
+    'international.markets.m3.desc':
+      'Cities, coastline, established markets. We open the file if the local network and legal frame hold.',
+    'international.markets.m4.title': 'Another destination',
+    'international.markets.m4.desc':
+      'A country already in mind? We say yes or no clearly, after checking partners, title and tax.',
+
+    'international.team.network': 'Local broker network',
+    'international.team.title': 'The duo behind<br>your file.',
     'international.team.p1':
-      'Mathieu Michaud and Catherine Aubé join forces to secure your investments. One analyses data coolly; the other intimately understands your lifestyle needs.',
+      'Mathieu structures the numbers and the transaction. Catherine holds the human thread and coordination with partners on site. A purchase outside Canada is treated like a Quebec deal: clarity, follow-up, no clause left in the fog.',
     'international.team.p2':
-      'Catherine is your dedicated specialist for Mexico and Panama transactions, ensuring smooth communication with our local partners.',
+      'Catherine leads international acquisitions: a home, retirement or a rental. She remains your French-language contact from the first call to the keys.',
     'international.team.cta': 'Meet Catherine',
 
-    'international.faq.label': 'Clearing your doubts',
     'international.faq.title': 'Frequently asked questions',
-    'international.faq.q1': 'Can I buy in Mexico as a Canadian?',
+    'international.faq.q1': 'Can a Canadian buy property abroad?',
     'international.faq.a1':
-      'Absolutely. If the property is in the "restricted zone" (near coasts or borders), we set up a <em>Fideicomiso</em>, a secure, renewable bank trust that gives you full ownership rights.',
+      'In most markets, yes. The structure changes by country: direct title, a company or a trust. We never start from a single model. Title is validated with a local professional before any offer.',
     'international.faq.q2': 'Do I need to travel for the signing?',
     'international.faq.a2':
-      'No, it’s not required. With notarial powers of attorney and e-signatures, we can close remotely from the comfort of your home in Quebec.',
-    'international.faq.q3': 'How does rental management work?',
+      'Often no. A notarial power of attorney and remote signatures can close from Quebec. An on-site visit still helps for lifestyle. It is not always required to sign.',
+    'international.faq.q3': 'How do you choose the market?',
     'international.faq.a3':
-      'We work with reputable property management companies on site. They handle maintenance, Airbnb/Vrbo marketing, guest welcome and key handoffs.',
+      'Use, budget, language, flights, tax, resale liquidity. If you already have a country in mind, we test it against those criteria. If not, we propose two or three workable markets, not a world map.',
+    'international.faq.q4': 'How does rental management work?',
+    'international.faq.a4':
+      'A local company handles upkeep, marketing and guest welcome. We compare commission, vacancy and the contract before purchase. Gross yield without management is not yield.',
+    'international.faq.q5': 'What about taxes in Canada?',
+    'international.faq.a5':
+      'Rental income, tax residency and filings are validated with a cross-border tax specialist. We coordinate the file. We do not replace that advice.',
 
-    'international.contact.label': 'Let’s discuss your vision',
-    'international.contact.title': 'Get in <br><span class="italic text-mc-sand">touch.</span>',
+    'international.contact.title': 'Talk about <br><span class="italic text-mc-sand">your project.</span>',
     'international.contact.desc':
-      'Book a strategy call with our team. We’ll answer your questions on taxes, the buying process and current opportunities in the South.',
+      'Country, use (live there or rent it) and timeline. We call back to frame the file, not to push a unit.',
     'international.contact.phones': 'Phones',
     'international.contact.emails': 'Emails',
     'international.contact.form.name': 'Hello, my name is...',
     'international.contact.form.email': 'My email is...',
     'international.contact.form.phone': 'My phone is...',
-    'international.contact.form.message': 'I’m interested in the market in...',
+    'international.contact.form.message': 'I am looking for a property in...',
     'international.contact.form.submit': 'Send message',
     'international.contact.form.nameLabel': 'Full name',
     'international.contact.form.emailLabel': 'Email address',
@@ -501,14 +535,14 @@
     'international.contact.form.messageLabel': 'Your message',
 
     'ressources.toBlogue': 'See the full blog (eXp recruitment + international) →',
-    'meta.title.ressources': 'Resources | Mexico & Panama | MC Équipe',
+    'meta.title.ressources': 'Resources | Buying abroad | MC Équipe',
     'meta.desc.ressources':
-      'Guides for Quebec buyers considering real estate in Mexico or Panama: market trends, buyer profiles and a secure acquisition method.',
+      'Guides for Quebec buyers considering real estate abroad: acquisition method, buyer profiles and market reads.',
     'ressources.hero.tag': 'Shareable guides',
     'ressources.hero.title':
-      'Mexico & Panama: <br><span class="italic text-mc-ocean">resources for Quebec buyers</span>',
+      'Buying abroad: <br><span class="italic text-mc-ocean">resources for Quebec buyers</span>',
     'ressources.hero.desc':
-      'Market analysis, buyer profiles and a secure acquisition method. Share these articles with friends or your network considering retirement, investment or a sunny second home.',
+      'Acquisition method, buyer profiles and market reads. Share these articles with anyone considering a home, retirement or a rental outside Canada.',
     'ressources.card1.tag': 'Market analysis',
     'ressources.card1.title': 'Why Quebec buyers are looking at Mexico and Panama in 2026',
     'ressources.card1.excerpt':
@@ -522,22 +556,21 @@
     'ressources.card3.excerpt':
       'Budget, lifestyle, taxes, financing and legal risk: a secure discovery method before choosing a property.',
     'ressources.read': 'Read article',
-    'ressources.cta.title': 'Ready to compare Panama and Mexico for your project?',
+    'ressources.cta.title': 'Ready to frame your project outside Canada?',
     'ressources.cta.desc':
       'Book a strategy call with Mathieu and Catherine. French-language service, secure process and turnkey support.',
     'ressources.cta.btn': 'Get in touch',
 
-    'international.ressources.label': 'Shareable guides',
-    'international.ressources.title': 'Resources for <br><span class="italic text-mc-sand">informed buyers.</span>',
+    'international.ressources.title': 'Guides for <span class="italic text-mc-sand">informed buyers.</span>',
     'international.ressources.desc':
-      'Market analysis, buyer profiles and our secure acquisition method. Articles you can share with your network.',
+      'The method first. Then market reads so a Quebec profile can actually compare one country to another.',
     'international.ressources.cta': 'View all resources',
 
     'article.back': '← All resources',
     'article.share': 'Copy link',
     'article.cta.title': 'Discuss your project with MC Équipe',
     'article.cta.desc':
-      'Turnkey acquisitions in Mexico and Panama. French-language service, eXp Global network and structured legal support.',
+      'Buy a home or an investment property abroad. French-language service, eXp Global network and structured legal support.',
     'article.cta.contact': 'Get in touch',
 
     'meta.title.article.marche': 'Mexico & Panama Market 2026 | MC Équipe',
@@ -726,11 +759,11 @@
     'blogue.hero.tag': 'News & guides',
     'blogue.hero.title': 'The MC Équipe <br><span class="italic text-mc-ocean">blog</span>',
     'blogue.hero.desc':
-      'Content for agents exploring eXp Realty, and for Quebec buyers looking at Mexico and Panama.',
+      'Content for agents exploring eXp Realty, and for Quebec buyers looking at property abroad.',
     'blogue.cat.recrutement': 'Recruitment',
     'blogue.cat.recrutementTitle': 'eXp Realty & career',
     'blogue.cat.international': 'International',
-    'blogue.cat.internationalTitle': 'Mexico & Panama',
+    'blogue.cat.internationalTitle': 'Buying abroad',
     'blogue.r1.tag': 'eXp Realty',
     'blogue.r1.title': 'Why choose eXp Realty',
     'blogue.r1.excerpt': 'Why Quebec agents join eXp - beyond the marketing.',
@@ -825,14 +858,13 @@
     'catherine.p2':
       'A specialist in personalized guidance, she is the relational heart of the firm. She excels at understanding clients’ lifestyle needs to guide them toward the right investment. Her staging expertise ensures optimal aesthetic positioning on the market.',
     'catherine.p3':
-      'Beyond Quebec, Catherine leads our overseas acquisition service. Whether a retirement project in Mexico or an investment in Panama, she demystifies cross-border legal processes and offers secure support from the first virtual visit to key handoff.',
+      'Beyond Quebec, Catherine leads international acquisitions. A home, retirement or a rental: she demystifies cross-border legal processes and remains your French-language contact from the first virtual visit to the keys.',
     'catherine.cta': 'Email Catherine',
     'catherine.recruit.link': 'Catherine Aubé - eXp Quebec recruitment',
     'catherine.horizon.title': 'Horizons <br><span class="italic text-mc-ocean">without borders.</span>',
-    'catherine.horizon.title': 'Horizons <br><span class="italic text-mc-ocean">without borders.</span>',
-    'catherine.horizon.tag': 'Mexico & Panama acquisitions',
+    'catherine.horizon.tag': 'International acquisitions',
     'catherine.horizon.desc':
-      'Buying abroad should never be stressful. Catherine has built a network of trusted local partners (lawyers, notaries, inspectors) in Mexico and Panama. She orchestrates every step with the same rigour as in Quebec, removing language and legal barriers for a smooth transition to the tropics.',
+      'Buying abroad should never be stressful. Through eXp Global, Catherine works with local brokers and professionals (lawyers, notaries) in the market you choose. She orchestrates every step with the same rigour as in Quebec, whether you plan to live there or invest.',
   };
 
   function getStoredLang() {
