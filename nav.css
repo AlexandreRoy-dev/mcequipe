@@ -1,3 +1,50 @@
+/* Brand lockup: MC mark + eXp Collection de luxe */
+.nav-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  flex-shrink: 0;
+}
+
+.nav-logo-mc {
+  height: 2.5rem !important;
+  width: 2.5rem !important;
+  object-fit: contain;
+}
+
+.nav-logo-luxe {
+  position: relative;
+  display: none;
+  height: 2rem;
+}
+
+.nav-logo-luxe img {
+  height: 2rem !important;
+  max-height: 2rem !important;
+  width: auto !important;
+  max-width: 11rem;
+  display: block !important;
+  object-fit: contain;
+}
+
+.nav-luxe-white {
+  display: none !important;
+}
+
+@media (min-width: 640px) {
+  .nav-logo-luxe {
+    display: block;
+  }
+}
+
+#navbar.text-white:not(.nav-scrolled):not(.mobile-nav-active) .nav-luxe-dark {
+  display: none !important;
+}
+
+#navbar.text-white:not(.nav-scrolled):not(.mobile-nav-active) .nav-luxe-white {
+  display: block !important;
+}
+
 /* Mobile navigation  -  MC Équipe */
 .mobile-nav-toggle {
   display: inline-flex;
