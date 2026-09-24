@@ -55,6 +55,18 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://mcequipe.ca/pamela.html</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://mcequipe.ca/joelle.html</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://mcequipe.ca/blogue.html</loc>
     <lastmod>2026-08-29</lastmod>
     <changefreq>weekly</changefreq>

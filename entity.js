@@ -10,6 +10,8 @@
   var WEBSITE_ID = ORIGIN + '/#website';
   var MATHIEU_ID = ORIGIN + '/#mathieu-michaud';
   var CATHERINE_ID = ORIGIN + '/#catherine-aube';
+  var PAMELA_ID = ORIGIN + '/#pamela-coulombe';
+  var JOELLE_ID = ORIGIN + '/#joelle-jacques';
   var LISTINGS = 'https://mathieumichaud.expquebec.com/fr/proprietes';
 
   function fileName() {
@@ -84,6 +86,36 @@
       'Courtière immobilière eXp Realty au Québec. Accompagnement résidentiel et acquisitions internationales (résidence, retraite ou locatif), en français, anglais ou espagnol.'
   };
 
+  var pamela = {
+    '@type': 'Person',
+    '@id': PAMELA_ID,
+    name: 'Pamela Coulombe',
+    url: ORIGIN + '/pamela.html',
+    image: ORIGIN + '/images/pamela.webp',
+    jobTitle: 'Courtière immobilière résidentielle',
+    email: 'pamela@cjimmo.ca',
+    telephone: '+1-581-748-9495',
+    worksFor: { '@id': ORG_ID },
+    knowsLanguage: ['fr', 'en', 'es'],
+    description:
+      'Courtière immobilière eXp Realty au Québec. Accompagnement personnalisé, notamment auprès des premiers acheteurs, en français, anglais et espagnol.'
+  };
+
+  var joelle = {
+    '@type': 'Person',
+    '@id': JOELLE_ID,
+    name: 'Joëlle Jacques',
+    url: ORIGIN + '/joelle.html',
+    image: ORIGIN + '/images/joelle.webp',
+    jobTitle: 'Courtière immobilière résidentielle',
+    email: 'joelle@cjimmo.ca',
+    telephone: '+1-581-349-5438',
+    worksFor: { '@id': ORG_ID },
+    knowsLanguage: ['fr'],
+    description:
+      'Courtière immobilière eXp Realty au Québec. Accompagnement personnalisé, structuré et transparent. Anciennement nutritionniste clinique en milieu hospitalier.'
+  };
+
   var org = {
     '@type': ['RealEstateAgent', 'Organization'],
     '@id': ORG_ID,
@@ -101,7 +133,7 @@
     areaServed: [quebec, capitale, quebecCity, valcartier],
     knowsLanguage: ['fr', 'en', 'es'],
     founder: [{ '@id': MATHIEU_ID }, { '@id': CATHERINE_ID }],
-    employee: [{ '@id': MATHIEU_ID }, { '@id': CATHERINE_ID }],
+    employee: [{ '@id': MATHIEU_ID }, { '@id': CATHERINE_ID }, { '@id': PAMELA_ID }, { '@id': JOELLE_ID }],
     parentOrganization: {
       '@type': 'Organization',
       name: 'eXp Realty',
@@ -160,7 +192,7 @@
     publisher: { '@id': ORG_ID }
   };
 
-  var graph = [org, website, mathieu, catherine, webpage];
+  var graph = [org, website, mathieu, catherine, pamela, joelle, webpage];
 
   if (isHome()) {
     webpage.name = 'MC Équipe | Courtiers immobiliers eXp au Québec';
@@ -232,6 +264,16 @@
   if (fileName() === 'catherine.html') {
     webpage['@type'] = ['WebPage', 'ProfilePage'];
     webpage.mainEntity = { '@id': CATHERINE_ID };
+  }
+
+  if (fileName() === 'pamela.html') {
+    webpage['@type'] = ['WebPage', 'ProfilePage'];
+    webpage.mainEntity = { '@id': PAMELA_ID };
+  }
+
+  if (fileName() === 'joelle.html') {
+    webpage['@type'] = ['WebPage', 'ProfilePage'];
+    webpage.mainEntity = { '@id': JOELLE_ID };
   }
 
   if (fileName() === 'a-propos.html') {

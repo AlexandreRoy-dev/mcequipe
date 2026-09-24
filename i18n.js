@@ -26,6 +26,12 @@
     'meta.title.catherine': 'Catherine Aubé | MC Équipe',
     'meta.desc.catherine':
       'Catherine Aubé, eXp Realty broker in Quebec. International acquisitions and support in French, English and Spanish. MC Équipe.',
+    'meta.title.pamela': 'Pamela Coulombe | MC Équipe',
+    'meta.desc.pamela':
+      'Pamela Coulombe, eXp Realty broker in Quebec. Personalized support, first-time buyers, service in French, English and Spanish. MC Équipe.',
+    'meta.title.joelle': 'Joëlle Jacques | MC Équipe',
+    'meta.desc.joelle':
+      'Joëlle Jacques, eXp Realty broker in Quebec. Personalized, structured and transparent support. MC Équipe.',
     'meta.title.privacy': 'Privacy Policy | MC Équipe',
     'meta.title.merci': 'Thank You | MC Équipe',
     'meta.desc.merci':
@@ -73,6 +79,10 @@
       'Residential real estate broker. Buy, sell, evaluate. Former regular-force member, accredited broker for Canadian Armed Forces relocations. Creator of The Buddy Broker method.',
     'about.people.catherine':
       'Real estate broker. Residential guidance and international acquisitions (a home, retirement or a rental). Your contact in French, English or Spanish from the first call to the keys.',
+    'about.people.pamela':
+      'Residential real estate broker. Personalized, proactive support, especially for first-time buyers. Works in French, English and Spanish.',
+    'about.people.joelle':
+      'Residential real estate broker. Previously a clinical nutritionist in hospital settings. Structured, transparent and human support from start to finish.',
     'about.services.title': 'What the team does',
     'about.services.s1': 'Residential buy and sell in Quebec',
     'about.services.s2': 'Free property evaluation',
@@ -305,6 +315,17 @@
       'Driven by a passion for architecture, spatial design and people, Catherine has a rare gift for revealing a property’s full potential. Her natural empathy and formidable negotiation skills build unshakeable trust.',
     'index.catherine.p2':
       'A specialist in personalized guidance, she is the relational heart of the firm. Whether it’s a first purchase in Quebec or a home or investment abroad, Catherine keeps the process clear and human.',
+    'index.pamela.role': 'Residential real estate broker',
+    'index.pamela.p1':
+      'Passionate about real estate and people, Pamela supports her clients with a professional, dynamic and personalized approach. For her, every transaction is a life project that deserves listening, transparency and care.',
+    'index.pamela.p2':
+      'Trilingual in French, English and Spanish, she works with a diverse clientele, including many first-time buyers, and stays available at every step.',
+    'index.joelle.role': 'Residential real estate broker',
+    'index.joelle.p1':
+      'Before becoming a broker, Joëlle spent several years in clinical nutrition in hospital settings. That work gave her rigour, attentive listening and a deeply human approach.',
+    'index.joelle.p2':
+      'She focuses on personalized, structured and transparent support so each step of a transaction happens with confidence and clarity.',
+    'index.luxe.label': 'eXp Luxury Collection member',
 
     'index.consult.label': 'Your bespoke project',
     'index.consult.title': 'Start your <span class="italic text-mc-sand">acquisition.</span>',
@@ -784,6 +805,10 @@
       'Strategy, transaction rigour and mentorship. He structures the approach and helps you perform in the eXp model.',
     'equipe.catherine.blurb':
       'Client relationships, international and human support. She is the relational heart of the team.',
+    'equipe.pamela.blurb':
+      'Personalized support and first-time buyers. She works in French, English and Spanish.',
+    'equipe.joelle.blurb':
+      'Listening, structure and clarity. She handles every file with the same rigour she brought to hospital work.',
     'equipe.articles.title': 'Read about our coaching',
     'equipe.articles.desc':
       'How we support agents day to day - and what it really means to join a real estate team.',
@@ -908,6 +933,32 @@
     'catherine.horizon.tag': 'International acquisitions',
     'catherine.horizon.desc':
       'Buying abroad should never be stressful. Through eXp Global, Catherine works with local brokers and professionals (lawyers, notaries) in the market you choose. She orchestrates every step with the same rigour as in Quebec, whether you plan to live there or invest.',
+
+    'pamela.role': 'Real estate broker',
+    'pamela.p1':
+      'Passionate about real estate and people, Pamela supports her clients with a professional, dynamic and personalized approach. For her, a transaction is more than a purchase or a sale: it is a life project that deserves listening, transparency and care.',
+    'pamela.p2':
+      'Trilingual in French, English and Spanish, she works with a diverse clientele, including many first-time buyers. Available, proactive and attentive, she makes sure clients feel supported and confident at every step.',
+    'pamela.p3':
+      'Her work is to keep the real estate experience simple and clear, while defending her clients’ interests from start to finish.',
+    'pamela.cta': 'Email Pamela',
+    'pamela.focus.title': 'Support <br><span class="italic text-mc-sand">in your language.</span>',
+    'pamela.focus.tag': 'French, English, Spanish',
+    'pamela.focus.desc':
+      'Pamela often works with first-time buyers and clients who want to follow every step in their language. She stays available, explains the decisions and defends the file through to closing.',
+
+    'joelle.role': 'Real estate broker',
+    'joelle.p1':
+      'Before becoming a real estate broker, Joëlle spent several years in clinical nutrition in hospital settings. That experience developed her rigour, attentive listening and a deeply human approach.',
+    'joelle.p2':
+      'Used to supporting people through important moments in their lives, she now brings the same commitment to real estate.',
+    'joelle.p3':
+      'She focuses on personalized, structured and transparent support, taking time to understand needs and goals. Her approach is reassuring and accessible, so each step of a transaction happens with confidence, clarity and peace of mind.',
+    'joelle.cta': 'Email Joëlle',
+    'joelle.focus.title': 'A relationship <br><span class="italic text-mc-ocean">of trust.</span>',
+    'joelle.focus.tag': 'Human support',
+    'joelle.focus.desc':
+      'For Joëlle, real estate is first a relationship of trust and human support, from start to finish. She keeps the file clear, takes time to explain and stays present at every step.',
   };
 
   function getStoredLang() {
