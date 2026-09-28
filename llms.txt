@@ -16,7 +16,7 @@ Fiche complète pour les modèles: [llms-full.txt](https://mcequipe.ca/llms-full
 - [Transfert militaire](https://mcequipe.ca/transfert-militaire.html): Mutations FAC, Valcartier et région de Québec
 - [Hypothèque](https://mcequipe.ca/hypotheque.html): Comparaison via le partenaire apoint
 - [Mathieu Michaud](https://mcequipe.ca/mathieu.html): Courtier, Buddy Broker, transfert militaire
-- [Catherine Aubé](https://mcequipe.ca/catherine.html): Courtière, acquisitions internationales
+- [Catherine Aubé](https://mcequipe.ca/catherine.html): Courtière immobilière résidentielle et commerciale, acquisitions internationales
 - [Pamela Coulombe](https://mcequipe.ca/pamela.html): Courtière, premiers acheteurs, FR/EN/ES
 - [Joëlle Jacques](https://mcequipe.ca/joelle.html): Courtière, accompagnement structuré et humain
 - [Devenir courtier eXp au Québec](https://mcequipe.ca/devenir-courtier-exp-quebec.html): Recrutement eXp Realty

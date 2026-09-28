@@ -77,7 +77,7 @@
     name: 'Catherine Aubé',
     url: ORIGIN + '/catherine.html',
     image: ORIGIN + '/images/catherine.webp',
-    jobTitle: 'Courtière immobilière',
+    jobTitle: 'Courtière immobilière résidentielle et commerciale',
     email: 'catherine@mcequipe.com',
     telephone: '+1-418-952-0925',
     worksFor: { '@id': ORG_ID },

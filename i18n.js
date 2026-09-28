@@ -78,7 +78,7 @@
     'about.people.mathieu':
       'Residential real estate broker. Buy, sell, evaluate. Former regular-force member, accredited broker for Canadian Armed Forces relocations. Creator of The Buddy Broker method.',
     'about.people.catherine':
-      'Real estate broker. Residential guidance and international acquisitions (a home, retirement or a rental). Your contact in French, English or Spanish from the first call to the keys.',
+      'Residential and commercial real estate broker. Residential guidance and international acquisitions (a home, retirement or a rental). Your contact in French, English or Spanish from the first call to the keys.',
     'about.people.pamela':
       'Residential real estate broker. Personalized, proactive support, especially for first-time buyers. Works in French, English and Spanish.',
     'about.people.joelle':
@@ -310,7 +310,7 @@
       'He architects the team’s listing strategies and created “The Buddy Broker” method, a system that guarantees follow-ups of absolute rigour.',
     'index.mathieu.p3':
       'An accredited broker and former regular-force member, he supports CAF members during relocations. He has lived a posting himself.',
-    'index.catherine.role': 'Residential real estate broker',
+    'index.catherine.role': 'Residential and commercial real estate broker',
     'index.catherine.p1':
       'Driven by a passion for architecture, spatial design and people, Catherine has a rare gift for revealing a property’s full potential. Her natural empathy and formidable negotiation skills build unshakeable trust.',
     'index.catherine.p2':
@@ -920,7 +920,7 @@
     'mathieu.buddy.desc':
       'Knowing that transaction success lies in the details, Mathieu developed “The Buddy Broker”. Far more than a notebook, it’s a complete organizational system for modern brokerage. This tool guarantees follow-ups of absolute rigour: no call forgotten, no deadline missed. True peace of mind and impeccable service for every client.',
 
-    'catherine.role': 'Real estate broker',
+    'catherine.role': 'Residential and commercial real estate broker',
     'catherine.p1':
       'Driven by a passion for architecture, spatial design and people, Catherine has a rare gift for revealing a property’s full potential. Her empathy and negotiation strength build unshakeable trust, turning complex transactions into smooth, reassuring experiences.',
     'catherine.p2':
