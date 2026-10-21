@@ -8,39 +8,39 @@
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <title data-i18n="meta.title.merci">Merci | MC Équipe</title>
     <meta name="description" data-i18n="meta.desc.merci" content="Votre message a bien été envoyé. L'équipe MC Équipe vous répondra sous peu.">
+    <link rel="canonical" href="https://mcequipe.ca/merci.html">
+    <meta property="og:title" content="Merci | MC Équipe">
+    <meta property="og:description" content="Votre message a bien été envoyé. L'équipe MC Équipe vous répondra sous peu.">
+    <meta property="og:image" content="https://mcequipe.ca/images/equipe-bureau.webp">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://mcequipe.ca/merci.html">
+    <meta property="og:locale" content="fr_CA">
     <meta name="robots" content="noindex">
     <script src="i18n.js"></script>
     <script src="cookies.js"></script>
     <link rel="stylesheet" href="nav.css">
     <script src="site-config.js"></script>
     <script src="ghl-contact.js"></script>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="tailwind.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&display=swap" rel="stylesheet">
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        mc: { charcoal: '#3d312c', sand: '#bbab9a', silver: '#c4c4c3', white: '#ffffff', linen: '#efe9e2', ocean: '#4f909b' }
-                    },
-                    fontFamily: { heading: ['Optima', 'sans-serif'], body: ['"Montserrat"', 'sans-serif'] }
-                }
-            }
-        }
-    </script>
+    
     <style>
         .font-heading { font-family: 'Optima', sans-serif; }
         .reveal-up { opacity: 0; transform: translateY(30px); transition: opacity 1s cubic-bezier(0.16, 1, 0.3, 1), transform 1s cubic-bezier(0.16, 1, 0.3, 1); }
         .reveal-up.is-visible { opacity: 1; transform: translateY(0); }
     </style>
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Merci | MC Équipe">
+    <meta name="twitter:description" content="Votre message a bien été envoyé. L'équipe MC Équipe vous répondra sous peu.">
+    <meta name="twitter:image" content="https://mcequipe.ca/images/equipe-bureau.webp">
 </head>
 <body class="bg-mc-white text-mc-charcoal font-body antialiased selection:bg-mc-ocean selection:text-white">
 
     <nav id="navbar" class="fixed top-0 w-full z-50 px-8 py-6 flex justify-between items-center bg-mc-charcoal/95 backdrop-blur text-white">
-        <a href="index.html" class="text-2xl font-heading tracking-widest uppercase">MC Équipe</a>
+        <a href="/" class="text-2xl font-heading tracking-widest uppercase">MC Équipe</a>
         <div class="hidden lg:flex gap-8 text-[11px] tracking-widest uppercase font-medium nav-links">
-            <a href="index.html#services" class="hover:text-mc-sand transition-colors" data-i18n="nav.services">Services</a>
-            <a href="index.html#equipe" class="hover:text-mc-sand transition-colors" data-i18n="nav.team">L'Équipe</a>
+            <a href="/#services" class="hover:text-mc-sand transition-colors" data-i18n="nav.services">Services</a>
+            <a href="/#equipe" class="hover:text-mc-sand transition-colors" data-i18n="nav.team">L'Équipe</a>
             <a href="international.html" class="hover:text-mc-sand transition-colors" data-i18n="nav.international">International</a>
             <a href="blogue.html" class="hover:text-mc-sand transition-colors" data-i18n="nav.blogue">Blogue</a>
             <a href="devenir-courtier-exp-quebec.html" class="hover:text-mc-sand transition-colors" data-i18n="nav.rejoindre">Rejoindre</a>
@@ -52,7 +52,7 @@
                 <span class="opacity-30 select-none" aria-hidden="true">|</span>
                 <button type="button" data-lang-set="en" class="lang-btn transition-opacity">EN</button>
             </div>
-            <a href="index.html#contact" class="nav-btn border border-white px-6 py-3 text-[10px] uppercase tracking-widest hover:bg-white hover:text-mc-charcoal transition-all duration-500 rounded-full" data-i18n="nav.contact">Contact</a>
+            <a href="/#contact" class="nav-btn border border-white px-6 py-3 text-[10px] uppercase tracking-widest hover:bg-white hover:text-mc-charcoal transition-all duration-500 rounded-full" data-i18n="nav.contact">Contact</a>
         </div>
     </nav>
 
@@ -67,7 +67,7 @@
                 <p class="font-light text-lg text-white/80 leading-relaxed mb-4" data-i18n="merci.desc">Votre demande a bien été transmise à notre équipe. Mathieu ou Catherine vous répondra dans les plus brefs délais.</p>
                 <p class="font-light text-sm text-white/50 mb-10" data-i18n="merci.privacy">Toutes les informations demeurent strictement confidentielles.</p>
                 <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-                    <a href="index.html" class="inline-block bg-mc-sand text-mc-charcoal px-10 py-4 text-xs uppercase tracking-widest rounded-full hover:bg-white transition-all duration-300" data-i18n="merci.cta.home">Retour à l'accueil</a>
+                    <a href="/" class="inline-block bg-mc-sand text-mc-charcoal px-10 py-4 text-xs uppercase tracking-widest rounded-full hover:bg-white transition-all duration-300" data-i18n="merci.cta.home">Retour à l'accueil</a>
                     <a href="hypotheque.html" class="inline-block border border-white/40 text-white px-10 py-4 text-xs uppercase tracking-widest rounded-full hover:bg-white hover:text-mc-charcoal transition-all duration-300" data-i18n="merci.cta.hypotheque">Besoin d'aide hypothécaire?</a>
                 </div>
             </div>

@@ -10,15 +10,19 @@
   const EN = {
     'meta.title.index': 'MC Équipe | eXp real estate brokers in Quebec',
     'meta.desc.index':
-      'MC Équipe is a Quebec eXp Realty team led by Mathieu Michaud and Catherine Aubé. Buy, sell, evaluate, military relocation, international acquisitions. Service in French, English and Spanish.',
+      'Quebec eXp Realty team led by Mathieu Michaud and Catherine Aubé. Buy, sell, evaluate, military relocation and international.',
     'meta.title.about': 'About MC Équipe | eXp real estate brokers in Quebec',
     'meta.desc.about':
-      'MC Équipe is the team of Mathieu Michaud and Catherine Aubé at eXp Realty in Quebec. Buy, sell, evaluate, military relocation, international. Service in French, English and Spanish.',
+      'The team of Mathieu Michaud and Catherine Aubé at eXp Realty in Quebec. Buy, sell, evaluate, military relocation and international.',
     'meta.title.residentiel': 'Buy & Sell | MC Équipe',
+    'meta.desc.residentiel':
+      'Residential buying and selling in Quebec with MC Équipe, eXp Realty brokers. Search, negotiation and listing.',
     'meta.title.military': 'Military Relocation | MC Équipe',
     'meta.desc.military':
       'Accredited broker and former regular-force member. Mathieu Michaud supports CAF members during relocations to Valcartier, Québec City and the surrounding region.',
     'meta.title.evaluation': 'Free Home Evaluation | MC Équipe',
+    'meta.desc.evaluation':
+      'Free home evaluation in Quebec with MC Équipe, eXp Realty brokers. Comparative market analysis, with no obligation.',
     'meta.title.international': 'Buy & Invest Abroad | MC Équipe',
     'meta.title.mathieu': 'Mathieu Michaud | MC Équipe',
     'meta.desc.mathieu':
@@ -28,11 +32,13 @@
       'Catherine Aubé, eXp Realty broker in Quebec. International acquisitions and support in French, English and Spanish. MC Équipe.',
     'meta.title.pamela': 'Pamela Coulombe | MC Équipe',
     'meta.desc.pamela':
-      'Pamela Coulombe, eXp Realty broker in Quebec. Personalized support, first-time buyers, service in French, English and Spanish. MC Équipe.',
+      'Pamela Coulombe, eXp Realty broker in Quebec. Personalized support, first-time buyers, service in French, English and Spanish.',
     'meta.title.joelle': 'Joëlle Jacques | MC Équipe',
     'meta.desc.joelle':
       'Joëlle Jacques, eXp Realty broker in Quebec. Personalized, structured and transparent support. MC Équipe.',
     'meta.title.privacy': 'Privacy Policy | MC Équipe',
+    'meta.desc.privacy':
+      'Privacy policy of MC Équipe, eXp Realty brokers in Quebec. How personal information is collected and protected.',
     'meta.title.merci': 'Thank You | MC Équipe',
     'meta.desc.merci':
       'Your message has been sent. The MC Équipe team will respond shortly.',

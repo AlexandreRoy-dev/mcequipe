@@ -7,32 +7,20 @@
     <link rel="icon" href="favicon.ico" sizes="any">
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <title data-i18n="meta.title.privacy">Politique de confidentialité | MC Équipe</title>
+    <meta name="description" data-i18n="meta.desc.privacy" content="Politique de confidentialité de MC Équipe, courtiers eXp Realty au Québec. Collecte et protection des renseignements personnels.">
+    <link rel="canonical" href="https://mcequipe.ca/politique-confidentialite.html">
+    <meta property="og:title" content="Politique de confidentialité | MC Équipe">
+    <meta property="og:description" content="Politique de confidentialité de MC Équipe, courtiers eXp Realty au Québec. Collecte et protection des renseignements personnels.">
+    <meta property="og:image" content="https://mcequipe.ca/images/equipe-bureau.webp">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://mcequipe.ca/politique-confidentialite.html">
+    <meta property="og:locale" content="fr_CA">
     <script src="i18n.js"></script>
     <script src="cookies.js"></script>
     <link rel="stylesheet" href="nav.css">
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="tailwind.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&display=swap" rel="stylesheet">
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        mc: {
-                            charcoal: '#3d312c',
-                            sand: '#bbab9a',
-                            white: '#ffffff',
-                            linen: '#efe9e2',
-                            ocean: '#4f909b',
-                        }
-                    },
-                    fontFamily: {
-                        heading: ['Optima', 'sans-serif'],
-                        body: ['"Montserrat"', 'sans-serif'],
-                    }
-                }
-            }
-        }
-    </script>
+    
     <style>
         .font-heading { font-family: 'Optima', sans-serif; }
         .legal-content h2 { margin-top: 2.5rem; margin-bottom: 1rem; }
@@ -47,16 +35,66 @@
         }
         .custom-cursor.active { width: 60px; height: 60px; opacity: 0.8; }
     </style>
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Politique de confidentialité | MC Équipe">
+    <meta name="twitter:description" content="Politique de confidentialité de MC Équipe, courtiers eXp Realty au Québec. Collecte et protection des renseignements personnels.">
+    <meta name="twitter:image" content="https://mcequipe.ca/images/equipe-bureau.webp">
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": [
+    "RealEstateAgent",
+    "Organization"
+  ],
+  "@id": "https://mcequipe.ca/#organization",
+  "name": "MC Équipe",
+  "alternateName": [
+    "MC Equipe",
+    "MC Équipe Immobilier"
+  ],
+  "url": "https://mcequipe.ca/",
+  "logo": "https://mcequipe.ca/images/mc-equipe-mark.png",
+  "image": "https://mcequipe.ca/images/equipe-bureau.webp",
+  "email": "info@mcequipe.com",
+  "telephone": [
+    "+1-418-655-8090",
+    "+1-418-952-0925"
+  ],
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "1111 Blvd. Dr. Frederik-Philips #601",
+    "addressLocality": "Saint-Laurent",
+    "addressRegion": "QC",
+    "postalCode": "H4M 2X6",
+    "addressCountry": "CA"
+  },
+  "areaServed": [
+    {
+      "@type": "AdministrativeArea",
+      "name": "Québec"
+    },
+    {
+      "@type": "City",
+      "name": "Québec"
+    }
+  ],
+  "parentOrganization": {
+    "@type": "Organization",
+    "name": "eXp Realty",
+    "url": "https://expquebec.com/"
+  }
+}
+    </script>
 </head>
 <body class="bg-mc-white text-mc-charcoal font-body antialiased selection:bg-mc-ocean selection:text-white overflow-x-hidden">
 
     <div class="custom-cursor hidden lg:block" id="cursor"></div>
 
     <nav id="navbar" class="w-full z-50 px-8 py-6 flex justify-between items-center bg-mc-white border-b border-mc-linen sticky top-0">
-        <a href="index.html" class="text-2xl font-heading tracking-widest uppercase hover-trigger text-mc-charcoal">MC Équipe</a>
+        <a href="/" class="text-2xl font-heading tracking-widest uppercase hover-trigger text-mc-charcoal">MC Équipe</a>
         <div class="hidden lg:flex gap-8 text-[11px] tracking-widest uppercase font-medium nav-links text-mc-charcoal">
-            <a href="index.html#services" class="hover-trigger hover:text-mc-sand transition-colors" data-i18n="nav.services">Services</a>
-            <a href="index.html#equipe" class="hover-trigger hover:text-mc-sand transition-colors" data-i18n="nav.team">L'Équipe</a>
+            <a href="/#services" class="hover-trigger hover:text-mc-sand transition-colors" data-i18n="nav.services">Services</a>
+            <a href="/#equipe" class="hover-trigger hover:text-mc-sand transition-colors" data-i18n="nav.team">L'Équipe</a>
             <a href="international.html" class="hover-trigger hover:text-mc-ocean transition-colors" data-i18n="nav.international">International</a>
             <a href="blogue.html" class="hover-trigger hover:text-mc-sand transition-colors" data-i18n="nav.blogue">Blogue</a>
             <a href="devenir-courtier-exp-quebec.html" class="hover-trigger hover:text-mc-sand transition-colors" data-i18n="nav.rejoindre">Rejoindre</a>
@@ -68,7 +106,7 @@
                 <span class="opacity-30 select-none" aria-hidden="true">|</span>
                 <button type="button" data-lang-set="en" class="lang-btn hover-trigger transition-opacity">EN</button>
             </div>
-            <a href="index.html#contact" class="nav-btn hover-trigger border border-mc-charcoal text-mc-charcoal px-6 py-3 text-[10px] uppercase tracking-widest hover:bg-mc-charcoal hover:text-white transition-all duration-500 rounded-full" data-i18n="nav.contact">Contact</a>
+            <a href="/#contact" class="nav-btn hover-trigger border border-mc-charcoal text-mc-charcoal px-6 py-3 text-[10px] uppercase tracking-widest hover:bg-mc-charcoal hover:text-white transition-all duration-500 rounded-full" data-i18n="nav.contact">Contact</a>
         </div>
     </nav>
 

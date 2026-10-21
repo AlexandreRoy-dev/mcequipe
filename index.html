@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title data-i18n="meta.title.index">MC Équipe | Courtiers immobiliers eXp au Québec</title>
-    <meta name="description" data-i18n="meta.desc.index" content="MC Équipe est une équipe de courtiers eXp Realty au Québec, dirigée par Mathieu Michaud et Catherine Aubé. Achat, vente, évaluation, transfert militaire, international. Service en français, anglais et espagnol.">
+    <meta name="description" data-i18n="meta.desc.index" content="Équipe de courtiers eXp Realty au Québec, dirigée par Mathieu Michaud et Catherine Aubé. Achat, vente, évaluation, transfert militaire et international.">
     <link rel="canonical" href="https://mcequipe.ca/">
     <link rel="icon" href="favicon.svg" type="image/svg+xml">
     <link rel="icon" href="favicon.ico" sizes="any">
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <link rel="alternate" type="text/plain" href="https://mcequipe.ca/llms.txt" title="llms.txt">
     <meta property="og:title" content="MC Équipe | Courtiers immobiliers eXp au Québec">
-    <meta property="og:description" content="Équipe de courtiers eXp Realty au Québec. Achat, vente, évaluation, transfert militaire et acquisitions internationales. Service en français, anglais et espagnol.">
+    <meta property="og:description" content="Équipe de courtiers eXp Realty au Québec, dirigée par Mathieu Michaud et Catherine Aubé. Achat, vente, évaluation, transfert militaire et international.">
     <meta property="og:image" content="https://mcequipe.ca/images/equipe-bureau.webp">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://mcequipe.ca/">
@@ -97,31 +97,10 @@
     <link rel="stylesheet" href="funnel.css">
     <script src="funnel.js"></script>
     <script src="forms.js"></script>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="tailwind.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&display=swap" rel="stylesheet">
     
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        mc: {
-                            charcoal: '#3d312c', 
-                            sand: '#bbab9a', 
-                            silver: '#c4c4c3',
-                            white: '#ffffff',
-                            linen: '#efe9e2', 
-                            ocean: '#4f909b',
-                        }
-                    },
-                    fontFamily: {
-                        heading: ['Optima', 'sans-serif'], 
-                        body: ['"Montserrat"', 'sans-serif'],
-                    }
-                }
-            }
-        }
-    </script>
+    
     
     <style>
         .font-heading { font-family: 'Optima', sans-serif; }
@@ -200,13 +179,16 @@
             }
         }
     </style>
+    <meta name="twitter:title" content="MC Équipe | Courtiers immobiliers eXp au Québec">
+    <meta name="twitter:description" content="Équipe de courtiers eXp Realty au Québec. Achat, vente, évaluation, transfert militaire et acquisitions internationales. Service en français, anglais et espagnol.">
+    <meta name="twitter:image" content="https://mcequipe.ca/images/equipe-bureau.webp">
 </head>
 <body class="bg-mc-white text-mc-charcoal font-body antialiased selection:bg-mc-ocean selection:text-white overflow-x-hidden">
 
     <div class="custom-cursor hidden lg:block" id="cursor"></div>
 
     <nav id="navbar" class="fixed top-0 w-full z-50 px-8 py-6 flex justify-between items-center text-white transition-all duration-500">
-        <a href="index.html" class="text-2xl font-heading tracking-widest uppercase hover-trigger">MC Équipe</a>
+        <a href="/" class="text-2xl font-heading tracking-widest uppercase hover-trigger">MC Équipe</a>
         <div class="hidden lg:flex gap-8 text-[11px] tracking-widest uppercase font-medium nav-links">
             <a href="#services" class="hover-trigger hover:text-mc-sand transition-colors" data-i18n="nav.services">Services</a>
             <a href="#equipe" class="hover-trigger hover:text-mc-sand transition-colors" data-i18n="nav.team">L'Équipe</a>
@@ -277,7 +259,7 @@
                 <div class="service-card group relative bg-mc-linen text-mc-charcoal rounded-xl overflow-hidden h-[450px] lg:h-[550px] flex items-end p-8 lg:p-10 hover-trigger transition-all duration-500 hover:shadow-2xl hover:-translate-y-1 reveal-up">
                     
                     <div class="absolute inset-0 z-0 overflow-hidden">
-                        <img src="images/vente-quebec.webp" alt="Vente Québec" 
+                        <img src="images/vente-quebec.webp" alt="Maison contemporaine au Québec" 
                              class="absolute w-full h-full object-cover transition-all duration-[4000ms] lg:scale-105 grayscale group-hover:grayscale-0 opacity-40 group-hover:opacity-100 group-hover:scale-100">
                         
                         <div class="absolute inset-x-0 bottom-0 h-2/3 bg-gradient-to-t from-mc-linen via-mc-linen/90 lg:from-black/80 lg:via-mc-charcoal/30 lg:to-transparent lg:opacity-0 lg:group-hover:opacity-100 transition-opacity duration-500"></div>
@@ -299,7 +281,7 @@
                 <div class="service-card group relative bg-mc-charcoal text-mc-white rounded-xl overflow-hidden h-[450px] lg:h-[550px] flex items-end p-8 lg:p-10 hover-trigger transition-all duration-500 hover:shadow-2xl hover:-translate-y-1 reveal-up" style="transition-delay: 100ms;">
                     
                     <div class="absolute inset-0 z-0 overflow-hidden">
-                        <img src="images/evaluation-maison.webp" alt="Évaluation" 
+                        <img src="images/evaluation-maison.webp" alt="Maison de bois et pierre au bord de l'eau" 
                              class="absolute w-full h-full object-cover transition-all duration-[4000ms] lg:scale-105 grayscale opacity-30 group-hover:grayscale-0 group-hover:opacity-90 group-hover:scale-100">
                         <div class="absolute inset-x-0 bottom-0 h-2/3 bg-gradient-to-t from-mc-charcoal via-mc-charcoal/80 to-transparent"></div>
                     </div>
@@ -320,7 +302,7 @@
                 <div class="service-card group relative bg-mc-ocean text-white rounded-xl overflow-hidden h-[450px] lg:h-[550px] flex items-end p-8 lg:p-10 hover-trigger transition-all duration-500 hover:shadow-2xl hover:-translate-y-1 reveal-up" style="transition-delay: 200ms;">
                     
                     <div class="absolute inset-0 z-0 overflow-hidden">
-                        <img src="images/international-plage.webp" alt="International" 
+                        <img src="images/international-plage.webp" alt="Plage tropicale" 
                              class="absolute w-full h-full object-cover transition-all duration-[4000ms] lg:scale-105 grayscale opacity-40 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-100">
                         <div class="absolute inset-x-0 bottom-0 h-2/3 bg-gradient-to-t from-mc-ocean via-mc-ocean/90 to-transparent"></div>
                         <div class="absolute inset-0 bg-mc-ocean/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
@@ -341,7 +323,7 @@
 
                 <div class="service-card group relative bg-mc-white text-mc-charcoal border border-mc-linen rounded-xl overflow-hidden h-[450px] lg:h-[550px] flex items-end p-8 lg:p-10 hover-trigger transition-all duration-500 hover:shadow-2xl hover:-translate-y-1 reveal-up" style="transition-delay: 300ms;">
                     <div class="absolute inset-0 z-0 overflow-hidden">
-                        <img src="images/hero-quebec-region.webp" alt="Transfert militaire Québec"
+                        <img src="images/hero-quebec-region.webp" alt="Rive du fleuve dans la région de Québec"
                              class="absolute w-full h-full object-cover transition-all duration-[4000ms] lg:scale-105 grayscale opacity-40 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-100">
                         <div class="absolute inset-x-0 bottom-0 h-2/3 bg-gradient-to-t from-white via-white/90 lg:from-mc-charcoal/80 lg:via-mc-charcoal/30 lg:to-transparent lg:opacity-0 lg:group-hover:opacity-100 transition-opacity duration-500"></div>
                     </div>

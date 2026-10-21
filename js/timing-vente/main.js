@@ -163,7 +163,7 @@ function icons() {
 
 function logos() {
   return `
-    <a href="index.html" class="eval-logo" aria-label="Retour à l’accueil MC Équipe">MC Équipe</a>
+    <a href="/" class="eval-logo" aria-label="Retour à l’accueil MC Équipe">MC Équipe</a>
   `;
 }
 
@@ -513,7 +513,7 @@ function leadThanks() {
     <div class="eval-card mt-10 text-center">
       <p class="font-heading text-2xl text-white">Bien reçu.</p>
       <p class="mt-3 text-white/65">Votre analyse est prête ci-dessous. Un courtier vous appellera pour confirmer les résultats.</p>
-      <a href="index.html#contact" class="eval-btn eval-btn-primary inline-flex mt-6">Nous contacter</a>
+      <a href="/#contact" class="eval-btn eval-btn-primary inline-flex mt-6">Nous contacter</a>
     </div>
   `;
 }
