@@ -55,20 +55,9 @@
     <link rel="stylesheet" href="funnel.css">
     <script src="funnel.js"></script>
     <script src="forms.js"></script>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="tailwind.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&display=swap" rel="stylesheet">
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        mc: { charcoal: '#3d312c', sand: '#bbab9a', silver: '#c4c4c3', white: '#ffffff', linen: '#efe9e2', ocean: '#4f909b' }
-                    },
-                    fontFamily: { heading: ['Optima', 'sans-serif'], body: ['"Montserrat"', 'sans-serif'] }
-                }
-            }
-        }
-    </script>
+    
     <style>
         .font-heading { font-family: 'Optima', sans-serif; }
         @media (min-width: 1024px) { body, a, button { cursor: none; } }
@@ -80,16 +69,65 @@
         .nav-scrolled .nav-btn { border-color: #3d312c; color: #3d312c; }
         .nav-scrolled .nav-btn:hover { background-color: #3d312c; color: #fff; }
     </style>
+    <meta name="twitter:title" content="Devenir courtier eXp Realty au Québec | MC Équipe">
+    <meta name="twitter:description" content="Pourquoi rejoindre eXp Realty, changer de bannière et travailler avec un recruteur eXp au Québec.">
+    <meta name="twitter:image" content="https://mcequipe.ca/images/equipe-bureau.webp">
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": [
+    "RealEstateAgent",
+    "Organization"
+  ],
+  "@id": "https://mcequipe.ca/#organization",
+  "name": "MC Équipe",
+  "alternateName": [
+    "MC Equipe",
+    "MC Équipe Immobilier"
+  ],
+  "url": "https://mcequipe.ca/",
+  "logo": "https://mcequipe.ca/images/mc-equipe-mark.png",
+  "image": "https://mcequipe.ca/images/equipe-bureau.webp",
+  "email": "info@mcequipe.com",
+  "telephone": [
+    "+1-418-655-8090",
+    "+1-418-952-0925"
+  ],
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "1111 Blvd. Dr. Frederik-Philips #601",
+    "addressLocality": "Saint-Laurent",
+    "addressRegion": "QC",
+    "postalCode": "H4M 2X6",
+    "addressCountry": "CA"
+  },
+  "areaServed": [
+    {
+      "@type": "AdministrativeArea",
+      "name": "Québec"
+    },
+    {
+      "@type": "City",
+      "name": "Québec"
+    }
+  ],
+  "parentOrganization": {
+    "@type": "Organization",
+    "name": "eXp Realty",
+    "url": "https://expquebec.com/"
+  }
+}
+    </script>
 </head>
 <body class="bg-mc-white text-mc-charcoal font-body antialiased selection:bg-mc-ocean selection:text-white overflow-x-hidden">
 
     <div class="custom-cursor hidden lg:block" id="cursor"></div>
 
     <nav id="navbar" class="fixed top-0 w-full z-50 px-8 py-6 flex justify-between items-center text-white transition-all duration-500">
-        <a href="index.html" class="text-2xl font-heading tracking-widest uppercase hover-trigger">MC Équipe</a>
+        <a href="/" class="text-2xl font-heading tracking-widest uppercase hover-trigger">MC Équipe</a>
         <div class="hidden lg:flex gap-8 text-[11px] tracking-widest uppercase font-medium nav-links">
-            <a href="index.html#services" class="hover-trigger hover:text-mc-sand transition-colors" data-i18n="nav.services">Services</a>
-            <a href="index.html#equipe" class="hover-trigger hover:text-mc-sand transition-colors" data-i18n="nav.team">L'Équipe</a>
+            <a href="/#services" class="hover-trigger hover:text-mc-sand transition-colors" data-i18n="nav.services">Services</a>
+            <a href="/#equipe" class="hover-trigger hover:text-mc-sand transition-colors" data-i18n="nav.team">L'Équipe</a>
             <a href="international.html" class="hover-trigger hover:text-mc-sand transition-colors" data-i18n="nav.international">International</a>
             <a href="blogue.html" class="hover-trigger hover:text-mc-sand transition-colors" data-i18n="nav.blogue">Blogue</a>
             <a href="recrutement-exp-quebec.html" class="hover-trigger text-mc-sand transition-colors" data-i18n="nav.rejoindre">Rejoindre</a>

@@ -7,6 +7,14 @@
     <link rel="icon" href="favicon.ico" sizes="any">
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <title data-i18n="meta.title.evaluation">Évaluation Gratuite | MC Équipe</title>
+    <meta name="description" data-i18n="meta.desc.evaluation" content="Évaluation gratuite au Québec par MC Équipe, courtiers eXp Realty. Analyse comparative de marché, sans obligation.">
+    <link rel="canonical" href="https://mcequipe.ca/evaluation.html">
+    <meta property="og:title" content="Évaluation Gratuite | MC Équipe">
+    <meta property="og:description" content="Évaluation gratuite au Québec par MC Équipe, courtiers eXp Realty. Analyse comparative de marché, sans obligation.">
+    <meta property="og:image" content="https://mcequipe.ca/images/evaluation-maison.webp">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://mcequipe.ca/evaluation.html">
+    <meta property="og:locale" content="fr_CA">
     <script src="i18n.js"></script>
     <script src="cookies.js"></script>
     <link rel="stylesheet" href="nav.css">
@@ -15,31 +23,10 @@
     <link rel="stylesheet" href="funnel.css">
     <script src="funnel.js"></script>
     <script src="forms.js"></script>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="tailwind.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&display=swap" rel="stylesheet">
     
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        mc: {
-                            charcoal: '#3d312c', 
-                            sand: '#bbab9a', 
-                            silver: '#c4c4c3',
-                            white: '#ffffff',
-                            linen: '#efe9e2', 
-                            ocean: '#4f909b',
-                        }
-                    },
-                    fontFamily: {
-                        heading: ['Optima', 'sans-serif'], 
-                        body: ['"Montserrat"', 'sans-serif'],
-                    }
-                }
-            }
-        }
-    </script>
+    
     
     <style>
         .font-heading { font-family: 'Optima', sans-serif; }
@@ -92,16 +79,66 @@
             color: #ffffff;
         }
     </style>
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Évaluation Gratuite | MC Équipe">
+    <meta name="twitter:description" content="Évaluation gratuite au Québec par MC Équipe, courtiers eXp Realty. Analyse comparative de marché, sans obligation.">
+    <meta name="twitter:image" content="https://mcequipe.ca/images/evaluation-maison.webp">
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": [
+    "RealEstateAgent",
+    "Organization"
+  ],
+  "@id": "https://mcequipe.ca/#organization",
+  "name": "MC Équipe",
+  "alternateName": [
+    "MC Equipe",
+    "MC Équipe Immobilier"
+  ],
+  "url": "https://mcequipe.ca/",
+  "logo": "https://mcequipe.ca/images/mc-equipe-mark.png",
+  "image": "https://mcequipe.ca/images/equipe-bureau.webp",
+  "email": "info@mcequipe.com",
+  "telephone": [
+    "+1-418-655-8090",
+    "+1-418-952-0925"
+  ],
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "1111 Blvd. Dr. Frederik-Philips #601",
+    "addressLocality": "Saint-Laurent",
+    "addressRegion": "QC",
+    "postalCode": "H4M 2X6",
+    "addressCountry": "CA"
+  },
+  "areaServed": [
+    {
+      "@type": "AdministrativeArea",
+      "name": "Québec"
+    },
+    {
+      "@type": "City",
+      "name": "Québec"
+    }
+  ],
+  "parentOrganization": {
+    "@type": "Organization",
+    "name": "eXp Realty",
+    "url": "https://expquebec.com/"
+  }
+}
+    </script>
 </head>
 <body class="bg-mc-white text-mc-charcoal font-body antialiased selection:bg-mc-ocean selection:text-white overflow-x-hidden">
 
     <div class="custom-cursor hidden lg:block" id="cursor"></div>
 
     <nav id="navbar" class="fixed top-0 w-full z-50 px-8 py-6 flex justify-between items-center text-white transition-all duration-500">
-        <a href="index.html" class="text-2xl font-heading tracking-widest uppercase hover-trigger">MC Équipe</a>
+        <a href="/" class="text-2xl font-heading tracking-widest uppercase hover-trigger">MC Équipe</a>
         <div class="hidden md:flex gap-12 text-[11px] tracking-widest uppercase font-medium nav-links">
-            <a href="index.html#services" class="hover-trigger hover:text-mc-sand transition-colors" data-i18n="nav.services">Services</a>
-            <a href="index.html#equipe" class="hover-trigger hover:text-mc-sand transition-colors" data-i18n="nav.team">L'Équipe</a>
+            <a href="/#services" class="hover-trigger hover:text-mc-sand transition-colors" data-i18n="nav.services">Services</a>
+            <a href="/#equipe" class="hover-trigger hover:text-mc-sand transition-colors" data-i18n="nav.team">L'Équipe</a>
             <a href="international.html" class="hover-trigger text-mc-ocean hover:opacity-70 transition-opacity" data-i18n="nav.international">International</a>
             <a href="hypotheque.html" class="hover-trigger hover:text-mc-sand transition-colors" data-i18n="nav.hypotheque">Hypothèque</a>
             <a href="https://mathieumichaud.expquebec.com/fr/proprietes" data-i18n-href="listings" class="hover-trigger hover:text-mc-sand transition-colors" target="_blank" rel="noopener noreferrer" data-i18n="nav.listings">Propriétés</a>
@@ -112,12 +149,12 @@
                 <span class="opacity-30 select-none" aria-hidden="true">|</span>
                 <button type="button" data-lang-set="en" class="lang-btn hover-trigger transition-opacity">EN</button>
             </div>
-            <a href="index.html#contact" class="nav-btn hover-trigger border border-white px-6 py-3 text-[10px] uppercase tracking-widest hover:bg-white hover:text-mc-charcoal transition-all duration-500 rounded-full" data-i18n="nav.contact">Contact</a>
+            <a href="/#contact" class="nav-btn hover-trigger border border-white px-6 py-3 text-[10px] uppercase tracking-widest hover:bg-white hover:text-mc-charcoal transition-all duration-500 rounded-full" data-i18n="nav.contact">Contact</a>
         </div>
     </nav>
 
     <header class="relative h-[60vh] w-full flex flex-col justify-center items-center overflow-hidden">
-        <img src="images/evaluation-maison.webp" alt="Évaluation Immobilière" class="absolute inset-0 w-full h-full object-cover z-0">
+        <img src="images/evaluation-maison.webp" alt="Maison de bois et pierre au bord de l'eau" class="absolute inset-0 w-full h-full object-cover z-0">
         <div class="absolute inset-0 bg-mc-charcoal/70 z-10"></div>
 
         <div class="relative z-20 text-center w-full max-w-4xl mx-auto px-6 reveal-up">

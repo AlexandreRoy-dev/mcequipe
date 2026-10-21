@@ -81,8 +81,8 @@
     panelNav.setAttribute('aria-label', 'Navigation mobile');
 
     var defaultLinks = [
-      { href: 'index.html#services', fr: 'Services', en: 'Services', key: 'nav.services' },
-      { href: 'index.html#equipe', fr: "L'Équipe", en: 'The Team', key: 'nav.team' },
+      { href: '/#services', fr: 'Services', en: 'Services', key: 'nav.services' },
+      { href: '/#equipe', fr: "L'Équipe", en: 'The Team', key: 'nav.team' },
       { href: 'international.html', fr: 'International', en: 'International', key: 'nav.international' },
       { href: 'blogue.html', fr: 'Blogue', en: 'Blog', key: 'nav.blogue' },
       { href: 'devenir-courtier-exp-quebec.html', fr: 'Rejoindre', en: 'Join us', key: 'nav.rejoindre' },
@@ -100,7 +100,7 @@
 
     function addLink(href, label, key, listings) {
       var a = document.createElement('a');
-      a.href = listings ? href : prefix + href.replace(/^\.\.\//, '');
+      a.href = listings ? href : (href.charAt(0) === '/' ? href : prefix + href.replace(/^\.\.\//, ''));
       if (listings) {
         a.setAttribute('data-i18n-href', 'listings');
         a.target = '_blank';
@@ -134,7 +134,7 @@
       panel.appendChild(cta);
     } else {
       var fallbackCta = document.createElement('a');
-      fallbackCta.href = prefix + 'index.html#contact';
+      fallbackCta.href = '/#contact';
       fallbackCta.className = 'mobile-nav-cta hover-trigger';
       fallbackCta.setAttribute('data-i18n', 'nav.contact');
       fallbackCta.textContent =
